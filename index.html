@@ -1092,7 +1092,7 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
     </div>
   </div>
   <div class="header-actions">
-    <div class="last-update" id="last-update">Atualizado: 20/05/2026 07:42 · Força de Vendas.xlsx</div>
+    <div class="last-update" id="last-update">Atualizado: 20/05/2026 08:19 · Força de Vendas.xlsx</div>
     <button class="btn-print" onclick="openPrintPreview('vendas')" title="Resumo Executivo — Vendas">🖨️ Resumo Executivo</button>
     
     
@@ -1101,15 +1101,15 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
 
 <!-- TABS -->
 <div class="tabs-nav">
-  <button class="tab-btn" onclick="switchTab('vendas',this)">📈 Vendas</button>
+  <button class="tab-btn active" onclick="switchTab('vendas',this)">📈 Vendas</button>
   <button class="tab-btn" onclick="switchTab('churn',this)">📉 Churn</button>
-  <button class="tab-btn active" onclick="switchTab('correlacao',this)">🔗 Correlação</button>
+  <button class="tab-btn" onclick="switchTab('correlacao',this)">🔗 Correlação</button>
   <button class="tab-btn" onclick="switchTab('ltv',this)">⏱ LTV &amp; Retenção</button>
   <button class="tab-btn" onclick="switchTab('arpu',this)">📊 ARPU</button>
 </div>
 
 <!-- ══════════ VENDAS ══════════ -->
-<div id="tab-vendas" class="tab-content">
+<div id="tab-vendas" class="tab-content active">
 
   <!-- FILTER -->
   <div class="filter-bar">
@@ -1214,14 +1214,14 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
         <div class="chart-title">Quantidade de Vendas por Mês</div>
         <div class="chart-sub">Volume de contratos fechados com variação ∆ entre períodos</div>
       </div>
-      <div class="chart-wrap h-360"><canvas id="mv-qtd" style="box-sizing: border-box; display: block; height: 0px; width: 0px;" width="0" height="0"></canvas></div>
+      <div class="chart-wrap h-360"><canvas id="mv-qtd" style="box-sizing: border-box; display: block; height: 360px; width: 755px;" width="849" height="405"></canvas></div>
     </div>
     <div class="chart-card">
       <div class="chart-head">
         <div class="chart-title">Receita de Vendas por Mês</div>
         <div class="chart-sub">Valor de serviços vendidos com variação ∆ entre períodos</div>
       </div>
-      <div class="chart-wrap h-360"><canvas id="mv-val" style="box-sizing: border-box; display: block; height: 0px; width: 0px;" width="0" height="0"></canvas></div>
+      <div class="chart-wrap h-360"><canvas id="mv-val" style="box-sizing: border-box; display: block; height: 360px; width: 755px;" width="849" height="405"></canvas></div>
     </div>
   </div>
 
@@ -1232,7 +1232,7 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
         <div class="chart-title">Receita por Produto — Cascata</div>
         <div class="chart-sub">Contribuição acumulada de cada linha de produto para a receita total</div>
       </div>
-      <div class="chart-wrap h-280"><canvas id="cv-wf-produto" style="box-sizing: border-box; display: block; height: 0px; width: 0px;" width="0" height="0"></canvas></div>
+      <div class="chart-wrap h-280"><canvas id="cv-wf-produto" style="box-sizing: border-box; display: block; height: 280px; width: 1572px;" width="1768" height="315"></canvas></div>
     </div>
   </div>
 
@@ -1243,14 +1243,14 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
         <div class="chart-title">Receita por Equipe — Cascata</div>
         <div class="chart-sub">Contribuição por canal de vendas</div>
       </div>
-      <div class="chart-wrap h-240"><canvas id="cv-wf-equipe" style="box-sizing: border-box; display: block; height: 0px; width: 0px;" width="0" height="0"></canvas></div>
+      <div class="chart-wrap h-240"><canvas id="cv-wf-equipe" style="box-sizing: border-box; display: block; height: 240px; width: 755px;" width="849" height="270"></canvas></div>
     </div>
     <div class="chart-card">
       <div class="chart-head">
         <div class="chart-title">Receita por Bloco / Região</div>
         <div class="chart-sub">Volume de receita por área geográfica</div>
       </div>
-      <div class="chart-wrap h-240"><canvas id="cv-bloco" style="box-sizing: border-box; display: block; height: 0px; width: 0px;" width="0" height="0"></canvas></div>
+      <div class="chart-wrap h-240"><canvas id="cv-bloco" style="box-sizing: border-box; display: block; height: 240px; width: 755px;" width="849" height="270"></canvas></div>
     </div>
   </div>
 
@@ -2025,9 +2025,9 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
     </div><div class="year-box" data-ano="2025">
       <div class="year-box-header">
         <span class="year-box-label">2025</span>
-        <button class="year-toggle-all" onclick="toggleYearAll('c-period-selector',2025,this)">Limpar</button>
+        <button class="year-toggle-all" onclick="toggleYearAll('c-period-selector',2025,this)">Todos</button>
       </div>
-      <div class="year-months"><span class="month-pill " data-ano="2025" data-mes="1">Jan</span><span class="month-pill " data-ano="2025" data-mes="2">Fev</span><span class="month-pill " data-ano="2025" data-mes="3">Mar</span><span class="month-pill " data-ano="2025" data-mes="4">Abr</span><span class="month-pill " data-ano="2025" data-mes="5">Mai</span><span class="month-pill selected" data-ano="2025" data-mes="6">Jun</span><span class="month-pill selected" data-ano="2025" data-mes="7">Jul</span><span class="month-pill selected" data-ano="2025" data-mes="8">Ago</span><span class="month-pill selected" data-ano="2025" data-mes="9">Set</span><span class="month-pill selected" data-ano="2025" data-mes="10">Out</span><span class="month-pill selected" data-ano="2025" data-mes="11">Nov</span><span class="month-pill selected" data-ano="2025" data-mes="12">Dez</span></div>
+      <div class="year-months"><span class="month-pill" data-ano="2025" data-mes="1">Jan</span><span class="month-pill" data-ano="2025" data-mes="2">Fev</span><span class="month-pill" data-ano="2025" data-mes="3">Mar</span><span class="month-pill" data-ano="2025" data-mes="4">Abr</span><span class="month-pill" data-ano="2025" data-mes="5">Mai</span><span class="month-pill" data-ano="2025" data-mes="6">Jun</span><span class="month-pill" data-ano="2025" data-mes="7">Jul</span><span class="month-pill" data-ano="2025" data-mes="8">Ago</span><span class="month-pill" data-ano="2025" data-mes="9">Set</span><span class="month-pill" data-ano="2025" data-mes="10">Out</span><span class="month-pill" data-ano="2025" data-mes="11">Nov</span><span class="month-pill" data-ano="2025" data-mes="12">Dez</span></div>
     </div><div class="year-box" data-ano="2026">
       <div class="year-box-header">
         <span class="year-box-label">2026</span>
@@ -2206,7 +2206,7 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
 </div>
 
 <!-- ══════════ CORRELAÇÃO ══════════ -->
-<div id="tab-correlacao" class="tab-content active">
+<div id="tab-correlacao" class="tab-content">
 
   <div class="filter-bar">
     <div class="filter-group">
@@ -2294,7 +2294,7 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
         <div class="chart-title">Quantidade: Vendas vs Cancelamentos por Mês</div>
         <div class="chart-sub">Evolução comparada com saldo líquido e variação ∆ mensal</div>
       </div>
-      <div class="chart-wrap h-380"><canvas id="mcorr-qtd" style="box-sizing: border-box; display: block; height: 380px; width: 2709px;" width="2438" height="341"></canvas></div>
+      <div class="chart-wrap h-380"><canvas id="mcorr-qtd" style="box-sizing: border-box; display: block; height: 0px; width: 0px;" width="0" height="0"></canvas></div>
     </div>
   </div>
   <div class="chart-row chart-row-1" style="margin-bottom:24px">
@@ -2303,7 +2303,7 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
         <div class="chart-title">Receita: Vendas vs Valor Cancelado por Mês</div>
         <div class="chart-sub">Comparação de valor captado vs perdido com saldo ∆</div>
       </div>
-      <div class="chart-wrap h-380"><canvas id="mcorr-val" style="box-sizing: border-box; display: block; height: 380px; width: 2709px;" width="2438" height="341"></canvas></div>
+      <div class="chart-wrap h-380"><canvas id="mcorr-val" style="box-sizing: border-box; display: block; height: 0px; width: 0px;" width="0" height="0"></canvas></div>
     </div>
   </div>
 
@@ -2313,14 +2313,14 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
         <div class="chart-title">Vendas vs Cancelamentos — por Produto</div>
         <div class="chart-sub">Comparação de volume adquirido e perdido</div>
       </div>
-      <div class="chart-wrap h-260"><canvas id="corr-prod" style="box-sizing: border-box; display: block; height: 150px; width: 1323px;" width="1191" height="134"></canvas></div>
+      <div class="chart-wrap h-260"><canvas id="corr-prod" style="box-sizing: border-box; display: block; height: 0px; width: 0px;" width="0" height="0"></canvas></div>
     </div>
     <div class="chart-card">
       <div class="chart-head">
         <div class="chart-title">Receita vs Perda — por Produto</div>
         <div class="chart-sub">Valor monetário por categoria</div>
       </div>
-      <div class="chart-wrap h-260"><canvas id="corr-val" style="box-sizing: border-box; display: block; height: 150px; width: 1323px;" width="1191" height="134"></canvas></div>
+      <div class="chart-wrap h-260"><canvas id="corr-val" style="box-sizing: border-box; display: block; height: 0px; width: 0px;" width="0" height="0"></canvas></div>
     </div>
   </div>
 
@@ -2330,14 +2330,14 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
         <div class="chart-title">Vendas vs Churn — por Bloco</div>
         <div class="chart-sub">Performance regional comparada</div>
       </div>
-      <div class="chart-wrap h-240"><canvas id="corr-bloco" style="box-sizing: border-box; display: block; height: 240px; width: 1323px;" width="1191" height="215"></canvas></div>
+      <div class="chart-wrap h-240"><canvas id="corr-bloco" style="box-sizing: border-box; display: block; height: 0px; width: 0px;" width="0" height="0"></canvas></div>
     </div>
     <div class="chart-card">
       <div class="chart-head">
         <div class="chart-title">Top 10 Cidades — Vendas vs Churn</div>
         <div class="chart-sub">Cidades com maior movimentação</div>
       </div>
-      <div class="chart-wrap h-240"><canvas id="corr-cid" style="box-sizing: border-box; display: block; height: 240px; width: 1323px;" width="1191" height="215"></canvas></div>
+      <div class="chart-wrap h-240"><canvas id="corr-cid" style="box-sizing: border-box; display: block; height: 0px; width: 0px;" width="0" height="0"></canvas></div>
     </div>
   </div>
 
@@ -2737,9 +2737,9 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
     </div><div class="year-box" data-ano="2025">
       <div class="year-box-header">
         <span class="year-box-label">2025</span>
-        <button class="year-toggle-all" onclick="toggleYearAll('ltv-period-selector',2025,this)">Limpar</button>
+        <button class="year-toggle-all" onclick="toggleYearAll('ltv-period-selector',2025,this)">Todos</button>
       </div>
-      <div class="year-months"><span class="month-pill " data-ano="2025" data-mes="1">Jan</span><span class="month-pill " data-ano="2025" data-mes="2">Fev</span><span class="month-pill " data-ano="2025" data-mes="3">Mar</span><span class="month-pill " data-ano="2025" data-mes="4">Abr</span><span class="month-pill " data-ano="2025" data-mes="5">Mai</span><span class="month-pill selected" data-ano="2025" data-mes="6">Jun</span><span class="month-pill selected" data-ano="2025" data-mes="7">Jul</span><span class="month-pill selected" data-ano="2025" data-mes="8">Ago</span><span class="month-pill selected" data-ano="2025" data-mes="9">Set</span><span class="month-pill selected" data-ano="2025" data-mes="10">Out</span><span class="month-pill selected" data-ano="2025" data-mes="11">Nov</span><span class="month-pill selected" data-ano="2025" data-mes="12">Dez</span></div>
+      <div class="year-months"><span class="month-pill" data-ano="2025" data-mes="1">Jan</span><span class="month-pill" data-ano="2025" data-mes="2">Fev</span><span class="month-pill" data-ano="2025" data-mes="3">Mar</span><span class="month-pill" data-ano="2025" data-mes="4">Abr</span><span class="month-pill" data-ano="2025" data-mes="5">Mai</span><span class="month-pill" data-ano="2025" data-mes="6">Jun</span><span class="month-pill" data-ano="2025" data-mes="7">Jul</span><span class="month-pill" data-ano="2025" data-mes="8">Ago</span><span class="month-pill" data-ano="2025" data-mes="9">Set</span><span class="month-pill" data-ano="2025" data-mes="10">Out</span><span class="month-pill" data-ano="2025" data-mes="11">Nov</span><span class="month-pill" data-ano="2025" data-mes="12">Dez</span></div>
     </div><div class="year-box" data-ano="2026">
       <div class="year-box-header">
         <span class="year-box-label">2026</span>
@@ -2985,9 +2985,9 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
     </div><div class="year-box" data-ano="2025">
       <div class="year-box-header">
         <span class="year-box-label">2025</span>
-        <button class="year-toggle-all" onclick="toggleYearAll('arpu-period-selector',2025,this)">Limpar</button>
+        <button class="year-toggle-all" onclick="toggleYearAll('arpu-period-selector',2025,this)">Todos</button>
       </div>
-      <div class="year-months"><span class="month-pill " data-ano="2025" data-mes="1">Jan</span><span class="month-pill " data-ano="2025" data-mes="2">Fev</span><span class="month-pill " data-ano="2025" data-mes="3">Mar</span><span class="month-pill " data-ano="2025" data-mes="4">Abr</span><span class="month-pill " data-ano="2025" data-mes="5">Mai</span><span class="month-pill selected" data-ano="2025" data-mes="6">Jun</span><span class="month-pill selected" data-ano="2025" data-mes="7">Jul</span><span class="month-pill selected" data-ano="2025" data-mes="8">Ago</span><span class="month-pill selected" data-ano="2025" data-mes="9">Set</span><span class="month-pill selected" data-ano="2025" data-mes="10">Out</span><span class="month-pill selected" data-ano="2025" data-mes="11">Nov</span><span class="month-pill selected" data-ano="2025" data-mes="12">Dez</span></div>
+      <div class="year-months"><span class="month-pill" data-ano="2025" data-mes="1">Jan</span><span class="month-pill" data-ano="2025" data-mes="2">Fev</span><span class="month-pill" data-ano="2025" data-mes="3">Mar</span><span class="month-pill" data-ano="2025" data-mes="4">Abr</span><span class="month-pill" data-ano="2025" data-mes="5">Mai</span><span class="month-pill" data-ano="2025" data-mes="6">Jun</span><span class="month-pill" data-ano="2025" data-mes="7">Jul</span><span class="month-pill" data-ano="2025" data-mes="8">Ago</span><span class="month-pill" data-ano="2025" data-mes="9">Set</span><span class="month-pill" data-ano="2025" data-mes="10">Out</span><span class="month-pill" data-ano="2025" data-mes="11">Nov</span><span class="month-pill" data-ano="2025" data-mes="12">Dez</span></div>
     </div><div class="year-box" data-ano="2026">
       <div class="year-box-header">
         <span class="year-box-label">2026</span>
@@ -3037,7 +3037,7 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
     <div class="arpu-chart-title">📈 Ticket Médio por Cliente — Evolução Mensal</div>
     <div class="arpu-chart-sub">TM = Σ Valor Total por CPF/CNPJ ÷ Nº de Clientes Únicos no período · indica evolução do gasto médio por cliente ao longo do tempo</div>
     <div class="arpu-canvas-wrap">
-      <canvas id="arpu-chart" style="box-sizing: border-box; display: block; height: 0px; width: 0px;" width="0" height="0"></canvas>
+      <canvas id="arpu-chart" style="box-sizing: border-box; display: block; height: 300px; width: 1568px;" width="1764" height="337"></canvas>
     </div>
   </div>
 
@@ -3059,34 +3059,6 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
       <tbody id="arpu-tbody"><tr>
       <td><span class="arpu-rank gold">1</span></td>
       <td>
-        <div class="arpu-cliente">Prefeitura Municipal De Monte Azul Paulista</div>
-        <div class="arpu-cpf">52.942.380/0001-87</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AZUL</div>
-      </td>
-      <td><span class="arpu-prod-chip">Internet_Mensal Pós ×3 · R$239.80</span><span class="arpu-prod-chip">Internet_Mensal/Setor Publico ×33 · R$2740.10</span><span class="arpu-prod-chip">Internet_Cortesia · R$100.00</span><span class="arpu-prod-chip">Telefonia Fixa ×2 · R$1566.90</span><span class="arpu-prod-chip">Telefonia Móvel ×20 · R$1598.00</span><span class="arpu-prod-chip">Central Telefônica em Nuvem · R$1280.00</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 7524.80</span></td>
-      <td style="text-align:right;color:var(--text2)">60</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-top">R$ 7524.80</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:100.0%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank silver">2</span></td>
-      <td>
-        <div class="arpu-cliente">Municipio De Severinia</div>
-        <div class="arpu-cpf">46.596.235/0001-99</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AZUL</div>
-      </td>
-      <td><span class="arpu-prod-chip">Telefonia Fixa ×2 · R$79.80</span><span class="arpu-prod-chip">Internet_Mensal/Setor Publico ×64 · R$3840.00</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 3919.80</span></td>
-      <td style="text-align:right;color:var(--text2)">66</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-top">R$ 3919.80</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:52.1%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank bronze">3</span></td>
-      <td>
         <div class="arpu-cliente">Microset Tecnologia Ltda</div>
         <div class="arpu-cpf">74.209.909/0001-90</div>
         <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AZUL</div>
@@ -3096,94 +3068,10 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
       <td style="text-align:right;color:var(--text2)">3</td>
       <td class="arpu-tm-cell">
         <span class="arpu-tm-top">R$ 1784.80</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:23.7%"></div></div>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:100.0%"></div></div>
       </td>
     </tr><tr>
-      <td><span class="arpu-rank ">4</span></td>
-      <td>
-        <div class="arpu-cliente">Cliente X Teste</div>
-        <div class="arpu-cpf">011.730.398-48</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AZUL</div>
-      </td>
-      <td><span class="arpu-prod-chip">Telefonia Móvel ×6 · R$289.60</span><span class="arpu-prod-chip">Central Telefônica em Nuvem · R$1000.00</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 1289.60</span></td>
-      <td style="text-align:right;color:var(--text2)">7</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-top">R$ 1289.60</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:17.1%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">5</span></td>
-      <td>
-        <div class="arpu-cliente">Nettop Servicos De Internet Ltda</div>
-        <div class="arpu-cpf">55.745.950/0001-37</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AMARELO</div>
-      </td>
-      <td><span class="arpu-prod-chip">Internet_Mensal Pós · R$1200.00</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 1200.00</span></td>
-      <td style="text-align:right;color:var(--text2)">1</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-top">R$ 1200.00</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:15.9%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">6</span></td>
-      <td>
-        <div class="arpu-cliente">Acquathermas Operadora De Turismo Ltda</div>
-        <div class="arpu-cpf">15.210.932/0001-36</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
-      </td>
-      <td><span class="arpu-prod-chip">Internet_Mensal Pré · R$980.00</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 980.00</span></td>
-      <td style="text-align:right;color:var(--text2)">1</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-top">R$ 980.00</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:13.0%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">7</span></td>
-      <td>
-        <div class="arpu-cliente">Arion Serviços De Telecomunicações Ltda</div>
-        <div class="arpu-cpf">20.059.578/0001-20</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AMARELO</div>
-      </td>
-      <td><span class="arpu-prod-chip">Internet/ PJ - Mensal POS · R$480.00</span><span class="arpu-prod-chip">Internet_Mensal Pós · R$480.00</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 960.00</span></td>
-      <td style="text-align:right;color:var(--text2)">2</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-top">R$ 960.00</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:12.8%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">8</span></td>
-      <td>
-        <div class="arpu-cliente">Elecnor Do Brasil Ltda</div>
-        <div class="arpu-cpf">30.455.661/0017-30</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
-      </td>
-      <td><span class="arpu-prod-chip">Internet_Mensal Pós ×3 · R$249.70</span><span class="arpu-prod-chip">Internet_Mensal Pré ×4 · R$559.60</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 809.30</span></td>
-      <td style="text-align:right;color:var(--text2)">7</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-top">R$ 809.30</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:10.8%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">9</span></td>
-      <td>
-        <div class="arpu-cliente">Urbanizadora Barretos 162 Ltda</div>
-        <div class="arpu-cpf">22.416.446/0001-34</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO VERDE</div>
-      </td>
-      <td><span class="arpu-prod-chip">Internet/ PJ - Mensal POS · R$800.00</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 800.00</span></td>
-      <td style="text-align:right;color:var(--text2)">1</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-top">R$ 800.00</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:10.6%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">10</span></td>
+      <td><span class="arpu-rank silver">2</span></td>
       <td>
         <div class="arpu-cliente">A. Alves De Oliveira Estacionamento Ltda</div>
         <div class="arpu-cpf">61.517.887/0001-84</div>
@@ -3194,164 +3082,10 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
       <td style="text-align:right;color:var(--text2)">1</td>
       <td class="arpu-tm-cell">
         <span class="arpu-tm-top">R$ 800.00</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:10.6%"></div></div>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:44.8%"></div></div>
       </td>
     </tr><tr>
-      <td><span class="arpu-rank ">11</span></td>
-      <td>
-        <div class="arpu-cliente">Pedro Bretanha</div>
-        <div class="arpu-cpf">125.680.588-20</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO VERDE</div>
-      </td>
-      <td><span class="arpu-prod-chip">Telefonia Móvel ×7 · R$319.48</span><span class="arpu-prod-chip">TV ×3 · R$128.70</span><span class="arpu-prod-chip">Internet_Digital Pós · R$140.00</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 588.18</span></td>
-      <td style="text-align:right;color:var(--text2)">11</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-mid">R$ 588.18</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:7.8%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">12</span></td>
-      <td>
-        <div class="arpu-cliente">Jair Augusto Paneque</div>
-        <div class="arpu-cpf">418.290.648-94</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AZUL</div>
-      </td>
-      <td><span class="arpu-prod-chip">Internet_Digital Pós ×3 · R$299.70</span><span class="arpu-prod-chip">Internet_Digital Pré ×3 · R$189.90</span><span class="arpu-prod-chip">Telefonia Móvel ×2 · R$94.89</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 584.49</span></td>
-      <td style="text-align:right;color:var(--text2)">8</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-mid">R$ 584.49</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:7.8%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">13</span></td>
-      <td>
-        <div class="arpu-cliente">Marcia Regina Da Cunha Dos Santos</div>
-        <div class="arpu-cpf">156.296.098-90</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AMARELO</div>
-      </td>
-      <td><span class="arpu-prod-chip">Internet_Carnê Pós ×3 · R$249.80</span><span class="arpu-prod-chip">TV ×2 · R$100.00</span><span class="arpu-prod-chip">Telefonia Móvel ×2 · R$99.80</span><span class="arpu-prod-chip">Internet_Digital Pós · R$99.90</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 549.50</span></td>
-      <td style="text-align:right;color:var(--text2)">8</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-mid">R$ 549.50</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:7.3%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">14</span></td>
-      <td>
-        <div class="arpu-cliente">Jessica Da Silva Borges</div>
-        <div class="arpu-cpf">444.275.898-04</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO VERDE</div>
-      </td>
-      <td><span class="arpu-prod-chip">Telefonia Móvel ×3 · R$269.97</span><span class="arpu-prod-chip">Internet_Digital Pós ×2 · R$199.80</span><span class="arpu-prod-chip">TV · R$50.00</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 519.77</span></td>
-      <td style="text-align:right;color:var(--text2)">6</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-mid">R$ 519.77</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:6.9%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">15</span></td>
-      <td>
-        <div class="arpu-cliente">Silvia Bonci Beserra</div>
-        <div class="arpu-cpf">277.968.638-37</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
-      </td>
-      <td><span class="arpu-prod-chip">Internet_Digital Pós ×5 · R$499.50</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 499.50</span></td>
-      <td style="text-align:right;color:var(--text2)">5</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-mid">R$ 499.50</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:6.6%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">16</span></td>
-      <td>
-        <div class="arpu-cliente">José Gouveia Dos Santos</div>
-        <div class="arpu-cpf">057.161.415-95</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
-      </td>
-      <td><span class="arpu-prod-chip">Telefonia Móvel ×4 · R$199.60</span><span class="arpu-prod-chip">TV ×2 · R$198.90</span><span class="arpu-prod-chip">Internet_Digital Pós · R$100.00</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 498.50</span></td>
-      <td style="text-align:right;color:var(--text2)">7</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-mid">R$ 498.50</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:6.6%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">17</span></td>
-      <td>
-        <div class="arpu-cliente">Rafael Da Silva</div>
-        <div class="arpu-cpf">099.400.027-85</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AMARELO</div>
-      </td>
-      <td><span class="arpu-prod-chip">Internet_Digital Pós · R$99.90</span><span class="arpu-prod-chip">Telefonia Móvel ×8 · R$389.20</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 489.10</span></td>
-      <td style="text-align:right;color:var(--text2)">9</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-mid">R$ 489.10</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:6.5%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">18</span></td>
-      <td>
-        <div class="arpu-cliente">Lindomar Marcal De Oliveira</div>
-        <div class="arpu-cpf">257.231.358-80</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AMARELO</div>
-      </td>
-      <td><span class="arpu-prod-chip">Telefonia Móvel ×3 · R$194.97</span><span class="arpu-prod-chip">Internet_Carnê Pós · R$140.00</span><span class="arpu-prod-chip">Internet_Digital Pós · R$140.00</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 474.97</span></td>
-      <td style="text-align:right;color:var(--text2)">5</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-mid">R$ 474.97</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:6.3%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">19</span></td>
-      <td>
-        <div class="arpu-cliente">Turbo Net Telecom Ltda - Cortesia Outros</div>
-        <div class="arpu-cpf">09.366.952/0001-06</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
-      </td>
-      <td><span class="arpu-prod-chip">Internet_Cortesia ×3 · R$299.70</span><span class="arpu-prod-chip">Telefonia Móvel ×4 · R$79.60</span><span class="arpu-prod-chip">TV · R$84.40</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 463.70</span></td>
-      <td style="text-align:right;color:var(--text2)">8</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-mid">R$ 463.70</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:6.2%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">20</span></td>
-      <td>
-        <div class="arpu-cliente">Sirlene Aparecida Passoni Pires</div>
-        <div class="arpu-cpf">34.960.330/0001-40</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AMARELO</div>
-      </td>
-      <td><span class="arpu-prod-chip">Internet_Mensal Pós · R$140.00</span><span class="arpu-prod-chip">TV ×8 · R$319.20</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 459.20</span></td>
-      <td style="text-align:right;color:var(--text2)">9</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-mid">R$ 459.20</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:6.1%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">21</span></td>
-      <td>
-        <div class="arpu-cliente">Sindicato Emp No Com Hoteleiro E Similares De S J R Preto</div>
-        <div class="arpu-cpf">60.001.690/0001-25</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
-      </td>
-      <td><span class="arpu-prod-chip">Telefonia Móvel ×5 · R$449.77</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 449.77</span></td>
-      <td style="text-align:right;color:var(--text2)">5</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-low">R$ 449.77</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:6.0%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">22</span></td>
+      <td><span class="arpu-rank bronze">3</span></td>
       <td>
         <div class="arpu-cliente">Gabriel Peralta Neto</div>
         <div class="arpu-cpf">981.794.038-15</div>
@@ -3361,120 +3095,386 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
       <td style="text-align:right"><span class="arpu-val">R$ 449.18</span></td>
       <td style="text-align:right;color:var(--text2)">5</td>
       <td class="arpu-tm-cell">
-        <span class="arpu-tm-low">R$ 449.18</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:6.0%"></div></div>
+        <span class="arpu-tm-top">R$ 449.18</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:25.2%"></div></div>
       </td>
     </tr><tr>
-      <td><span class="arpu-rank ">23</span></td>
+      <td><span class="arpu-rank ">4</span></td>
       <td>
-        <div class="arpu-cliente">Jaquelini Moreira Dos Santos</div>
-        <div class="arpu-cpf">389.781.068-97</div>
+        <div class="arpu-cliente">Ana Laura Regina Moraes Pereira</div>
+        <div class="arpu-cpf">577.012.768-66</div>
         <div class="arpu-cpf" style="color:var(--accent2)">BLOCO VERDE</div>
       </td>
-      <td><span class="arpu-prod-chip">Internet_Carnê Pós ×2 · R$199.80</span><span class="arpu-prod-chip">TV ×3 · R$148.90</span><span class="arpu-prod-chip">Internet_Digital Pós · R$99.90</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 448.60</span></td>
-      <td style="text-align:right;color:var(--text2)">6</td>
+      <td><span class="arpu-prod-chip">Internet_Carnê Pós · R$99.90</span><span class="arpu-prod-chip">Internet_Digital Pós · R$89.90</span><span class="arpu-prod-chip">TV · R$48.90</span><span class="arpu-prod-chip">Telefonia Móvel ×2 · R$129.98</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 368.68</span></td>
+      <td style="text-align:right;color:var(--text2)">5</td>
       <td class="arpu-tm-cell">
-        <span class="arpu-tm-low">R$ 448.60</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:6.0%"></div></div>
+        <span class="arpu-tm-top">R$ 368.68</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:20.7%"></div></div>
       </td>
     </tr><tr>
-      <td><span class="arpu-rank ">24</span></td>
-      <td>
-        <div class="arpu-cliente">Debora Cristina Pereira Gomes</div>
-        <div class="arpu-cpf">343.910.388-97</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO VERDE</div>
-      </td>
-      <td><span class="arpu-prod-chip">Internet_Digital Pós ×2 · R$199.80</span><span class="arpu-prod-chip">TV ×3 · R$146.70</span><span class="arpu-prod-chip">Internet/ PF - Digital POS · R$99.90</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 446.40</span></td>
-      <td style="text-align:right;color:var(--text2)">6</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-low">R$ 446.40</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:5.9%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">25</span></td>
-      <td>
-        <div class="arpu-cliente">Jose Antonio Alves Pereira</div>
-        <div class="arpu-cpf">039.664.998-00</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AZUL</div>
-      </td>
-      <td><span class="arpu-prod-chip">Internet_Digital Pós ×3 · R$299.70</span><span class="arpu-prod-chip">TV ×3 · R$129.90</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 429.60</span></td>
-      <td style="text-align:right;color:var(--text2)">6</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-low">R$ 429.60</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:5.7%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">26</span></td>
-      <td>
-        <div class="arpu-cliente">Pires Supermercados Ltda</div>
-        <div class="arpu-cpf">10.273.166/0002-16</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AZUL</div>
-      </td>
-      <td><span class="arpu-prod-chip">Internet_Mensal/Setor Publico · R$380.00</span><span class="arpu-prod-chip">Telefonia Fixa · R$29.90</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 409.90</span></td>
-      <td style="text-align:right;color:var(--text2)">2</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-low">R$ 409.90</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:5.4%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">27</span></td>
+      <td><span class="arpu-rank ">5</span></td>
       <td>
         <div class="arpu-cliente">Camila Caetano Antonio</div>
         <div class="arpu-cpf">233.353.228-94</div>
         <div class="arpu-cpf" style="color:var(--accent2)">BLOCO VERDE</div>
       </td>
-      <td><span class="arpu-prod-chip">Telefonia Móvel ×4 · R$234.87</span><span class="arpu-prod-chip">Internet_Digital Pós ×2 · R$169.80</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 404.67</span></td>
+      <td><span class="arpu-prod-chip">Internet_Digital Pós ×2 · R$169.80</span><span class="arpu-prod-chip">Telefonia Móvel ×3 · R$194.97</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 364.77</span></td>
+      <td style="text-align:right;color:var(--text2)">5</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-top">R$ 364.77</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:20.4%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">6</span></td>
+      <td>
+        <div class="arpu-cliente">Joice De Fatima Neves Ferreira</div>
+        <div class="arpu-cpf">380.587.998-90</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AZUL</div>
+      </td>
+      <td><span class="arpu-prod-chip">Telefonia Móvel ×2 · R$84.89</span><span class="arpu-prod-chip">Internet_Digital Pós ×2 · R$179.80</span><span class="arpu-prod-chip">TV ×2 · R$97.80</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 362.49</span></td>
       <td style="text-align:right;color:var(--text2)">6</td>
       <td class="arpu-tm-cell">
-        <span class="arpu-tm-low">R$ 404.67</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:5.4%"></div></div>
+        <span class="arpu-tm-top">R$ 362.49</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:20.3%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">7</span></td>
+      <td>
+        <div class="arpu-cliente">Joalice Gallina Pelissari</div>
+        <div class="arpu-cpf">281.547.558-82</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
+      </td>
+      <td><span class="arpu-prod-chip">Internet_Digital Pós ×3 · R$359.70</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 359.70</span></td>
+      <td style="text-align:right;color:var(--text2)">3</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-top">R$ 359.70</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:20.2%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">8</span></td>
+      <td>
+        <div class="arpu-cliente">Bruna Aparecida Tieko Do Santos Domingos</div>
+        <div class="arpu-cpf">390.340.828-06</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
+      </td>
+      <td><span class="arpu-prod-chip">Internet_Digital Pós · R$109.90</span><span class="arpu-prod-chip">TV ×2 · R$78.80</span><span class="arpu-prod-chip">Telefonia Móvel ×2 · R$129.98</span><span class="arpu-prod-chip">Telefonia Fixa · R$39.90</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 358.58</span></td>
+      <td style="text-align:right;color:var(--text2)">6</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-top">R$ 358.58</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:20.1%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">9</span></td>
+      <td>
+        <div class="arpu-cliente">Wise Intermediacao Estrategica E Participacoes Ltda</div>
+        <div class="arpu-cpf">66.059.224/0001-87</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
+      </td>
+      <td><span class="arpu-prod-chip">Internet_Mensal Pós · R$350.00</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 350.00</span></td>
+      <td style="text-align:right;color:var(--text2)">1</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-top">R$ 350.00</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:19.6%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">10</span></td>
+      <td>
+        <div class="arpu-cliente">Cristiano Perpetuo Da Silva</div>
+        <div class="arpu-cpf">355.313.708-81</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
+      </td>
+      <td><span class="arpu-prod-chip">Internet_Digital Pós ×3 · R$298.70</span><span class="arpu-prod-chip">TV · R$48.90</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 347.60</span></td>
+      <td style="text-align:right;color:var(--text2)">4</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-top">R$ 347.60</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:19.5%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">11</span></td>
+      <td>
+        <div class="arpu-cliente">Keyte Kely Alves Simionato</div>
+        <div class="arpu-cpf">405.297.198-19</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO VERDE</div>
+      </td>
+      <td><span class="arpu-prod-chip">Telefonia Móvel ×2 · R$129.98</span><span class="arpu-prod-chip">Internet_Carnê Pós · R$109.90</span><span class="arpu-prod-chip">Internet_Digital Pós · R$89.90</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 329.78</span></td>
+      <td style="text-align:right;color:var(--text2)">4</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-mid">R$ 329.78</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:18.5%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">12</span></td>
+      <td>
+        <div class="arpu-cliente">Rosa Rubi De Olimpia - Comercio De Bijuterias Ltda</div>
+        <div class="arpu-cpf">08.371.580/0001-35</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
+      </td>
+      <td><span class="arpu-prod-chip">Internet_Mensal Pós · R$250.80</span><span class="arpu-prod-chip">Telefonia Fixa · R$69.90</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 320.70</span></td>
+      <td style="text-align:right;color:var(--text2)">2</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-mid">R$ 320.70</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:18.0%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">13</span></td>
+      <td>
+        <div class="arpu-cliente">Mateus Sousa Leal Silva</div>
+        <div class="arpu-cpf">529.254.758-17</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
+      </td>
+      <td><span class="arpu-prod-chip">Internet_Digital Pós ×2 · R$269.90</span><span class="arpu-prod-chip">Telefonia Móvel · R$49.90</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 319.80</span></td>
+      <td style="text-align:right;color:var(--text2)">3</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-mid">R$ 319.80</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:17.9%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">14</span></td>
+      <td>
+        <div class="arpu-cliente">Bebedouro Comercio De Bombas Injetoras Limitada</div>
+        <div class="arpu-cpf">55.503.387/0001-90</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AMARELO</div>
+      </td>
+      <td><span class="arpu-prod-chip">Internet_Mensal Pós ×2 · R$249.80</span><span class="arpu-prod-chip">Telefonia Fixa · R$69.90</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 319.70</span></td>
+      <td style="text-align:right;color:var(--text2)">3</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-mid">R$ 319.70</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:17.9%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">15</span></td>
+      <td>
+        <div class="arpu-cliente">Matheus Augusto Julião Da Rocha</div>
+        <div class="arpu-cpf">476.464.858-02</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
+      </td>
+      <td><span class="arpu-prod-chip">Internet_Digital Pós · R$99.90</span><span class="arpu-prod-chip">TV ×4 · R$178.70</span><span class="arpu-prod-chip">Telefonia Móvel · R$39.90</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 318.50</span></td>
+      <td style="text-align:right;color:var(--text2)">6</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-mid">R$ 318.50</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:17.8%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">16</span></td>
+      <td>
+        <div class="arpu-cliente">Mariane Dos Santos Farinaci</div>
+        <div class="arpu-cpf">307.345.368-79</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO VERDE</div>
+      </td>
+      <td><span class="arpu-prod-chip">Telefonia Móvel ×2 · R$129.80</span><span class="arpu-prod-chip">Internet_Digital Pós · R$99.90</span><span class="arpu-prod-chip">Telefonia Fixa · R$39.90</span><span class="arpu-prod-chip">TV · R$48.90</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 318.50</span></td>
+      <td style="text-align:right;color:var(--text2)">5</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-mid">R$ 318.50</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:17.8%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">17</span></td>
+      <td>
+        <div class="arpu-cliente">Marcelo Alves Batista</div>
+        <div class="arpu-cpf">357.857.508-99</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AZUL</div>
+      </td>
+      <td><span class="arpu-prod-chip">Internet_Carnê Pós ×2 · R$199.80</span><span class="arpu-prod-chip">Telefonia Móvel · R$59.99</span><span class="arpu-prod-chip">TV · R$48.90</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 308.69</span></td>
+      <td style="text-align:right;color:var(--text2)">4</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-mid">R$ 308.69</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:17.3%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">18</span></td>
+      <td>
+        <div class="arpu-cliente">Ivan José Da Silva Junior</div>
+        <div class="arpu-cpf">480.095.868-70</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
+      </td>
+      <td><span class="arpu-prod-chip">Internet_Digital Pós · R$149.00</span><span class="arpu-prod-chip">TV ×5 · R$159.50</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 308.50</span></td>
+      <td style="text-align:right;color:var(--text2)">6</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-mid">R$ 308.50</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:17.3%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">19</span></td>
+      <td>
+        <div class="arpu-cliente">Lidiane Cristiana Diogo</div>
+        <div class="arpu-cpf">357.416.368-10</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO VERDE</div>
+      </td>
+      <td><span class="arpu-prod-chip">Internet_Digital Pós · R$99.90</span><span class="arpu-prod-chip">TV ×2 · R$97.80</span><span class="arpu-prod-chip">Internet_Carnê Pós · R$109.90</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 307.60</span></td>
+      <td style="text-align:right;color:var(--text2)">4</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-mid">R$ 307.60</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:17.2%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">20</span></td>
+      <td>
+        <div class="arpu-cliente">Michely Cristina Da Silva Nascimento</div>
+        <div class="arpu-cpf">34.778.561/0001-38</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AMARELO</div>
+      </td>
+      <td><span class="arpu-prod-chip">Internet_Digital Pós · R$199.90</span><span class="arpu-prod-chip">Telefonia Fixa · R$100.00</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 299.90</span></td>
+      <td style="text-align:right;color:var(--text2)">2</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-mid">R$ 299.90</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:16.8%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">21</span></td>
+      <td>
+        <div class="arpu-cliente">Gustavo Alfredo Cintra</div>
+        <div class="arpu-cpf">475.293.408-67</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
+      </td>
+      <td><span class="arpu-prod-chip">Internet_Digital Pré · R$99.90</span><span class="arpu-prod-chip">TV ×2 · R$100.00</span><span class="arpu-prod-chip">Internet_Carnê Pós · R$99.90</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 299.80</span></td>
+      <td style="text-align:right;color:var(--text2)">4</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-low">R$ 299.80</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:16.8%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">22</span></td>
+      <td>
+        <div class="arpu-cliente">Regiane De Sousa Silva De Almeida Ltda</div>
+        <div class="arpu-cpf">26.843.660/0001-28</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AMARELO</div>
+      </td>
+      <td><span class="arpu-prod-chip">Internet_Mensal Pós ×2 · R$299.80</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 299.80</span></td>
+      <td style="text-align:right;color:var(--text2)">2</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-low">R$ 299.80</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:16.8%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">23</span></td>
+      <td>
+        <div class="arpu-cliente">Karina Dos Santos Munis</div>
+        <div class="arpu-cpf">244.984.508-92</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO VERDE</div>
+      </td>
+      <td><span class="arpu-prod-chip">Internet_Digital Pós ×2 · R$199.80</span><span class="arpu-prod-chip">TV ×2 · R$100.00</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 299.80</span></td>
+      <td style="text-align:right;color:var(--text2)">4</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-low">R$ 299.80</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:16.8%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">24</span></td>
+      <td>
+        <div class="arpu-cliente">Douglas Henrique De Oliveira Ry Souza</div>
+        <div class="arpu-cpf">504.010.198-88</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO VERDE</div>
+      </td>
+      <td><span class="arpu-prod-chip">Internet_Carnê Pós · R$89.90</span><span class="arpu-prod-chip">Internet_Digital Pós · R$109.90</span><span class="arpu-prod-chip">Telefonia Móvel · R$99.99</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 299.79</span></td>
+      <td style="text-align:right;color:var(--text2)">3</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-low">R$ 299.79</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:16.8%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">25</span></td>
+      <td>
+        <div class="arpu-cliente">Edivaldo Felix Da Silva</div>
+        <div class="arpu-cpf">008.532.448-55</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
+      </td>
+      <td><span class="arpu-prod-chip">Internet_Digital Pós · R$99.90</span><span class="arpu-prod-chip">TV ×3 · R$199.70</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 299.60</span></td>
+      <td style="text-align:right;color:var(--text2)">4</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-low">R$ 299.60</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:16.8%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">26</span></td>
+      <td>
+        <div class="arpu-cliente">Emerson Antonio De Souza Nobre</div>
+        <div class="arpu-cpf">216.835.278-01</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AMARELO</div>
+      </td>
+      <td><span class="arpu-prod-chip">Internet_Digital Pós ×2 · R$285.00</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 285.00</span></td>
+      <td style="text-align:right;color:var(--text2)">2</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-low">R$ 285.00</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:16.0%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">27</span></td>
+      <td>
+        <div class="arpu-cliente">Bti Brazilian Tabaco International Ltda</div>
+        <div class="arpu-cpf">44.466.172/0001-20</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AMARELO</div>
+      </td>
+      <td><span class="arpu-prod-chip">Internet_Mensal Pós · R$280.00</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 280.00</span></td>
+      <td style="text-align:right;color:var(--text2)">1</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-low">R$ 280.00</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:15.7%"></div></div>
       </td>
     </tr><tr>
       <td><span class="arpu-rank ">28</span></td>
       <td>
-        <div class="arpu-cliente">Miguel Ferreira Da Costa Henrique</div>
-        <div class="arpu-cpf">351.624.288-41</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO RURAL</div>
+        <div class="arpu-cliente">Anderson Antonio Gomes 28217522880</div>
+        <div class="arpu-cpf">24.580.473/0001-73</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AMARELO</div>
       </td>
-      <td><span class="arpu-prod-chip">Internet_Digital Pós · R$200.00</span><span class="arpu-prod-chip">Internet/ PF - Digital POS · R$200.00</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 400.00</span></td>
-      <td style="text-align:right;color:var(--text2)">2</td>
+      <td><span class="arpu-prod-chip">Internet_Mensal Pós · R$280.00</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 280.00</span></td>
+      <td style="text-align:right;color:var(--text2)">1</td>
       <td class="arpu-tm-cell">
-        <span class="arpu-tm-low">R$ 400.00</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:5.3%"></div></div>
+        <span class="arpu-tm-low">R$ 280.00</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:15.7%"></div></div>
       </td>
     </tr><tr>
       <td><span class="arpu-rank ">29</span></td>
       <td>
-        <div class="arpu-cliente">Robson Paredero Hernandes</div>
-        <div class="arpu-cpf">317.468.718-73</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
+        <div class="arpu-cliente">Lorraine Rodrigues Narcizo</div>
+        <div class="arpu-cpf">525.110.848-64</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO VERDE</div>
       </td>
-      <td><span class="arpu-prod-chip">Internet/ PF - Digital POS ×2 · R$399.90</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 399.90</span></td>
-      <td style="text-align:right;color:var(--text2)">2</td>
+      <td><span class="arpu-prod-chip">Internet_Digital Pós ×2 · R$179.80</span><span class="arpu-prod-chip">TV ×2 · R$99.80</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 279.60</span></td>
+      <td style="text-align:right;color:var(--text2)">4</td>
       <td class="arpu-tm-cell">
-        <span class="arpu-tm-low">R$ 399.90</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:5.3%"></div></div>
+        <span class="arpu-tm-low">R$ 279.60</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:15.7%"></div></div>
       </td>
     </tr><tr>
       <td><span class="arpu-rank ">30</span></td>
       <td>
-        <div class="arpu-cliente">Paulo Rogerio Correa Orpham</div>
-        <div class="arpu-cpf">059.511.598-57</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AMARELO</div>
+        <div class="arpu-cliente">Luiz Antonio Pereira Junior</div>
+        <div class="arpu-cpf">324.198.388-90</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO VERDE</div>
       </td>
-      <td><span class="arpu-prod-chip">Internet_Digital Pós · R$89.90</span><span class="arpu-prod-chip">Telefonia Móvel ×6 · R$299.40</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 389.30</span></td>
-      <td style="text-align:right;color:var(--text2)">7</td>
+      <td><span class="arpu-prod-chip">Internet_Digital Pós ×2 · R$269.90</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 269.90</span></td>
+      <td style="text-align:right;color:var(--text2)">2</td>
       <td class="arpu-tm-cell">
-        <span class="arpu-tm-low">R$ 389.30</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:5.2%"></div></div>
+        <span class="arpu-tm-low">R$ 269.90</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:15.1%"></div></div>
       </td>
     </tr></tbody>
     </table>
@@ -3484,122 +3484,18 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
 
 
 <!-- ══════════ PRINT OVERLAY ══════════ -->
-<div id="print-overlay" class="">
+<div id="print-overlay">
   <div id="print-modal">
     <div class="print-modal-actions">
-      <h3>🖨️ Resumo Executivo — Correlação — Pré-visualização</h3>
+      <h3>🖨️ Resumo Executivo — Pré-visualização</h3>
       <div style="display:flex;gap:8px">
         <button class="btn-close-print" onclick="closePrintPreview()">✕ Fechar</button>
         <button class="btn-do-print" onclick="window.print()">🖨️ Imprimir / Salvar PDF</button>
       </div>
     </div>
     <div id="print-content">
-  <div class="pe-header" style="border-bottom-color:#3a8ee8">
-    <div>
-      <div class="pe-title">🔗 RESUMO EXECUTIVO — CORRELAÇÃO VENDAS vs CHURN</div>
-      <div class="pe-sub">Turbo Net Telecom Ltda &nbsp;·&nbsp; Período: <strong style="color:#3a8ee8">undefined – undefined</strong> &nbsp;·&nbsp; Filtro de período aplicado</div>
+      <!-- preenchido por openPrintPreview() -->
     </div>
-    <div class="pe-date">
-      <div style="color:#b0b8c8;font-size:11px;font-weight:600">Gerado em 20/05/2026</div>
-      <div style="color:#3a8ee8;font-size:9px;margin-top:2px;font-weight:700">CONFIDENCIAL</div>
-    </div>
-  </div>
-
-  <div class="pe-section-label" style="border-left-color:#3a8ee8">VISÃO GERAL — VENDAS vs CANCELAMENTOS</div>
-  <div class="pe-kpi-grid">
-    <div class="pe-kpi blue">
-      <div class="pe-kpi-label">Receita de Vendas</div>
-      <div class="pe-kpi-val" style="color:#3a8ee8">R$ 316.378,01</div>
-      <div class="pe-kpi-sub">4.021 contratos emitidos</div>
-    </div>
-    <div class="pe-kpi red">
-      <div class="pe-kpi-label">Valor Cancelado</div>
-      <div class="pe-kpi-val" style="color:#e83050">R$ 303.305,46</div>
-      <div class="pe-kpi-sub">3.797 cancelamentos</div>
-    </div>
-    <div class="pe-kpi green">
-      <div class="pe-kpi-label">Saldo Líquido</div>
-      <div class="pe-kpi-val" style="color:#2ab870">R$ 13.072,55</div>
-      <div class="pe-kpi-sub">Vendas − Cancelamentos</div>
-    </div>
-    <div class="pe-kpi red">
-      <div class="pe-kpi-label">Taxa Churn / Vendas</div>
-      <div class="pe-kpi-val" style="color:#e83050">94.4%</div>
-      <div class="pe-kpi-sub">Qtd cancelamentos ÷ vendas</div>
-    </div>
-  </div>
-
-  <div class="pe-section-label" style="border-left-color:#3a8ee8">EVOLUÇÃO MENSAL — VENDAS (🔵) vs CHURN (🔴)</div>
-  <div style="background:#f8fafb;border:1px solid #dde3ec;border-radius:8px;padding:14px 16px">
-    <div class="pe-chart-wrap"><div class="pe-bar-col" style="gap:1px"><div class="pe-bar-val" style="font-size:7px;color:#0d1b2e">R$65.8k</div><div style="display:flex;align-items:flex-end;gap:2px;width:100%"><div style="flex:1;height:50px;background:#3a8ee8;border-radius:2px 2px 0 0"></div><div style="flex:1;height:46px;background:#e83050;border-radius:2px 2px 0 0"></div></div><div class="pe-bar-label" style="color:#5a6278">Jan/26</div></div><div class="pe-bar-col" style="gap:1px"><div class="pe-bar-val" style="font-size:7px;color:#0d1b2e">R$55.5k</div><div style="display:flex;align-items:flex-end;gap:2px;width:100%"><div style="flex:1;height:42px;background:#3a8ee8;border-radius:2px 2px 0 0"></div><div style="flex:1;height:38px;background:#e83050;border-radius:2px 2px 0 0"></div></div><div class="pe-bar-label" style="color:#5a6278">Fev/26</div></div><div class="pe-bar-col" style="gap:1px"><div class="pe-bar-val" style="font-size:7px;color:#0d1b2e">R$75.3k</div><div style="display:flex;align-items:flex-end;gap:2px;width:100%"><div style="flex:1;height:57px;background:#3a8ee8;border-radius:2px 2px 0 0"></div><div style="flex:1;height:60px;background:#e83050;border-radius:2px 2px 0 0"></div></div><div class="pe-bar-label" style="color:#5a6278">Mar/26</div></div><div class="pe-bar-col" style="gap:1px"><div class="pe-bar-val" style="font-size:7px;color:#0d1b2e">R$73.4k</div><div style="display:flex;align-items:flex-end;gap:2px;width:100%"><div style="flex:1;height:56px;background:#3a8ee8;border-radius:2px 2px 0 0"></div><div style="flex:1;height:52px;background:#e83050;border-radius:2px 2px 0 0"></div></div><div class="pe-bar-label" style="color:#5a6278">Abr/26</div></div><div class="pe-bar-col" style="gap:1px"><div class="pe-bar-val" style="font-size:7px;color:#0d1b2e">R$46.5k</div><div style="display:flex;align-items:flex-end;gap:2px;width:100%"><div style="flex:1;height:35px;background:#3a8ee8;border-radius:2px 2px 0 0"></div><div style="flex:1;height:35px;background:#e83050;border-radius:2px 2px 0 0"></div></div><div class="pe-bar-label" style="color:#5a6278">Mai/26</div></div><div class="pe-bar-col" style="gap:1px"><div class="pe-bar-val" style="font-size:7px;color:#9aa0b0">—</div><div style="display:flex;align-items:flex-end;gap:2px;width:100%"><div style="flex:1;height:2px;background:#dde8f5;border-radius:2px 2px 0 0"></div><div style="flex:1;height:2px;background:#f5dddd;border-radius:2px 2px 0 0"></div></div><div class="pe-bar-label" style="color:#c8d4e4">Jun/26</div></div><div class="pe-bar-col" style="gap:1px"><div class="pe-bar-val" style="font-size:7px;color:#9aa0b0">—</div><div style="display:flex;align-items:flex-end;gap:2px;width:100%"><div style="flex:1;height:2px;background:#dde8f5;border-radius:2px 2px 0 0"></div><div style="flex:1;height:2px;background:#f5dddd;border-radius:2px 2px 0 0"></div></div><div class="pe-bar-label" style="color:#c8d4e4">Jul/26</div></div><div class="pe-bar-col" style="gap:1px"><div class="pe-bar-val" style="font-size:7px;color:#9aa0b0">—</div><div style="display:flex;align-items:flex-end;gap:2px;width:100%"><div style="flex:1;height:2px;background:#dde8f5;border-radius:2px 2px 0 0"></div><div style="flex:1;height:2px;background:#f5dddd;border-radius:2px 2px 0 0"></div></div><div class="pe-bar-label" style="color:#c8d4e4">Ago/26</div></div><div class="pe-bar-col" style="gap:1px"><div class="pe-bar-val" style="font-size:7px;color:#9aa0b0">—</div><div style="display:flex;align-items:flex-end;gap:2px;width:100%"><div style="flex:1;height:2px;background:#dde8f5;border-radius:2px 2px 0 0"></div><div style="flex:1;height:2px;background:#f5dddd;border-radius:2px 2px 0 0"></div></div><div class="pe-bar-label" style="color:#c8d4e4">Set/26</div></div><div class="pe-bar-col" style="gap:1px"><div class="pe-bar-val" style="font-size:7px;color:#9aa0b0">—</div><div style="display:flex;align-items:flex-end;gap:2px;width:100%"><div style="flex:1;height:2px;background:#dde8f5;border-radius:2px 2px 0 0"></div><div style="flex:1;height:2px;background:#f5dddd;border-radius:2px 2px 0 0"></div></div><div class="pe-bar-label" style="color:#c8d4e4">Out/26</div></div><div class="pe-bar-col" style="gap:1px"><div class="pe-bar-val" style="font-size:7px;color:#9aa0b0">—</div><div style="display:flex;align-items:flex-end;gap:2px;width:100%"><div style="flex:1;height:2px;background:#dde8f5;border-radius:2px 2px 0 0"></div><div style="flex:1;height:2px;background:#f5dddd;border-radius:2px 2px 0 0"></div></div><div class="pe-bar-label" style="color:#c8d4e4">Nov/26</div></div><div class="pe-bar-col" style="gap:1px"><div class="pe-bar-val" style="font-size:7px;color:#9aa0b0">—</div><div style="display:flex;align-items:flex-end;gap:2px;width:100%"><div style="flex:1;height:2px;background:#dde8f5;border-radius:2px 2px 0 0"></div><div style="flex:1;height:2px;background:#f5dddd;border-radius:2px 2px 0 0"></div></div><div class="pe-bar-label" style="color:#c8d4e4">Dez/26</div></div></div>
-    <div style="display:flex;gap:16px;margin-top:6px;justify-content:center">
-      <span style="font-size:9px;color:#3a8ee8;font-weight:700">■ Vendas</span>
-      <span style="font-size:9px;color:#e83050;font-weight:700">■ Cancelamentos</span>
-    </div>
-  </div>
-
-  <div class="pe-section-label" style="border-left-color:#5a6278">RESULTADO POR PERÍODO</div>
-  <table class="pe-table">
-    <thead><tr>
-      <th>Período</th>
-      <th style="text-align:right;color:#3a8ee8">Receita Vendas</th>
-      <th style="text-align:right;color:#e83050">Valor Cancelado</th>
-      <th style="text-align:right">Saldo Líquido</th>
-      <th style="text-align:right">Taxa Churn</th>
-    </tr></thead>
-    <tbody><tr><td style="font-weight:600">Jan/26</td><td style="text-align:right;color:#3a8ee8;font-weight:600">R$ 65.759,70</td><td style="text-align:right;color:#e83050;font-weight:600">R$ 60.267,58</td><td style="text-align:right;font-weight:700;color:#2ab870">R$ 5.492,12</td><td style="text-align:right;color:#e83050;font-weight:600">84.6%</td></tr><tr><td style="font-weight:600">Fev/26</td><td style="text-align:right;color:#3a8ee8;font-weight:600">R$ 55.495,47</td><td style="text-align:right;color:#e83050;font-weight:600">R$ 50.031,86</td><td style="text-align:right;font-weight:700;color:#2ab870">R$ 5.463,61</td><td style="text-align:right;color:#e83050;font-weight:600">88.1%</td></tr><tr><td style="font-weight:600">Mar/26</td><td style="text-align:right;color:#3a8ee8;font-weight:600">R$ 75.253,41</td><td style="text-align:right;color:#e83050;font-weight:600">R$ 78.809,67</td><td style="text-align:right;font-weight:700;color:#e83050">R$ -3.556,26</td><td style="text-align:right;color:#e83050;font-weight:600">103.9%</td></tr><tr><td style="font-weight:600">Abr/26</td><td style="text-align:right;color:#3a8ee8;font-weight:600">R$ 73.402,95</td><td style="text-align:right;color:#e83050;font-weight:600">R$ 68.430,68</td><td style="text-align:right;font-weight:700;color:#2ab870">R$ 4.972,27</td><td style="text-align:right;color:#e83050;font-weight:600">94.6%</td></tr><tr><td style="font-weight:600">Mai/26</td><td style="text-align:right;color:#3a8ee8;font-weight:600">R$ 46.466,48</td><td style="text-align:right;color:#e83050;font-weight:600">R$ 45.765,67</td><td style="text-align:right;font-weight:700;color:#2ab870">R$ 700,81</td><td style="text-align:right;color:#e83050;font-weight:600">101.4%</td></tr></tbody>
-  </table>
-
-  <div style="margin-top:14px">
-      <div class="pe-section-label" style="border-left-color:#3a8ee8">VENDAS vs CHURN POR PRODUTO</div>
-      <table class="pe-table">
-        <thead><tr>
-          <th>Produto</th>
-          <th style="text-align:center;color:#3a8ee8">V.Qtd</th>
-          <th style="text-align:center;color:#e83050">C.Qtd</th>
-          <th style="text-align:right;color:#3a8ee8">Vendas R$</th>
-          <th style="text-align:right;color:#e83050">Cancel. R$</th>
-        </tr></thead>
-        <tbody><tr>
-      <td style="max-width:110px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Internet</td>
-      <td style="text-align:center;color:#3a8ee8;font-weight:700">2454</td>
-      <td style="text-align:center;color:#e83050;font-weight:700">2616</td>
-      <td style="text-align:right;color:#3a8ee8;font-weight:600">R$ 241.387,85</td>
-      <td style="text-align:right;color:#e83050;font-weight:600">R$ 249.240,05</td>
-    </tr><tr>
-      <td style="max-width:110px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Móvel</td>
-      <td style="text-align:center;color:#3a8ee8;font-weight:700">883</td>
-      <td style="text-align:center;color:#e83050;font-weight:700">688</td>
-      <td style="text-align:right;color:#3a8ee8;font-weight:600">R$ 44.326,16</td>
-      <td style="text-align:right;color:#e83050;font-weight:600">R$ 31.803,10</td>
-    </tr><tr>
-      <td style="max-width:110px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">TV</td>
-      <td style="text-align:center;color:#3a8ee8;font-weight:700">557</td>
-      <td style="text-align:center;color:#e83050;font-weight:700">476</td>
-      <td style="text-align:right;color:#3a8ee8;font-weight:600">R$ 27.063,40</td>
-      <td style="text-align:right;color:#e83050;font-weight:600">R$ 21.493,91</td>
-    </tr><tr>
-      <td style="max-width:110px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Fixo</td>
-      <td style="text-align:center;color:#3a8ee8;font-weight:700">79</td>
-      <td style="text-align:center;color:#e83050;font-weight:700">16</td>
-      <td style="text-align:right;color:#3a8ee8;font-weight:600">R$ 3.600,60</td>
-      <td style="text-align:right;color:#e83050;font-weight:600">R$ 668,40</td>
-    </tr><tr>
-      <td style="max-width:110px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Outros</td>
-      <td style="text-align:center;color:#3a8ee8;font-weight:700">48</td>
-      <td style="text-align:center;color:#e83050;font-weight:700">1</td>
-      <td style="text-align:right;color:#3a8ee8;font-weight:600">R$ 0,00</td>
-      <td style="text-align:right;color:#e83050;font-weight:600">R$ 100,00</td>
-    </tr></tbody>
-      </table>
-  </div>
-
-  <div class="pe-footer">
-    <span>Turbo Net Telecom Ltda &nbsp;·&nbsp; Dashboard Executivo — Correlação</span>
-    <span>Dados extraídos do CRM interno &nbsp;·&nbsp; Uso restrito à diretoria</span>
-    <span style="color:#3a8ee8;font-weight:700">1 / 1</span>
-  </div>
-  </div>
   </div>
 </div>
 
@@ -6418,7 +6314,7 @@ function exportSharedVersion() {
 
       // ── Replace update badge text in the static HTML ──────────────────
       html = html.replace(
-        'Atualizado: 20/05/2026 07:42 · Força de Vendas.xlsx',
+        'Atualizado: 20/05/2026 08:19 · Força de Vendas.xlsx',
         updateLabel
       );
 
