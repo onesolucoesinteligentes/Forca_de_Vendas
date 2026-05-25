@@ -1161,7 +1161,7 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
     </div>
   </div>
   <div class="header-actions">
-    <div class="last-update" id="last-update">Atualizado: 25/05/2026 13:41 · Força de Vendas.xlsx</div>
+    <div class="last-update" id="last-update">Atualizado: 25/05/2026 14:17 · Força de Vendas.xlsx</div>
     <button class="btn-print" onclick="openPrintPreview('vendas')" title="Resumo Executivo — Vendas">🖨️ Resumo Executivo</button>
     
     
@@ -1194,9 +1194,9 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
     </div><div class="year-box" data-ano="2025">
       <div class="year-box-header">
         <span class="year-box-label">2025</span>
-        <button class="year-toggle-all" onclick="toggleYearAll('v-period-selector',2025,this)">Todos</button>
+        <button class="year-toggle-all" onclick="toggleYearAll('v-period-selector',2025,this)">Limpar</button>
       </div>
-      <div class="year-months"><span class="month-pill" data-ano="2025" data-mes="1">Jan</span><span class="month-pill" data-ano="2025" data-mes="2">Fev</span><span class="month-pill" data-ano="2025" data-mes="3">Mar</span><span class="month-pill" data-ano="2025" data-mes="4">Abr</span><span class="month-pill" data-ano="2025" data-mes="5">Mai</span><span class="month-pill" data-ano="2025" data-mes="6">Jun</span><span class="month-pill" data-ano="2025" data-mes="7">Jul</span><span class="month-pill" data-ano="2025" data-mes="8">Ago</span><span class="month-pill" data-ano="2025" data-mes="9">Set</span><span class="month-pill" data-ano="2025" data-mes="10">Out</span><span class="month-pill" data-ano="2025" data-mes="11">Nov</span><span class="month-pill" data-ano="2025" data-mes="12">Dez</span></div>
+      <div class="year-months"><span class="month-pill " data-ano="2025" data-mes="1">Jan</span><span class="month-pill " data-ano="2025" data-mes="2">Fev</span><span class="month-pill " data-ano="2025" data-mes="3">Mar</span><span class="month-pill " data-ano="2025" data-mes="4">Abr</span><span class="month-pill " data-ano="2025" data-mes="5">Mai</span><span class="month-pill selected" data-ano="2025" data-mes="6">Jun</span><span class="month-pill selected" data-ano="2025" data-mes="7">Jul</span><span class="month-pill selected" data-ano="2025" data-mes="8">Ago</span><span class="month-pill selected" data-ano="2025" data-mes="9">Set</span><span class="month-pill selected" data-ano="2025" data-mes="10">Out</span><span class="month-pill selected" data-ano="2025" data-mes="11">Nov</span><span class="month-pill selected" data-ano="2025" data-mes="12">Dez</span></div>
     </div><div class="year-box" data-ano="2026">
       <div class="year-box-header">
         <span class="year-box-label">2026</span>
@@ -1232,7 +1232,7 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
     </div>
     <div class="filter-divider"></div>
     <div class="filter-group">
-      <label>Ativação (col BH)</label>
+      <label>Status Ativação</label>
       <div class="pill-select" id="v-ativacao-pills">
         <span class="pill-opt selected" data-v="Ativado">Ativado</span>
         <span class="pill-opt selected" data-v="Não Ativado">Não Ativado</span>
@@ -1248,25 +1248,25 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
   <div class="kpi-row">
     <div class="kpi-card" style="--kpi-color:var(--accent)">
       <div class="kpi-label">Receita Total</div>
-      <div class="kpi-value" id="v-kpi-rec">R$ 321.711,81</div>
+      <div class="kpi-value" id="v-kpi-rec">R$ 771.439,09</div>
       <div class="kpi-sub">Valor de serviços vendidos</div>
       <div class="kpi-icon">💰</div>
     </div>
     <div class="kpi-card" style="--kpi-color:var(--accent2)">
       <div class="kpi-label">Total de Vendas</div>
-      <div class="kpi-value" id="v-kpi-tot">4.063</div>
-      <div class="kpi-sub" id="v-kpi-ticket">Ticket médio: R$ 79,18</div>
+      <div class="kpi-value" id="v-kpi-tot">10.039</div>
+      <div class="kpi-sub" id="v-kpi-ticket">Ticket médio: R$ 76,84</div>
       <div class="kpi-icon">📋</div>
     </div>
     <div class="kpi-card" style="--kpi-color:var(--green)">
       <div class="kpi-label">Vendedores Ativos</div>
-      <div class="kpi-value" id="v-kpi-vend">55</div>
+      <div class="kpi-value" id="v-kpi-vend">85</div>
       <div class="kpi-sub">No período selecionado</div>
       <div class="kpi-icon">👥</div>
     </div>
     <div class="kpi-card" style="--kpi-color:var(--gold)">
       <div class="kpi-label">Ticket Médio</div>
-      <div class="kpi-value" id="v-kpi-tm">R$ 79,18</div>
+      <div class="kpi-value" id="v-kpi-tm">R$ 76,84</div>
       <div class="kpi-sub" id="v-kpi-max">Maior venda: R$ 1.500,00</div>
       <div class="kpi-icon">🎯</div>
     </div>
@@ -1346,563 +1346,862 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
     <td><span class="rank rank-1">1</span></td>
     <td style="font-weight:500">Priscila Leonangelo Paes</td>
     <td><span class="chip chip-blue">INTERNO</span></td>
-    <td>559</td>
-    <td>R$ 84,68</td>
+    <td>1314</td>
+    <td>R$ 83,98</td>
     <td>
       <div class="mini-bar-wrap">
         <div class="mini-bar" style="width:100px; background:#1a6bc8"></div>
-        R$ 47.337,72
+        R$ 110.354,14
       </div>
     </td>
-    <td><span style="color:var(--muted)">14.7%</span></td>
+    <td><span style="color:var(--muted)">14.3%</span></td>
   </tr><tr>
     <td><span class="rank rank-2">2</span></td>
     <td style="font-weight:500">Tatiana Lima Nunes</td>
     <td><span class="chip chip-blue">INTERNO</span></td>
-    <td>441</td>
-    <td>R$ 85,22</td>
+    <td>1046</td>
+    <td>R$ 83,42</td>
     <td>
       <div class="mini-bar-wrap">
         <div class="mini-bar" style="width:79px; background:#1a6bc8"></div>
-        R$ 37.581,49
-      </div>
-    </td>
-    <td><span style="color:var(--muted)">11.7%</span></td>
-  </tr><tr>
-    <td><span class="rank rank-3">3</span></td>
-    <td style="font-weight:500">Maria Paula Silva Serralheiro</td>
-    <td><span class="chip chip-blue">INTERNO</span></td>
-    <td>448</td>
-    <td>R$ 81,46</td>
-    <td>
-      <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:77px; background:#1a6bc8"></div>
-        R$ 36.493,45
+        R$ 87.261,52
       </div>
     </td>
     <td><span style="color:var(--muted)">11.3%</span></td>
   </tr><tr>
+    <td><span class="rank rank-3">3</span></td>
+    <td style="font-weight:500">Maria Paula Silva Serralheiro</td>
+    <td><span class="chip chip-blue">INTERNO</span></td>
+    <td>1012</td>
+    <td>R$ 83,01</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:76px; background:#1a6bc8"></div>
+        R$ 84.008,52
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">10.9%</span></td>
+  </tr><tr>
     <td><span class="rank ">4</span></td>
     <td style="font-weight:500">Sabrina Da Silva Pessoa</td>
     <td><span class="chip chip-blue">INTERNO</span></td>
-    <td>292</td>
-    <td>R$ 87,40</td>
+    <td>580</td>
+    <td>R$ 79,48</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:54px; background:#1a6bc8"></div>
-        R$ 25.521,03
+        <div class="mini-bar" style="width:42px; background:#1a6bc8"></div>
+        R$ 46.100,03
       </div>
     </td>
-    <td><span style="color:var(--muted)">7.9%</span></td>
+    <td><span style="color:var(--muted)">6.0%</span></td>
   </tr><tr>
     <td><span class="rank ">5</span></td>
+    <td style="font-weight:500">Caroline De Oliveira Veiga</td>
+    <td><span class="chip chip-green">ATIVO</span></td>
+    <td>646</td>
+    <td>R$ 65,99</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:39px; background:#1a8a4a"></div>
+        R$ 42.630,90
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">5.5%</span></td>
+  </tr><tr>
+    <td><span class="rank ">6</span></td>
+    <td style="font-weight:500">Murilo Silva Leite</td>
+    <td><span class="chip chip-orange">CORPORATIVO</span></td>
+    <td>258</td>
+    <td>R$ 117,88</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:28px; background:#c8611a"></div>
+        R$ 30.413,50
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">3.9%</span></td>
+  </tr><tr>
+    <td><span class="rank ">7</span></td>
+    <td style="font-weight:500">Clara Vidal Salviano</td>
+    <td><span class="chip chip-blue">INTERNO</span></td>
+    <td>315</td>
+    <td>R$ 82,50</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:24px; background:#1a6bc8"></div>
+        R$ 25.986,73
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">3.4%</span></td>
+  </tr><tr>
+    <td><span class="rank ">8</span></td>
+    <td style="font-weight:500">Joseli Pereira De Souza</td>
+    <td><span class="chip chip-blue">INTERNO</span></td>
+    <td>278</td>
+    <td>R$ 86,49</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:22px; background:#1a6bc8"></div>
+        R$ 24.045,16
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">3.1%</span></td>
+  </tr><tr>
+    <td><span class="rank ">9</span></td>
+    <td style="font-weight:500">Raquel Lima</td>
+    <td><span class="chip chip-green">ATIVO</span></td>
+    <td>287</td>
+    <td>R$ 78,94</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:21px; background:#1a8a4a"></div>
+        R$ 22.655,35
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">2.9%</span></td>
+  </tr><tr>
+    <td><span class="rank ">10</span></td>
+    <td style="font-weight:500">Ana Carolina Bessa</td>
+    <td><span class="chip chip-green">ATIVO</span></td>
+    <td>354</td>
+    <td>R$ 53,22</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:17px; background:#1a8a4a"></div>
+        R$ 18.840,33
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">2.4%</span></td>
+  </tr><tr>
+    <td><span class="rank ">11</span></td>
+    <td style="font-weight:500">Gabriela Aparecida Tassiotti</td>
+    <td><span class="chip chip-green">ATIVO</span></td>
+    <td>220</td>
+    <td>R$ 74,16</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:15px; background:#1a8a4a"></div>
+        R$ 16.314,54
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">2.1%</span></td>
+  </tr><tr>
+    <td><span class="rank ">12</span></td>
+    <td style="font-weight:500">Bianca Carina Lucas Da Silva</td>
+    <td><span class="chip chip-blue">INTERNO</span></td>
+    <td>145</td>
+    <td>R$ 95,20</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:13px; background:#1a6bc8"></div>
+        R$ 13.803,30
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">1.8%</span></td>
+  </tr><tr>
+    <td><span class="rank ">13</span></td>
     <td style="font-weight:500">Samara Pazetto Dos Santos</td>
     <td><span class="chip chip-green">ATIVO</span></td>
     <td>182</td>
     <td>R$ 74,14</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:29px; background:#1a8a4a"></div>
+        <div class="mini-bar" style="width:12px; background:#1a8a4a"></div>
         R$ 13.493,29
       </div>
     </td>
-    <td><span style="color:var(--muted)">4.2%</span></td>
+    <td><span style="color:var(--muted)">1.7%</span></td>
   </tr><tr>
-    <td><span class="rank ">6</span></td>
-    <td style="font-weight:500">Raquel Lima</td>
-    <td><span class="chip chip-blue">INTERNO</span></td>
-    <td>122</td>
-    <td>R$ 93,99</td>
+    <td><span class="rank ">14</span></td>
+    <td style="font-weight:500">Thaylla Dos Santos Caires</td>
+    <td><span class="chip chip-green">ATIVO</span></td>
+    <td>207</td>
+    <td>R$ 60,06</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:24px; background:#1a6bc8"></div>
-        R$ 11.466,34
+        <div class="mini-bar" style="width:11px; background:#1a8a4a"></div>
+        R$ 12.431,58
       </div>
     </td>
-    <td><span style="color:var(--muted)">3.6%</span></td>
+    <td><span style="color:var(--muted)">1.6%</span></td>
   </tr><tr>
-    <td><span class="rank ">7</span></td>
+    <td><span class="rank ">15</span></td>
+    <td style="font-weight:500">Yara Da Costa Pereira</td>
+    <td><span class="chip chip-green">ATIVO</span></td>
+    <td>190</td>
+    <td>R$ 60,05</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:10px; background:#1a8a4a"></div>
+        R$ 11.409,27
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">1.5%</span></td>
+  </tr><tr>
+    <td><span class="rank ">16</span></td>
+    <td style="font-weight:500">Aline Freitas De Oliveira Sousa</td>
+    <td><span class="chip chip-green">ATIVO</span></td>
+    <td>159</td>
+    <td>R$ 70,67</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:10px; background:#1a8a4a"></div>
+        R$ 11.236,99
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">1.5%</span></td>
+  </tr><tr>
+    <td><span class="rank ">17</span></td>
     <td style="font-weight:500">Gabriel Eduardo Felipe Luccas</td>
     <td><span class="chip chip-green">ATIVO</span></td>
     <td>136</td>
     <td>R$ 75,17</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:22px; background:#1a8a4a"></div>
+        <div class="mini-bar" style="width:9px; background:#1a8a4a"></div>
         R$ 10.223,61
       </div>
     </td>
-    <td><span style="color:var(--muted)">3.2%</span></td>
+    <td><span style="color:var(--muted)">1.3%</span></td>
   </tr><tr>
-    <td><span class="rank ">8</span></td>
+    <td><span class="rank ">18</span></td>
     <td style="font-weight:500">Ingrid Horrane Da Silva Maciel</td>
     <td><span class="chip chip-green">ATIVO</span></td>
     <td>131</td>
     <td>R$ 72,45</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:20px; background:#1a8a4a"></div>
+        <div class="mini-bar" style="width:9px; background:#1a8a4a"></div>
         R$ 9.490,99
       </div>
     </td>
-    <td><span style="color:var(--muted)">3.0%</span></td>
+    <td><span style="color:var(--muted)">1.2%</span></td>
   </tr><tr>
-    <td><span class="rank ">9</span></td>
-    <td style="font-weight:500">Caroline De Oliveira Veiga</td>
+    <td><span class="rank ">19</span></td>
+    <td style="font-weight:500">Vitoria Jamile Lima Silva</td>
     <td><span class="chip chip-green">ATIVO</span></td>
-    <td>126</td>
-    <td>R$ 71,45</td>
+    <td>132</td>
+    <td>R$ 70,73</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:19px; background:#1a8a4a"></div>
-        R$ 9.002,18
+        <div class="mini-bar" style="width:8px; background:#1a8a4a"></div>
+        R$ 9.336,76
       </div>
     </td>
-    <td><span style="color:var(--muted)">2.8%</span></td>
+    <td><span style="color:var(--muted)">1.2%</span></td>
   </tr><tr>
-    <td><span class="rank ">10</span></td>
+    <td><span class="rank ">20</span></td>
+    <td style="font-weight:500">Camille Vitoria De Souza Rodrigues</td>
+    <td><span class="chip chip-green">ATIVO</span></td>
+    <td>149</td>
+    <td>R$ 62,52</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:8px; background:#1a8a4a"></div>
+        R$ 9.315,34
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">1.2%</span></td>
+  </tr><tr>
+    <td><span class="rank ">21</span></td>
     <td style="font-weight:500">Beatriz Zafra Ferreira</td>
     <td><span class="chip chip-green">ATIVO</span></td>
     <td>100</td>
     <td>R$ 88,02</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:19px; background:#1a8a4a"></div>
+        <div class="mini-bar" style="width:8px; background:#1a8a4a"></div>
         R$ 8.802,16
       </div>
     </td>
-    <td><span style="color:var(--muted)">2.7%</span></td>
+    <td><span style="color:var(--muted)">1.1%</span></td>
   </tr><tr>
-    <td><span class="rank ">11</span></td>
+    <td><span class="rank ">22</span></td>
     <td style="font-weight:500">Cibele Maria Soares Xavier</td>
     <td><span class="chip chip-green">ATIVO</span></td>
-    <td>110</td>
-    <td>R$ 78,44</td>
+    <td>111</td>
+    <td>R$ 78,64</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:18px; background:#1a8a4a"></div>
-        R$ 8.628,77
+        <div class="mini-bar" style="width:8px; background:#1a8a4a"></div>
+        R$ 8.728,67
       </div>
     </td>
-    <td><span style="color:var(--muted)">2.7%</span></td>
+    <td><span style="color:var(--muted)">1.1%</span></td>
   </tr><tr>
-    <td><span class="rank ">12</span></td>
+    <td><span class="rank ">23</span></td>
     <td style="font-weight:500">Gislene Da Silva Custodio</td>
     <td><span class="chip chip-green">ATIVO</span></td>
     <td>125</td>
     <td>R$ 67,15</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:18px; background:#1a8a4a"></div>
+        <div class="mini-bar" style="width:8px; background:#1a8a4a"></div>
         R$ 8.393,55
       </div>
     </td>
-    <td><span style="color:var(--muted)">2.6%</span></td>
+    <td><span style="color:var(--muted)">1.1%</span></td>
   </tr><tr>
-    <td><span class="rank ">13</span></td>
+    <td><span class="rank ">24</span></td>
     <td style="font-weight:500">Marla Carolina Da Silva Ribeiro</td>
     <td><span class="chip chip-blue">INTERNO</span></td>
     <td>92</td>
     <td>R$ 89,87</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:17px; background:#1a6bc8"></div>
+        <div class="mini-bar" style="width:7px; background:#1a6bc8"></div>
         R$ 8.268,06
       </div>
     </td>
-    <td><span style="color:var(--muted)">2.6%</span></td>
+    <td><span style="color:var(--muted)">1.1%</span></td>
   </tr><tr>
-    <td><span class="rank ">14</span></td>
-    <td style="font-weight:500">Murilo Silva Leite</td>
-    <td><span class="chip chip-orange">CORPORATIVO</span></td>
-    <td>63</td>
-    <td>R$ 128,28</td>
+    <td><span class="rank ">25</span></td>
+    <td style="font-weight:500">Natalia Da Silva Santos</td>
+    <td><span class="chip chip-blue">INTERNO</span></td>
+    <td>118</td>
+    <td>R$ 65,33</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:17px; background:#c8611a"></div>
-        R$ 8.081,70
+        <div class="mini-bar" style="width:7px; background:#1a6bc8"></div>
+        R$ 7.709,25
       </div>
     </td>
-    <td><span style="color:var(--muted)">2.5%</span></td>
+    <td><span style="color:var(--muted)">1.0%</span></td>
   </tr><tr>
-    <td><span class="rank ">15</span></td>
-    <td style="font-weight:500">Rafaela Cristina Mestre Pessoa</td>
-    <td><span class="chip chip-orange">CORPORATIVO</span></td>
-    <td>77</td>
-    <td>R$ 77,44</td>
-    <td>
-      <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:13px; background:#c8611a"></div>
-        R$ 5.962,87
-      </div>
-    </td>
-    <td><span style="color:var(--muted)">1.9%</span></td>
-  </tr><tr>
-    <td><span class="rank ">16</span></td>
-    <td style="font-weight:500">Gabriela Aparecida Tassiotti</td>
+    <td><span class="rank ">26</span></td>
+    <td style="font-weight:500">Maxwell Do Nascimento</td>
     <td><span class="chip chip-green">ATIVO</span></td>
-    <td>67</td>
-    <td>R$ 85,69</td>
+    <td>98</td>
+    <td>R$ 72,43</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:12px; background:#1a8a4a"></div>
-        R$ 5.741,10
+        <div class="mini-bar" style="width:6px; background:#1a8a4a"></div>
+        R$ 7.097,90
       </div>
     </td>
-    <td><span style="color:var(--muted)">1.8%</span></td>
+    <td><span style="color:var(--muted)">0.9%</span></td>
   </tr><tr>
-    <td><span class="rank ">17</span></td>
+    <td><span class="rank ">27</span></td>
+    <td style="font-weight:500">Vanusa Olivia Dos Santos</td>
+    <td><span class="chip chip-green">ATIVO</span></td>
+    <td>107</td>
+    <td>R$ 64,34</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:6px; background:#1a8a4a"></div>
+        R$ 6.884,23
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">0.9%</span></td>
+  </tr><tr>
+    <td><span class="rank ">28</span></td>
+    <td style="font-weight:500">Karisa Cestaro De Morais</td>
+    <td><span class="chip chip-blue">INTERNO</span></td>
+    <td>71</td>
+    <td>R$ 89,11</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:6px; background:#1a6bc8"></div>
+        R$ 6.326,96
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">0.8%</span></td>
+  </tr><tr>
+    <td><span class="rank ">29</span></td>
+    <td style="font-weight:500">Rafaela Cristina Mestre Pessoa</td>
+    <td><span class="chip chip-blue">INTERNO</span></td>
+    <td>79</td>
+    <td>R$ 77,25</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:6px; background:#1a6bc8"></div>
+        R$ 6.102,77
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">0.8%</span></td>
+  </tr><tr>
+    <td><span class="rank ">30</span></td>
+    <td style="font-weight:500">Ana Claudia Santos Vieira</td>
+    <td><span class="chip chip-blue">INTERNO</span></td>
+    <td>63</td>
+    <td>R$ 93,36</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:5px; background:#1a6bc8"></div>
+        R$ 5.881,80
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">0.8%</span></td>
+  </tr><tr>
+    <td><span class="rank ">31</span></td>
     <td style="font-weight:500">Maria Luiza Martins Barbosa</td>
     <td><span class="chip chip-green">ATIVO</span></td>
     <td>84</td>
     <td>R$ 64,03</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:11px; background:#1a8a4a"></div>
+        <div class="mini-bar" style="width:5px; background:#1a8a4a"></div>
         R$ 5.378,44
       </div>
     </td>
-    <td><span style="color:var(--muted)">1.7%</span></td>
+    <td><span style="color:var(--muted)">0.7%</span></td>
   </tr><tr>
-    <td><span class="rank ">18</span></td>
-    <td style="font-weight:500">Aline Freitas De Oliveira Sousa</td>
+    <td><span class="rank ">32</span></td>
+    <td style="font-weight:500">Elton Mendes Arantes</td>
     <td><span class="chip chip-green">ATIVO</span></td>
-    <td>73</td>
-    <td>R$ 67,98</td>
+    <td>81</td>
+    <td>R$ 63,07</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:10px; background:#1a8a4a"></div>
-        R$ 4.962,54
+        <div class="mini-bar" style="width:5px; background:#1a8a4a"></div>
+        R$ 5.108,53
       </div>
     </td>
-    <td><span style="color:var(--muted)">1.5%</span></td>
+    <td><span style="color:var(--muted)">0.7%</span></td>
   </tr><tr>
-    <td><span class="rank ">19</span></td>
+    <td><span class="rank ">33</span></td>
     <td style="font-weight:500">Juliana Tiossi Leghi</td>
     <td><span class="chip chip-green">ATIVO</span></td>
     <td>69</td>
     <td>R$ 69,37</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:10px; background:#1a8a4a"></div>
+        <div class="mini-bar" style="width:4px; background:#1a8a4a"></div>
         R$ 4.786,22
       </div>
     </td>
-    <td><span style="color:var(--muted)">1.5%</span></td>
+    <td><span style="color:var(--muted)">0.6%</span></td>
   </tr><tr>
-    <td><span class="rank ">20</span></td>
-    <td style="font-weight:500">Camille Vitoria De Souza Rodrigues</td>
-    <td><span class="chip chip-green">ATIVO</span></td>
-    <td>62</td>
-    <td>R$ 61,59</td>
+    <td><span class="rank ">34</span></td>
+    <td style="font-weight:500">Rafael Trennepohl Dos Santos</td>
+    <td><span class="chip chip-blue">INTERNO</span></td>
+    <td>64</td>
+    <td>R$ 60,00</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:8px; background:#1a8a4a"></div>
-        R$ 3.818,44
+        <div class="mini-bar" style="width:3px; background:#1a6bc8"></div>
+        R$ 3.840,00
       </div>
     </td>
-    <td><span style="color:var(--muted)">1.2%</span></td>
+    <td><span style="color:var(--muted)">0.5%</span></td>
   </tr><tr>
-    <td><span class="rank ">21</span></td>
+    <td><span class="rank ">35</span></td>
+    <td style="font-weight:500">Gabriel Luis De Souza</td>
+    <td><span class="chip chip-green">ATIVO</span></td>
+    <td>51</td>
+    <td>R$ 74,80</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:3px; background:#1a8a4a"></div>
+        R$ 3.814,99
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">0.5%</span></td>
+  </tr><tr>
+    <td><span class="rank ">36</span></td>
+    <td style="font-weight:500">Jose Augusto Soares Filho</td>
+    <td><span class="chip chip-green">ATIVO</span></td>
+    <td>63</td>
+    <td>R$ 60,12</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:3px; background:#1a8a4a"></div>
+        R$ 3.787,63
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">0.5%</span></td>
+  </tr><tr>
+    <td><span class="rank ">37</span></td>
     <td style="font-weight:500">Cintia Aparecida Soares Rissi</td>
     <td><span class="chip chip-green">ATIVO</span></td>
     <td>60</td>
     <td>R$ 60,46</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:8px; background:#1a8a4a"></div>
+        <div class="mini-bar" style="width:3px; background:#1a8a4a"></div>
         R$ 3.627,61
       </div>
     </td>
-    <td><span style="color:var(--muted)">1.1%</span></td>
+    <td><span style="color:var(--muted)">0.5%</span></td>
   </tr><tr>
-    <td><span class="rank ">22</span></td>
+    <td><span class="rank ">38</span></td>
+    <td style="font-weight:500">Rosiane Mendes Barbosa Roberto</td>
+    <td><span class="chip chip-green">ATIVO</span></td>
+    <td>61</td>
+    <td>R$ 56,96</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:3px; background:#1a8a4a"></div>
+        R$ 3.474,30
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">0.5%</span></td>
+  </tr><tr>
+    <td><span class="rank ">39</span></td>
+    <td style="font-weight:500">Barbara Yeda Gonçalves Do Amaral</td>
+    <td><span class="chip chip-green">ATIVO</span></td>
+    <td>58</td>
+    <td>R$ 59,47</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:3px; background:#1a8a4a"></div>
+        R$ 3.449,40
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">0.4%</span></td>
+  </tr><tr>
+    <td><span class="rank ">40</span></td>
+    <td style="font-weight:500">Carolaine Rodrigues Das Flores</td>
+    <td><span class="chip chip-blue">INTERNO</span></td>
+    <td>51</td>
+    <td>R$ 66,50</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:3px; background:#1a6bc8"></div>
+        R$ 3.391,59
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">0.4%</span></td>
+  </tr><tr>
+    <td><span class="rank ">41</span></td>
     <td style="font-weight:500">Elisangela Aparecida Cuccinelli Altrao</td>
     <td><span class="chip chip-green">ATIVO</span></td>
     <td>46</td>
     <td>R$ 73,44</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:7px; background:#1a8a4a"></div>
+        <div class="mini-bar" style="width:3px; background:#1a8a4a"></div>
         R$ 3.378,22
       </div>
     </td>
-    <td><span style="color:var(--muted)">1.1%</span></td>
+    <td><span style="color:var(--muted)">0.4%</span></td>
   </tr><tr>
-    <td><span class="rank ">23</span></td>
-    <td style="font-weight:500">Carolaine Rodrigues Das Flores</td>
-    <td><span class="chip chip-green">ATIVO</span></td>
-    <td>49</td>
-    <td>R$ 67,59</td>
-    <td>
-      <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:7px; background:#1a8a4a"></div>
-        R$ 3.311,79
-      </div>
-    </td>
-    <td><span style="color:var(--muted)">1.0%</span></td>
-  </tr><tr>
-    <td><span class="rank ">24</span></td>
-    <td style="font-weight:500">Natalia Da Silva Santos</td>
-    <td><span class="chip chip-green">ATIVO</span></td>
-    <td>40</td>
-    <td>R$ 79,51</td>
-    <td>
-      <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:7px; background:#1a8a4a"></div>
-        R$ 3.180,38
-      </div>
-    </td>
-    <td><span style="color:var(--muted)">1.0%</span></td>
-  </tr><tr>
-    <td><span class="rank ">25</span></td>
+    <td><span class="rank ">42</span></td>
     <td style="font-weight:500">Thayla Rosa Silva</td>
     <td><span class="chip chip-green">ATIVO</span></td>
     <td>47</td>
     <td>R$ 66,67</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:7px; background:#1a8a4a"></div>
+        <div class="mini-bar" style="width:3px; background:#1a8a4a"></div>
         R$ 3.133,26
       </div>
     </td>
-    <td><span style="color:var(--muted)">1.0%</span></td>
+    <td><span style="color:var(--muted)">0.4%</span></td>
   </tr><tr>
-    <td><span class="rank ">26</span></td>
-    <td style="font-weight:500">Vitoria Jamile Lima Silva</td>
-    <td><span class="chip chip-green">ATIVO</span></td>
-    <td>37</td>
-    <td>R$ 78,18</td>
-    <td>
-      <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:6px; background:#1a8a4a"></div>
-        R$ 2.892,50
-      </div>
-    </td>
-    <td><span style="color:var(--muted)">0.9%</span></td>
-  </tr><tr>
-    <td><span class="rank ">27</span></td>
+    <td><span class="rank ">43</span></td>
     <td style="font-weight:500">Rayssa Vitoria Paneco</td>
     <td><span class="chip chip-green">ATIVO</span></td>
     <td>39</td>
     <td>R$ 70,16</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:6px; background:#1a8a4a"></div>
+        <div class="mini-bar" style="width:2px; background:#1a8a4a"></div>
         R$ 2.736,43
       </div>
     </td>
-    <td><span style="color:var(--muted)">0.9%</span></td>
+    <td><span style="color:var(--muted)">0.4%</span></td>
   </tr><tr>
-    <td><span class="rank ">28</span></td>
-    <td style="font-weight:500">Vanusa Olivia Dos Santos</td>
+    <td><span class="rank ">44</span></td>
+    <td style="font-weight:500">Priscila Zancheta</td>
     <td><span class="chip chip-green">ATIVO</span></td>
     <td>35</td>
-    <td>R$ 65,88</td>
+    <td>R$ 69,40</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:5px; background:#1a8a4a"></div>
-        R$ 2.305,88
+        <div class="mini-bar" style="width:2px; background:#1a8a4a"></div>
+        R$ 2.429,00
       </div>
     </td>
-    <td><span style="color:var(--muted)">0.7%</span></td>
+    <td><span style="color:var(--muted)">0.3%</span></td>
   </tr><tr>
-    <td><span class="rank ">29</span></td>
+    <td><span class="rank ">45</span></td>
     <td style="font-weight:500">Michele Regatieri Jose</td>
     <td><span class="chip chip-green">ATIVO</span></td>
     <td>33</td>
     <td>R$ 69,84</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:5px; background:#1a8a4a"></div>
+        <div class="mini-bar" style="width:2px; background:#1a8a4a"></div>
         R$ 2.304,70
       </div>
     </td>
-    <td><span style="color:var(--muted)">0.7%</span></td>
+    <td><span style="color:var(--muted)">0.3%</span></td>
   </tr><tr>
-    <td><span class="rank ">30</span></td>
+    <td><span class="rank ">46</span></td>
     <td style="font-weight:500">Leticia Aparecida Henrique Prudencio</td>
     <td><span class="chip chip-blue">INTERNO</span></td>
     <td>25</td>
     <td>R$ 85,61</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:5px; background:#1a6bc8"></div>
+        <div class="mini-bar" style="width:2px; background:#1a6bc8"></div>
         R$ 2.140,27
       </div>
     </td>
-    <td><span style="color:var(--muted)">0.7%</span></td>
+    <td><span style="color:var(--muted)">0.3%</span></td>
   </tr><tr>
-    <td><span class="rank ">31</span></td>
-    <td style="font-weight:500">Clara Vidal Salviano</td>
-    <td><span class="chip chip-green">ATIVO</span></td>
-    <td>28</td>
-    <td>R$ 73,20</td>
-    <td>
-      <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:4px; background:#1a8a4a"></div>
-        R$ 2.049,49
-      </div>
-    </td>
-    <td><span style="color:var(--muted)">0.6%</span></td>
-  </tr><tr>
-    <td><span class="rank ">32</span></td>
+    <td><span class="rank ">47</span></td>
     <td style="font-weight:500">Brandy Betiol Fascio</td>
     <td><span class="chip chip-green">ATIVO</span></td>
     <td>37</td>
     <td>R$ 53,97</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:4px; background:#1a8a4a"></div>
+        <div class="mini-bar" style="width:2px; background:#1a8a4a"></div>
         R$ 1.996,99
       </div>
     </td>
-    <td><span style="color:var(--muted)">0.6%</span></td>
+    <td><span style="color:var(--muted)">0.3%</span></td>
   </tr><tr>
-    <td><span class="rank ">33</span></td>
+    <td><span class="rank ">48</span></td>
+    <td style="font-weight:500">Kelly Cristina Pinheiro</td>
+    <td><span class="chip chip-green">ATIVO</span></td>
+    <td>24</td>
+    <td>R$ 79,59</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:2px; background:#1a8a4a"></div>
+        R$ 1.910,10
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">0.2%</span></td>
+  </tr><tr>
+    <td><span class="rank ">49</span></td>
+    <td style="font-weight:500">Larissa Prado Oliveira</td>
+    <td><span class="chip chip-green">ATIVO</span></td>
+    <td>22</td>
+    <td>R$ 81,87</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:2px; background:#1a8a4a"></div>
+        R$ 1.801,19
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">0.2%</span></td>
+  </tr><tr>
+    <td><span class="rank ">50</span></td>
+    <td style="font-weight:500">Tarciso Marques Peixoto</td>
+    <td><span class="chip chip-green">ATIVO</span></td>
+    <td>22</td>
+    <td>R$ 77,87</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:2px; background:#1a8a4a"></div>
+        R$ 1.713,18
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">0.2%</span></td>
+  </tr><tr>
+    <td><span class="rank ">51</span></td>
+    <td style="font-weight:500">Nicole Laura Montrezor</td>
+    <td><span class="chip chip-green">ATIVO</span></td>
+    <td>28</td>
+    <td>R$ 61,10</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:2px; background:#1a8a4a"></div>
+        R$ 1.710,70
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">0.2%</span></td>
+  </tr><tr>
+    <td><span class="rank ">52</span></td>
     <td style="font-weight:500">Inaê Caroline Da Silva</td>
     <td><span class="chip chip-green">ATIVO</span></td>
     <td>31</td>
     <td>R$ 54,73</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:4px; background:#1a8a4a"></div>
+        <div class="mini-bar" style="width:2px; background:#1a8a4a"></div>
         R$ 1.696,55
       </div>
     </td>
-    <td><span style="color:var(--muted)">0.5%</span></td>
+    <td><span style="color:var(--muted)">0.2%</span></td>
   </tr><tr>
-    <td><span class="rank ">34</span></td>
-    <td style="font-weight:500">Elton Mendes Arantes</td>
+    <td><span class="rank ">53</span></td>
+    <td style="font-weight:500">Maraiza Cristina Hypolito</td>
     <td><span class="chip chip-green">ATIVO</span></td>
-    <td>24</td>
-    <td>R$ 63,06</td>
+    <td>28</td>
+    <td>R$ 57,60</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:3px; background:#1a8a4a"></div>
-        R$ 1.513,40
+        <div class="mini-bar" style="width:1px; background:#1a8a4a"></div>
+        R$ 1.612,87
       </div>
     </td>
-    <td><span style="color:var(--muted)">0.5%</span></td>
+    <td><span style="color:var(--muted)">0.2%</span></td>
   </tr><tr>
-    <td><span class="rank ">35</span></td>
+    <td><span class="rank ">54</span></td>
+    <td style="font-weight:500">Maria Gabriella Frigo Dos Santos</td>
+    <td><span class="chip chip-green">ATIVO</span></td>
+    <td>23</td>
+    <td>R$ 56,62</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:1px; background:#1a8a4a"></div>
+        R$ 1.302,15
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">0.2%</span></td>
+  </tr><tr>
+    <td><span class="rank ">55</span></td>
+    <td style="font-weight:500">Carolina Scarano Muniz</td>
+    <td><span class="chip chip-green">ATIVO</span></td>
+    <td>17</td>
+    <td>R$ 75,77</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:1px; background:#1a8a4a"></div>
+        R$ 1.288,10
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">0.2%</span></td>
+  </tr><tr>
+    <td><span class="rank ">56</span></td>
+    <td style="font-weight:500">Amanda Cristina Ribeiro</td>
+    <td><span class="chip chip-green">ATIVO</span></td>
+    <td>22</td>
+    <td>R$ 57,63</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:1px; background:#1a8a4a"></div>
+        R$ 1.267,80
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">0.2%</span></td>
+  </tr><tr>
+    <td><span class="rank ">57</span></td>
     <td style="font-weight:500">Kahua Alexandro Ramos</td>
     <td><span class="chip chip-blue">INTERNO</span></td>
     <td>18</td>
     <td>R$ 66,39</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:3px; background:#1a6bc8"></div>
+        <div class="mini-bar" style="width:1px; background:#1a6bc8"></div>
         R$ 1.195,01
       </div>
     </td>
-    <td><span style="color:var(--muted)">0.4%</span></td>
+    <td><span style="color:var(--muted)">0.2%</span></td>
   </tr><tr>
-    <td><span class="rank ">36</span></td>
+    <td><span class="rank ">58</span></td>
     <td style="font-weight:500">Ana Carolina Do Prado</td>
     <td><span class="chip chip-green">ATIVO</span></td>
     <td>16</td>
     <td>R$ 74,01</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:3px; background:#1a8a4a"></div>
+        <div class="mini-bar" style="width:1px; background:#1a8a4a"></div>
         R$ 1.184,13
       </div>
     </td>
-    <td><span style="color:var(--muted)">0.4%</span></td>
+    <td><span style="color:var(--muted)">0.2%</span></td>
   </tr><tr>
-    <td><span class="rank ">37</span></td>
+    <td><span class="rank ">59</span></td>
+    <td style="font-weight:500">Lara Tauane Bruno Maia</td>
+    <td><span class="chip chip-green">ATIVO</span></td>
+    <td>14</td>
+    <td>R$ 82,48</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:1px; background:#1a8a4a"></div>
+        R$ 1.154,70
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">0.1%</span></td>
+  </tr><tr>
+    <td><span class="rank ">60</span></td>
     <td style="font-weight:500">Jessica Santana De Paula</td>
     <td><span class="chip chip-green">ATIVO</span></td>
     <td>18</td>
     <td>R$ 62,34</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:2px; background:#1a8a4a"></div>
+        <div class="mini-bar" style="width:1px; background:#1a8a4a"></div>
         R$ 1.122,11
       </div>
     </td>
-    <td><span style="color:var(--muted)">0.3%</span></td>
+    <td><span style="color:var(--muted)">0.1%</span></td>
   </tr><tr>
-    <td><span class="rank ">38</span></td>
+    <td><span class="rank ">61</span></td>
     <td style="font-weight:500">Leonardo Pereira Dos Santos</td>
     <td><span class="chip chip-blue">INTERNO</span></td>
     <td>15</td>
     <td>R$ 67,10</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:2px; background:#1a6bc8"></div>
+        <div class="mini-bar" style="width:1px; background:#1a6bc8"></div>
         R$ 1.006,57
       </div>
     </td>
-    <td><span style="color:var(--muted)">0.3%</span></td>
+    <td><span style="color:var(--muted)">0.1%</span></td>
   </tr><tr>
-    <td><span class="rank ">39</span></td>
-    <td style="font-weight:500">Ana Carolina Bessa</td>
+    <td><span class="rank ">62</span></td>
+    <td style="font-weight:500">Cheila Maria Goncalves Lima</td>
     <td><span class="chip chip-green">ATIVO</span></td>
-    <td>13</td>
-    <td>R$ 73,29</td>
+    <td>15</td>
+    <td>R$ 67,00</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:2px; background:#1a8a4a"></div>
-        R$ 952,79
+        <div class="mini-bar" style="width:1px; background:#1a8a4a"></div>
+        R$ 1.004,96
       </div>
     </td>
-    <td><span style="color:var(--muted)">0.3%</span></td>
+    <td><span style="color:var(--muted)">0.1%</span></td>
   </tr><tr>
-    <td><span class="rank ">40</span></td>
-    <td style="font-weight:500">Jose Augusto Soares Filho</td>
-    <td><span class="chip chip-green">ATIVO</span></td>
-    <td>12</td>
-    <td>R$ 71,41</td>
+    <td><span class="rank ">63</span></td>
+    <td style="font-weight:500">Manin Themiddle</td>
+    <td><span class="chip chip-blue">INTERNO</span></td>
+    <td>9</td>
+    <td>R$ 96,46</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:2px; background:#1a8a4a"></div>
-        R$ 856,90
+        <div class="mini-bar" style="width:1px; background:#1a6bc8"></div>
+        R$ 868,10
       </div>
     </td>
-    <td><span style="color:var(--muted)">0.3%</span></td>
+    <td><span style="color:var(--muted)">0.1%</span></td>
   </tr><tr>
-    <td><span class="rank ">41</span></td>
+    <td><span class="rank ">64</span></td>
     <td style="font-weight:500">Maria Heloiza Peralta</td>
     <td><span class="chip chip-green">ATIVO</span></td>
     <td>11</td>
     <td>R$ 77,88</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:2px; background:#1a8a4a"></div>
+        <div class="mini-bar" style="width:1px; background:#1a8a4a"></div>
         R$ 856,67
       </div>
     </td>
-    <td><span style="color:var(--muted)">0.3%</span></td>
+    <td><span style="color:var(--muted)">0.1%</span></td>
   </tr><tr>
-    <td><span class="rank ">42</span></td>
-    <td style="font-weight:500">Thaylla Dos Santos Caires</td>
+    <td><span class="rank ">65</span></td>
+    <td style="font-weight:500">Gustavo Mauri Barbosa</td>
     <td><span class="chip chip-green">ATIVO</span></td>
-    <td>13</td>
-    <td>R$ 65,75</td>
+    <td>9</td>
+    <td>R$ 84,37</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:2px; background:#1a8a4a"></div>
-        R$ 854,80
+        <div class="mini-bar" style="width:1px; background:#1a8a4a"></div>
+        R$ 759,30
       </div>
     </td>
-    <td><span style="color:var(--muted)">0.3%</span></td>
+    <td><span style="color:var(--muted)">0.1%</span></td>
   </tr><tr>
-    <td><span class="rank ">43</span></td>
-    <td style="font-weight:500">Maria Gabriella Frigo Dos Santos</td>
+    <td><span class="rank ">66</span></td>
+    <td style="font-weight:500">Marilsa Rodrigues Da Silva</td>
     <td><span class="chip chip-green">ATIVO</span></td>
-    <td>13</td>
-    <td>R$ 58,77</td>
+    <td>9</td>
+    <td>R$ 75,39</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:2px; background:#1a8a4a"></div>
-        R$ 763,97
+        <div class="mini-bar" style="width:1px; background:#1a8a4a"></div>
+        R$ 678,49
       </div>
     </td>
-    <td><span style="color:var(--muted)">0.2%</span></td>
+    <td><span style="color:var(--muted)">0.1%</span></td>
   </tr><tr>
-    <td><span class="rank ">44</span></td>
+    <td><span class="rank ">67</span></td>
     <td style="font-weight:500">Luan Kellven Felipe Camerro</td>
     <td><span class="chip chip-green">ATIVO</span></td>
     <td>9</td>
@@ -1913,9 +2212,9 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
         R$ 629,55
       </div>
     </td>
-    <td><span style="color:var(--muted)">0.2%</span></td>
+    <td><span style="color:var(--muted)">0.1%</span></td>
   </tr><tr>
-    <td><span class="rank ">45</span></td>
+    <td><span class="rank ">68</span></td>
     <td style="font-weight:500">Luiza De Barcellos São Romão</td>
     <td><span class="chip chip-green">ATIVO</span></td>
     <td>9</td>
@@ -1926,74 +2225,152 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
         R$ 606,30
       </div>
     </td>
-    <td><span style="color:var(--muted)">0.2%</span></td>
+    <td><span style="color:var(--muted)">0.1%</span></td>
   </tr><tr>
-    <td><span class="rank ">46</span></td>
+    <td><span class="rank ">69</span></td>
+    <td style="font-weight:500">Juliane Da Rosa Russino</td>
+    <td><span class="chip chip-green">ATIVO</span></td>
+    <td>9</td>
+    <td>R$ 60,35</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:0px; background:#1a8a4a"></div>
+        R$ 543,19
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">0.1%</span></td>
+  </tr><tr>
+    <td><span class="rank ">70</span></td>
     <td style="font-weight:500">Vitoria Vicença Medeiros Pereira</td>
     <td><span class="chip chip-green">ATIVO</span></td>
     <td>5</td>
     <td>R$ 93,90</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:1px; background:#1a8a4a"></div>
+        <div class="mini-bar" style="width:0px; background:#1a8a4a"></div>
         R$ 469,50
       </div>
     </td>
     <td><span style="color:var(--muted)">0.1%</span></td>
   </tr><tr>
-    <td><span class="rank ">47</span></td>
-    <td style="font-weight:500">Amanda Cristina Ribeiro</td>
-    <td><span class="chip chip-blue">INTERNO</span></td>
-    <td>7</td>
-    <td>R$ 67,03</td>
-    <td>
-      <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:1px; background:#1a6bc8"></div>
-        R$ 469,20
-      </div>
-    </td>
-    <td><span style="color:var(--muted)">0.1%</span></td>
-  </tr><tr>
-    <td><span class="rank ">48</span></td>
-    <td style="font-weight:500">Joseli Pereira De Souza</td>
-    <td><span class="chip chip-blue">INTERNO</span></td>
-    <td>5</td>
-    <td>R$ 71,92</td>
-    <td>
-      <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:1px; background:#1a6bc8"></div>
-        R$ 359,60
-      </div>
-    </td>
-    <td><span style="color:var(--muted)">0.1%</span></td>
-  </tr><tr>
-    <td><span class="rank ">49</span></td>
-    <td style="font-weight:500">Manin Themiddle</td>
-    <td><span class="chip chip-blue">INTERNO</span></td>
-    <td>3</td>
-    <td>R$ 109,90</td>
-    <td>
-      <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:1px; background:#1a6bc8"></div>
-        R$ 329,70
-      </div>
-    </td>
-    <td><span style="color:var(--muted)">0.1%</span></td>
-  </tr><tr>
-    <td><span class="rank ">50</span></td>
-    <td style="font-weight:500">Carolina Scarano Muniz</td>
+    <td><span class="rank ">71</span></td>
+    <td style="font-weight:500">Gabriele Cardoso Ferreira Felipe</td>
     <td><span class="chip chip-green">ATIVO</span></td>
-    <td>1</td>
-    <td>R$ 99,00</td>
+    <td>5</td>
+    <td>R$ 89,70</td>
     <td>
       <div class="mini-bar-wrap">
         <div class="mini-bar" style="width:0px; background:#1a8a4a"></div>
-        R$ 99,00
+        R$ 448,50
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">0.1%</span></td>
+  </tr><tr>
+    <td><span class="rank ">72</span></td>
+    <td style="font-weight:500">Guilherme Henrique Costa Souza</td>
+    <td><span class="chip chip-green">ATIVO</span></td>
+    <td>6</td>
+    <td>R$ 66,43</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:0px; background:#1a8a4a"></div>
+        R$ 398,60
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">0.1%</span></td>
+  </tr><tr>
+    <td><span class="rank ">73</span></td>
+    <td style="font-weight:500">Ana Claudia Pereira Calixto</td>
+    <td><span class="chip chip-green">ATIVO</span></td>
+    <td>7</td>
+    <td>R$ 51,33</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:0px; background:#1a8a4a"></div>
+        R$ 359,30
       </div>
     </td>
     <td><span style="color:var(--muted)">0.0%</span></td>
   </tr><tr>
-    <td><span class="rank ">51</span></td>
+    <td><span class="rank ">74</span></td>
+    <td style="font-weight:500">Lucas Henrique Vieira</td>
+    <td><span class="chip chip-green">ATIVO</span></td>
+    <td>6</td>
+    <td>R$ 46,60</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:0px; background:#1a8a4a"></div>
+        R$ 279,60
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">0.0%</span></td>
+  </tr><tr>
+    <td><span class="rank ">75</span></td>
+    <td style="font-weight:500">Lucas Figueira Motta</td>
+    <td><span class="chip chip-green">ATIVO</span></td>
+    <td>5</td>
+    <td>R$ 51,92</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:0px; background:#1a8a4a"></div>
+        R$ 259,60
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">0.0%</span></td>
+  </tr><tr>
+    <td><span class="rank ">76</span></td>
+    <td style="font-weight:500">Camile Costa Pereira Guedes</td>
+    <td><span class="chip chip-green">ATIVO</span></td>
+    <td>6</td>
+    <td>R$ 41,42</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:0px; background:#1a8a4a"></div>
+        R$ 248,50
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">0.0%</span></td>
+  </tr><tr>
+    <td><span class="rank ">77</span></td>
+    <td style="font-weight:500">Mirelli Souza Roque</td>
+    <td><span class="chip chip-blue">INTERNO</span></td>
+    <td>4</td>
+    <td>R$ 57,43</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:0px; background:#1a6bc8"></div>
+        R$ 229,70
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">0.0%</span></td>
+  </tr><tr>
+    <td><span class="rank ">78</span></td>
+    <td style="font-weight:500">Ingrid Vitoria Da Silva Araujo</td>
+    <td><span class="chip chip-blue">INTERNO</span></td>
+    <td>1</td>
+    <td>R$ 99,90</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:0px; background:#1a6bc8"></div>
+        R$ 99,90
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">0.0%</span></td>
+  </tr><tr>
+    <td><span class="rank ">79</span></td>
+    <td style="font-weight:500">Thamires Aparecida Borges Cattaneo</td>
+    <td><span class="chip chip-green">ATIVO</span></td>
+    <td>1</td>
+    <td>R$ 89,90</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:0px; background:#1a8a4a"></div>
+        R$ 89,90
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">0.0%</span></td>
+  </tr><tr>
+    <td><span class="rank ">80</span></td>
     <td style="font-weight:500">Mercedes Oliveira Araujo</td>
     <td><span class="chip chip-green">ATIVO</span></td>
     <td>1</td>
@@ -2006,7 +2383,7 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
     </td>
     <td><span style="color:var(--muted)">0.0%</span></td>
   </tr><tr>
-    <td><span class="rank ">52</span></td>
+    <td><span class="rank ">81</span></td>
     <td style="font-weight:500">Wesley Eduardo Campos</td>
     <td><span class="chip chip-green">ATIVO</span></td>
     <td>1</td>
@@ -2019,7 +2396,20 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
     </td>
     <td><span style="color:var(--muted)">0.0%</span></td>
   </tr><tr>
-    <td><span class="rank ">53</span></td>
+    <td><span class="rank ">82</span></td>
+    <td style="font-weight:500">Daiane Cristina Ferreira Scabini</td>
+    <td><span class="chip chip-blue">INTERNO</span></td>
+    <td>1</td>
+    <td>R$ 49,90</td>
+    <td>
+      <div class="mini-bar-wrap">
+        <div class="mini-bar" style="width:0px; background:#1a6bc8"></div>
+        R$ 49,90
+      </div>
+    </td>
+    <td><span style="color:var(--muted)">0.0%</span></td>
+  </tr><tr>
+    <td><span class="rank ">83</span></td>
     <td style="font-weight:500">Gabriel Rogerio Toder</td>
     <td><span class="chip chip-green">ATIVO</span></td>
     <td>1</td>
@@ -2032,7 +2422,7 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
     </td>
     <td><span style="color:var(--muted)">0.0%</span></td>
   </tr><tr>
-    <td><span class="rank ">54</span></td>
+    <td><span class="rank ">84</span></td>
     <td style="font-weight:500">Natalia Valentino De Paula</td>
     <td><span class="chip chip-blue">INTERNO</span></td>
     <td>1</td>
@@ -2045,15 +2435,15 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
     </td>
     <td><span style="color:var(--muted)">0.0%</span></td>
   </tr><tr>
-    <td><span class="rank ">55</span></td>
-    <td style="font-weight:500">Camile Costa Pereira Guedes</td>
-    <td><span class="chip chip-green">ATIVO</span></td>
+    <td><span class="rank ">85</span></td>
+    <td style="font-weight:500">Eduardo Antonio Fossaluza</td>
+    <td><span class="chip chip-blue">INTERNO</span></td>
     <td>1</td>
-    <td>R$ 24,90</td>
+    <td>R$ 39,90</td>
     <td>
       <div class="mini-bar-wrap">
-        <div class="mini-bar" style="width:0px; background:#1a8a4a"></div>
-        R$ 24,90
+        <div class="mini-bar" style="width:0px; background:#1a6bc8"></div>
+        R$ 39,90
       </div>
     </td>
     <td><span style="color:var(--muted)">0.0%</span></td>
@@ -2073,35 +2463,35 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
       </tr></thead>
       <tbody id="tv-cid"><tr><td><span class="rank rank-1">1</span></td><td style="font-weight:500">Barretos</td>
       <td><span style="color:#1a8a4a;font-size:12px;font-weight:600">VERDE</span></td>
-      <td>1016</td><td>R$ 81.468,62</td>
-      <td><span style="color:var(--muted)">25.3%</span></td></tr><tr><td><span class="rank rank-2">2</span></td><td style="font-weight:500">Olímpia</td>
+      <td>2327</td><td>R$ 177.509,00</td>
+      <td><span style="color:var(--muted)">23.0%</span></td></tr><tr><td><span class="rank rank-2">2</span></td><td style="font-weight:500">Olímpia</td>
       <td><span style="color:#c8611a;font-size:12px;font-weight:600">LARANJA</span></td>
-      <td>698</td><td>R$ 55.960,60</td>
-      <td><span style="color:var(--muted)">17.4%</span></td></tr><tr><td><span class="rank rank-3">3</span></td><td style="font-weight:500">Bebedouro</td>
+      <td>1815</td><td>R$ 142.204,86</td>
+      <td><span style="color:var(--muted)">18.4%</span></td></tr><tr><td><span class="rank rank-3">3</span></td><td style="font-weight:500">Bebedouro</td>
       <td><span style="color:#b8860b;font-size:12px;font-weight:600">AMARELO</span></td>
-      <td>654</td><td>R$ 54.406,57</td>
-      <td><span style="color:var(--muted)">16.9%</span></td></tr><tr><td><span class="rank ">4</span></td><td style="font-weight:500">Severínia</td>
+      <td>1659</td><td>R$ 134.805,94</td>
+      <td><span style="color:var(--muted)">17.5%</span></td></tr><tr><td><span class="rank ">4</span></td><td style="font-weight:500">Severínia</td>
       <td><span style="color:#1a6bc8;font-size:12px;font-weight:600">AZUL</span></td>
-      <td>273</td><td>R$ 20.895,45</td>
-      <td><span style="color:var(--muted)">6.5%</span></td></tr><tr><td><span class="rank ">5</span></td><td style="font-weight:500">Monte Azul Paulista</td>
+      <td>651</td><td>R$ 49.028,31</td>
+      <td><span style="color:var(--muted)">6.4%</span></td></tr><tr><td><span class="rank ">5</span></td><td style="font-weight:500">Monte Azul Paulista</td>
       <td><span style="color:#1a6bc8;font-size:12px;font-weight:600">AZUL</span></td>
-      <td>178</td><td>R$ 14.525,18</td>
-      <td><span style="color:var(--muted)">4.5%</span></td></tr><tr><td><span class="rank ">6</span></td><td style="font-weight:500">Cajobi</td>
+      <td>513</td><td>R$ 43.181,72</td>
+      <td><span style="color:var(--muted)">5.6%</span></td></tr><tr><td><span class="rank ">6</span></td><td style="font-weight:500">Cajobi</td>
       <td><span style="color:#1a6bc8;font-size:12px;font-weight:600">AZUL</span></td>
-      <td>185</td><td>R$ 14.138,31</td>
-      <td><span style="color:var(--muted)">4.4%</span></td></tr><tr><td><span class="rank ">7</span></td><td style="font-weight:500">Guaraci</td>
+      <td>610</td><td>R$ 41.460,32</td>
+      <td><span style="color:var(--muted)">5.4%</span></td></tr><tr><td><span class="rank ">7</span></td><td style="font-weight:500">Guaraci</td>
       <td><span style="color:#c8611a;font-size:12px;font-weight:600">LARANJA</span></td>
-      <td>164</td><td>R$ 12.991,69</td>
-      <td><span style="color:var(--muted)">4.0%</span></td></tr><tr><td><span class="rank ">8</span></td><td style="font-weight:500">Colômbia</td>
+      <td>393</td><td>R$ 30.770,66</td>
+      <td><span style="color:var(--muted)">4.0%</span></td></tr><tr><td><span class="rank ">8</span></td><td style="font-weight:500">Tabapuã</td>
+      <td><span style="color:#1a6bc8;font-size:12px;font-weight:600">AZUL</span></td>
+      <td>335</td><td>R$ 24.793,46</td>
+      <td><span style="color:var(--muted)">3.2%</span></td></tr><tr><td><span class="rank ">9</span></td><td style="font-weight:500">Colômbia</td>
       <td><span style="color:#1a8a4a;font-size:12px;font-weight:600">VERDE</span></td>
-      <td>140</td><td>R$ 10.606,18</td>
-      <td><span style="color:var(--muted)">3.3%</span></td></tr><tr><td><span class="rank ">9</span></td><td style="font-weight:500">Tabapuã</td>
-      <td><span style="color:#1a6bc8;font-size:12px;font-weight:600">AZUL</span></td>
-      <td>117</td><td>R$ 9.084,18</td>
-      <td><span style="color:var(--muted)">2.8%</span></td></tr><tr><td><span class="rank ">10</span></td><td style="font-weight:500">Pirangi</td>
+      <td>302</td><td>R$ 23.075,19</td>
+      <td><span style="color:var(--muted)">3.0%</span></td></tr><tr><td><span class="rank ">10</span></td><td style="font-weight:500">Pirangi</td>
       <td><span style="color:#b8860b;font-size:12px;font-weight:600">AMARELO</span></td>
-      <td>111</td><td>R$ 8.647,33</td>
-      <td><span style="color:var(--muted)">2.7%</span></td></tr></tbody>
+      <td>211</td><td>R$ 16.378,11</td>
+      <td><span style="color:var(--muted)">2.1%</span></td></tr></tbody>
     </table>
   </div>
 </div>
@@ -2121,9 +2511,9 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
     </div><div class="year-box" data-ano="2025">
       <div class="year-box-header">
         <span class="year-box-label">2025</span>
-        <button class="year-toggle-all" onclick="toggleYearAll('c-period-selector',2025,this)">Todos</button>
+        <button class="year-toggle-all" onclick="toggleYearAll('c-period-selector',2025,this)">Limpar</button>
       </div>
-      <div class="year-months"><span class="month-pill" data-ano="2025" data-mes="1">Jan</span><span class="month-pill" data-ano="2025" data-mes="2">Fev</span><span class="month-pill" data-ano="2025" data-mes="3">Mar</span><span class="month-pill" data-ano="2025" data-mes="4">Abr</span><span class="month-pill" data-ano="2025" data-mes="5">Mai</span><span class="month-pill" data-ano="2025" data-mes="6">Jun</span><span class="month-pill" data-ano="2025" data-mes="7">Jul</span><span class="month-pill" data-ano="2025" data-mes="8">Ago</span><span class="month-pill" data-ano="2025" data-mes="9">Set</span><span class="month-pill" data-ano="2025" data-mes="10">Out</span><span class="month-pill" data-ano="2025" data-mes="11">Nov</span><span class="month-pill" data-ano="2025" data-mes="12">Dez</span></div>
+      <div class="year-months"><span class="month-pill " data-ano="2025" data-mes="1">Jan</span><span class="month-pill " data-ano="2025" data-mes="2">Fev</span><span class="month-pill " data-ano="2025" data-mes="3">Mar</span><span class="month-pill " data-ano="2025" data-mes="4">Abr</span><span class="month-pill " data-ano="2025" data-mes="5">Mai</span><span class="month-pill selected" data-ano="2025" data-mes="6">Jun</span><span class="month-pill selected" data-ano="2025" data-mes="7">Jul</span><span class="month-pill selected" data-ano="2025" data-mes="8">Ago</span><span class="month-pill selected" data-ano="2025" data-mes="9">Set</span><span class="month-pill selected" data-ano="2025" data-mes="10">Out</span><span class="month-pill selected" data-ano="2025" data-mes="11">Nov</span><span class="month-pill selected" data-ano="2025" data-mes="12">Dez</span></div>
     </div><div class="year-box" data-ano="2026">
       <div class="year-box-header">
         <span class="year-box-label">2026</span>
@@ -2316,15 +2706,15 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
     </div><div class="year-box" data-ano="2025">
       <div class="year-box-header">
         <span class="year-box-label">2025</span>
-        <button class="year-toggle-all" onclick="toggleYearAll('corr-period-selector',2025,this)">Todos</button>
+        <button class="year-toggle-all" onclick="toggleYearAll('corr-period-selector',2025,this)">Limpar</button>
       </div>
-      <div class="year-months"><span class="month-pill" data-ano="2025" data-mes="1">Jan</span><span class="month-pill" data-ano="2025" data-mes="2">Fev</span><span class="month-pill" data-ano="2025" data-mes="3">Mar</span><span class="month-pill" data-ano="2025" data-mes="4">Abr</span><span class="month-pill" data-ano="2025" data-mes="5">Mai</span><span class="month-pill" data-ano="2025" data-mes="6">Jun</span><span class="month-pill" data-ano="2025" data-mes="7">Jul</span><span class="month-pill" data-ano="2025" data-mes="8">Ago</span><span class="month-pill" data-ano="2025" data-mes="9">Set</span><span class="month-pill" data-ano="2025" data-mes="10">Out</span><span class="month-pill" data-ano="2025" data-mes="11">Nov</span><span class="month-pill" data-ano="2025" data-mes="12">Dez</span></div>
+      <div class="year-months"><span class="month-pill " data-ano="2025" data-mes="1">Jan</span><span class="month-pill " data-ano="2025" data-mes="2">Fev</span><span class="month-pill " data-ano="2025" data-mes="3">Mar</span><span class="month-pill " data-ano="2025" data-mes="4">Abr</span><span class="month-pill " data-ano="2025" data-mes="5">Mai</span><span class="month-pill selected" data-ano="2025" data-mes="6">Jun</span><span class="month-pill selected" data-ano="2025" data-mes="7">Jul</span><span class="month-pill selected" data-ano="2025" data-mes="8">Ago</span><span class="month-pill selected" data-ano="2025" data-mes="9">Set</span><span class="month-pill selected" data-ano="2025" data-mes="10">Out</span><span class="month-pill selected" data-ano="2025" data-mes="11">Nov</span><span class="month-pill selected" data-ano="2025" data-mes="12">Dez</span></div>
     </div><div class="year-box" data-ano="2026">
       <div class="year-box-header">
         <span class="year-box-label">2026</span>
         <button class="year-toggle-all" onclick="toggleYearAll('corr-period-selector',2026,this)">Limpar</button>
       </div>
-      <div class="year-months"><span class="month-pill" data-ano="2026" data-mes="1">Jan</span><span class="month-pill" data-ano="2026" data-mes="2">Fev</span><span class="month-pill" data-ano="2026" data-mes="3">Mar</span><span class="month-pill" data-ano="2026" data-mes="4">Abr</span><span class="month-pill selected" data-ano="2026" data-mes="5">Mai</span></div>
+      <div class="year-months"><span class="month-pill selected" data-ano="2026" data-mes="1">Jan</span><span class="month-pill selected" data-ano="2026" data-mes="2">Fev</span><span class="month-pill selected" data-ano="2026" data-mes="3">Mar</span><span class="month-pill selected" data-ano="2026" data-mes="4">Abr</span><span class="month-pill selected" data-ano="2026" data-mes="5">Mai</span></div>
     </div></div>
     </div>
     <div class="filter-divider"></div>
@@ -2358,23 +2748,23 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
   <div class="corr-metric-row">
     <div class="metric-card">
       <div class="metric-label">Receita de Vendas</div>
-      <div class="metric-val pos" id="corr-rec">R$ 61.691,08</div>
+      <div class="metric-val pos" id="corr-rec">R$ 771.439,09</div>
       <div class="metric-sub">Total do período filtrado</div>
     </div>
     <div class="metric-card">
       <div class="metric-label">Valor Cancelado</div>
-      <div class="metric-val neg" id="corr-can">R$ 60.157,83</div>
+      <div class="metric-val neg" id="corr-can">R$ 317.697,62</div>
       <div class="metric-sub">Total do período filtrado</div>
     </div>
     <div class="metric-card">
       <div class="metric-label">Saldo Líquido</div>
-      <div class="metric-val pos" id="corr-saldo">R$ 1.533,25</div>
+      <div class="metric-val pos" id="corr-saldo">R$ 453.741,47</div>
       <div class="metric-sub">Vendas − Cancelamentos</div>
-      <div class="progress-thin"><div class="progress-fill" id="corr-prog" style="width: 2.48537%; background: var(--green);"></div></div>
+      <div class="progress-thin"><div class="progress-fill" id="corr-prog" style="width: 58.8175%; background: var(--green);"></div></div>
     </div>
     <div class="metric-card">
       <div class="metric-label">Taxa Churn / Vendas</div>
-      <div class="metric-val neg" id="corr-taxa">97.7%</div>
+      <div class="metric-val neg" id="corr-taxa">39.5%</div>
       <div class="metric-sub">Qtd cancelamentos ÷ vendas</div>
     </div>
   </div>
@@ -2451,153 +2841,153 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
       <tbody id="t-corr-vend"><tr>
       <td>1</td>
       <td style="font-weight:500">Priscila Leonangelo Paes</td>
-      <td>108</td>
-      <td>R$ 9.257,53</td>
-      <td>66</td>
-      <td>R$ 5.860,02</td>
-      <td style="color:var(--green);font-weight:600">R$ 3.397,51</td>
-      <td><span class="chip chip-red">61%</span></td>
-      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 3.397,51) × LTV Médio (10.8 meses)">R$ 36.857,84</td>
+      <td>1314</td>
+      <td>R$ 110.354,14</td>
+      <td>361</td>
+      <td>R$ 32.000,25</td>
+      <td style="color:var(--green);font-weight:600">R$ 78.353,89</td>
+      <td><span class="chip chip-orange">27%</span></td>
+      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 78.353,89) × LTV Médio (11.8 meses)">R$ 927.657,97</td>
     </tr><tr>
       <td>2</td>
-      <td style="font-weight:500">Sabrina Da Silva Pessoa</td>
-      <td>79</td>
-      <td>R$ 7.143,40</td>
-      <td>11</td>
-      <td>R$ 822,99</td>
-      <td style="color:var(--green);font-weight:600">R$ 6.320,41</td>
-      <td><span class="chip chip-green">14%</span></td>
-      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 6.320,41) × LTV Médio (3.3 meses)">R$ 20.684,98</td>
+      <td style="font-weight:500">Tatiana Lima Nunes</td>
+      <td>1046</td>
+      <td>R$ 87.261,52</td>
+      <td>233</td>
+      <td>R$ 19.280,75</td>
+      <td style="color:var(--green);font-weight:600">R$ 67.980,77</td>
+      <td><span class="chip chip-green">22%</span></td>
+      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 67.980,77) × LTV Médio (7.3 meses)">R$ 496.580,56</td>
     </tr><tr>
       <td>3</td>
-      <td style="font-weight:500">Tatiana Lima Nunes</td>
-      <td>80</td>
-      <td>R$ 7.101,03</td>
-      <td>48</td>
-      <td>R$ 4.017,66</td>
-      <td style="color:var(--green);font-weight:600">R$ 3.083,37</td>
-      <td><span class="chip chip-red">60%</span></td>
-      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 3.083,37) × LTV Médio (6.9 meses)">R$ 21.262,41</td>
+      <td style="font-weight:500">Maria Paula Silva Serralheiro</td>
+      <td>1012</td>
+      <td>R$ 84.008,52</td>
+      <td>130</td>
+      <td>R$ 10.500,27</td>
+      <td style="color:var(--green);font-weight:600">R$ 73.508,25</td>
+      <td><span class="chip chip-green">13%</span></td>
+      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 73.508,25) × LTV Médio (5.2 meses)">R$ 381.112,00</td>
     </tr><tr>
       <td>4</td>
-      <td style="font-weight:500">Marla Carolina Da Silva Ribeiro</td>
-      <td>62</td>
-      <td>R$ 5.508,17</td>
-      <td>1</td>
-      <td>R$ 109,90</td>
-      <td style="color:var(--green);font-weight:600">R$ 5.398,27</td>
-      <td><span class="chip chip-green">2%</span></td>
-      <td style="color:var(--muted);font-weight:600" title="Saldo (R$ 5.398,27) × LTV Médio (0.0 meses)">—</td>
+      <td style="font-weight:500">Sabrina Da Silva Pessoa</td>
+      <td>580</td>
+      <td>R$ 46.100,03</td>
+      <td>54</td>
+      <td>R$ 4.038,36</td>
+      <td style="color:var(--green);font-weight:600">R$ 42.061,67</td>
+      <td><span class="chip chip-green">9%</span></td>
+      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 42.061,67) × LTV Médio (4.0 meses)">R$ 169.804,52</td>
     </tr><tr>
       <td>5</td>
-      <td style="font-weight:500">Samara Pazetto Dos Santos</td>
-      <td>56</td>
-      <td>R$ 4.415,14</td>
-      <td>3</td>
-      <td>R$ 214,79</td>
-      <td style="color:var(--green);font-weight:600">R$ 4.200,35</td>
-      <td><span class="chip chip-green">5%</span></td>
-      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 4.200,35) × LTV Médio (0.3 meses)">R$ 1.400,12</td>
+      <td style="font-weight:500">Caroline De Oliveira Veiga</td>
+      <td>646</td>
+      <td>R$ 42.630,90</td>
+      <td>298</td>
+      <td>R$ 19.527,12</td>
+      <td style="color:var(--green);font-weight:600">R$ 23.103,78</td>
+      <td><span class="chip chip-orange">46%</span></td>
+      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 23.103,78) × LTV Médio (5.9 meses)">R$ 135.676,56</td>
     </tr><tr>
       <td>6</td>
-      <td style="font-weight:500">Gabriel Eduardo Felipe Luccas</td>
-      <td>47</td>
-      <td>R$ 3.713,88</td>
-      <td>9</td>
-      <td>R$ 533,73</td>
-      <td style="color:var(--green);font-weight:600">R$ 3.180,15</td>
-      <td><span class="chip chip-green">19%</span></td>
-      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 3.180,15) × LTV Médio (0.1 meses)">R$ 353,35</td>
+      <td style="font-weight:500">Murilo Silva Leite</td>
+      <td>258</td>
+      <td>R$ 30.413,50</td>
+      <td>19</td>
+      <td>R$ 1.703,40</td>
+      <td style="color:var(--green);font-weight:600">R$ 28.710,10</td>
+      <td><span class="chip chip-green">7%</span></td>
+      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 28.710,10) × LTV Médio (11.1 meses)">R$ 317.322,16</td>
     </tr><tr>
       <td>7</td>
-      <td style="font-weight:500">Cibele Maria Soares Xavier</td>
-      <td>40</td>
-      <td>R$ 3.071,27</td>
-      <td>6</td>
-      <td>R$ 329,67</td>
-      <td style="color:var(--green);font-weight:600">R$ 2.741,60</td>
-      <td><span class="chip chip-green">15%</span></td>
-      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 2.741,60) × LTV Médio (0.5 meses)">R$ 1.370,80</td>
+      <td style="font-weight:500">Clara Vidal Salviano</td>
+      <td>315</td>
+      <td>R$ 25.986,73</td>
+      <td>58</td>
+      <td>R$ 4.852,99</td>
+      <td style="color:var(--green);font-weight:600">R$ 21.133,74</td>
+      <td><span class="chip chip-green">18%</span></td>
+      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 21.133,74) × LTV Médio (7.0 meses)">R$ 148.664,93</td>
     </tr><tr>
       <td>8</td>
-      <td style="font-weight:500">Ingrid Horrane Da Silva Maciel</td>
-      <td>39</td>
-      <td>R$ 2.875,72</td>
-      <td>1</td>
-      <td>R$ 59,99</td>
-      <td style="color:var(--green);font-weight:600">R$ 2.815,73</td>
-      <td><span class="chip chip-green">3%</span></td>
-      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 2.815,73) × LTV Médio (1.0 meses)">R$ 2.815,73</td>
+      <td style="font-weight:500">Joseli Pereira De Souza</td>
+      <td>278</td>
+      <td>R$ 24.045,16</td>
+      <td>141</td>
+      <td>R$ 12.731,27</td>
+      <td style="color:var(--green);font-weight:600">R$ 11.313,89</td>
+      <td><span class="chip chip-red">51%</span></td>
+      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 11.313,89) × LTV Médio (15.9 meses)">R$ 179.979,12</td>
     </tr><tr>
       <td>9</td>
-      <td style="font-weight:500">Juliana Tiossi Leghi</td>
-      <td>27</td>
-      <td>R$ 1.944,23</td>
-      <td>4</td>
-      <td>R$ 264,87</td>
-      <td style="color:var(--green);font-weight:600">R$ 1.679,36</td>
-      <td><span class="chip chip-green">15%</span></td>
-      <td style="color:var(--muted);font-weight:600" title="Saldo (R$ 1.679,36) × LTV Médio (0.0 meses)">—</td>
+      <td style="font-weight:500">Raquel Lima</td>
+      <td>287</td>
+      <td>R$ 22.655,35</td>
+      <td>74</td>
+      <td>R$ 4.456,16</td>
+      <td style="color:var(--green);font-weight:600">R$ 18.199,19</td>
+      <td><span class="chip chip-orange">26%</span></td>
+      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 18.199,19) × LTV Médio (3.3 meses)">R$ 59.270,33</td>
     </tr><tr>
       <td>10</td>
-      <td style="font-weight:500">Raquel Lima</td>
-      <td>13</td>
-      <td>R$ 1.534,00</td>
-      <td>7</td>
-      <td>R$ 429,30</td>
-      <td style="color:var(--green);font-weight:600">R$ 1.104,70</td>
-      <td><span class="chip chip-red">54%</span></td>
-      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 1.104,70) × LTV Médio (3.9 meses)">R$ 4.260,99</td>
+      <td style="font-weight:500">Ana Carolina Bessa</td>
+      <td>354</td>
+      <td>R$ 18.840,33</td>
+      <td>63</td>
+      <td>R$ 3.323,67</td>
+      <td style="color:var(--green);font-weight:600">R$ 15.516,66</td>
+      <td><span class="chip chip-green">18%</span></td>
+      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 15.516,66) × LTV Médio (6.9 meses)">R$ 106.646,25</td>
     </tr><tr>
       <td>11</td>
-      <td style="font-weight:500">Cintia Aparecida Soares Rissi</td>
-      <td>22</td>
-      <td>R$ 1.399,70</td>
-      <td>5</td>
-      <td>R$ 249,95</td>
-      <td style="color:var(--green);font-weight:600">R$ 1.149,75</td>
-      <td><span class="chip chip-green">23%</span></td>
-      <td style="color:var(--muted);font-weight:600" title="Saldo (R$ 1.149,75) × LTV Médio (0.0 meses)">—</td>
+      <td style="font-weight:500">Gabriela Aparecida Tassiotti</td>
+      <td>220</td>
+      <td>R$ 16.314,54</td>
+      <td>33</td>
+      <td>R$ 2.369,30</td>
+      <td style="color:var(--green);font-weight:600">R$ 13.945,24</td>
+      <td><span class="chip chip-green">15%</span></td>
+      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 13.945,24) × LTV Médio (4.1 meses)">R$ 56.626,13</td>
     </tr><tr>
       <td>12</td>
-      <td style="font-weight:500">Maria Luiza Martins Barbosa</td>
-      <td>20</td>
-      <td>R$ 1.346,63</td>
-      <td>3</td>
-      <td>R$ 129,88</td>
-      <td style="color:var(--green);font-weight:600">R$ 1.216,75</td>
-      <td><span class="chip chip-green">15%</span></td>
-      <td style="color:var(--muted);font-weight:600" title="Saldo (R$ 1.216,75) × LTV Médio (0.0 meses)">—</td>
+      <td style="font-weight:500">Bianca Carina Lucas Da Silva</td>
+      <td>145</td>
+      <td>R$ 13.803,30</td>
+      <td>14</td>
+      <td>R$ 1.332,70</td>
+      <td style="color:var(--green);font-weight:600">R$ 12.470,60</td>
+      <td><span class="chip chip-green">10%</span></td>
+      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 12.470,60) × LTV Médio (6.9 meses)">R$ 86.403,44</td>
     </tr><tr>
       <td>13</td>
-      <td style="font-weight:500">Gislene Da Silva Custodio</td>
-      <td>16</td>
-      <td>R$ 1.341,50</td>
-      <td>4</td>
-      <td>R$ 199,69</td>
-      <td style="color:var(--green);font-weight:600">R$ 1.141,81</td>
-      <td><span class="chip chip-green">25%</span></td>
-      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 1.141,81) × LTV Médio (1.8 meses)">R$ 1.998,17</td>
+      <td style="font-weight:500">Samara Pazetto Dos Santos</td>
+      <td>182</td>
+      <td>R$ 13.493,29</td>
+      <td>7</td>
+      <td>R$ 440,39</td>
+      <td style="color:var(--green);font-weight:600">R$ 13.052,90</td>
+      <td><span class="chip chip-green">4%</span></td>
+      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 13.052,90) × LTV Médio (0.1 meses)">R$ 1.864,70</td>
     </tr><tr>
       <td>14</td>
-      <td style="font-weight:500">Brandy Betiol Fascio</td>
-      <td>18</td>
-      <td>R$ 1.234,43</td>
-      <td>0</td>
-      <td>R$ 0,00</td>
-      <td style="color:var(--green);font-weight:600">R$ 1.234,43</td>
-      <td><span class="chip chip-green">0%</span></td>
-      <td style="color:var(--muted);font-weight:600" title="Saldo (R$ 1.234,43) × LTV Médio (0.0 meses)">—</td>
+      <td style="font-weight:500">Thaylla Dos Santos Caires</td>
+      <td>207</td>
+      <td>R$ 12.431,58</td>
+      <td>64</td>
+      <td>R$ 3.927,77</td>
+      <td style="color:var(--green);font-weight:600">R$ 8.503,81</td>
+      <td><span class="chip chip-orange">31%</span></td>
+      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 8.503,81) × LTV Médio (3.8 meses)">R$ 31.889,29</td>
     </tr><tr>
       <td>15</td>
-      <td style="font-weight:500">Kahua Alexandro Ramos</td>
-      <td>18</td>
-      <td>R$ 1.195,01</td>
-      <td>0</td>
-      <td>R$ 0,00</td>
-      <td style="color:var(--green);font-weight:600">R$ 1.195,01</td>
-      <td><span class="chip chip-green">0%</span></td>
-      <td style="color:var(--muted);font-weight:600" title="Saldo (R$ 1.195,01) × LTV Médio (0.0 meses)">—</td>
+      <td style="font-weight:500">Yara Da Costa Pereira</td>
+      <td>190</td>
+      <td>R$ 11.409,27</td>
+      <td>37</td>
+      <td>R$ 2.609,70</td>
+      <td style="color:var(--green);font-weight:600">R$ 8.799,57</td>
+      <td><span class="chip chip-green">19%</span></td>
+      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 8.799,57) × LTV Médio (7.8 meses)">R$ 68.731,78</td>
     </tr></tbody>
     </table>
   </div>
@@ -2616,203 +3006,203 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
       <tbody id="t-corr-cid"><tr>
       <td>1</td>
       <td style="font-weight:500">Barretos</td>
-      <td>248</td>
-      <td>R$ 20.165,26</td>
-      <td>144</td>
-      <td>R$ 11.117,46</td>
-      <td style="color:var(--green);font-weight:600">R$ 9.047,80</td>
-      <td><span class="chip chip-red">58%</span></td>
-      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 9.047,80) × LTV Médio (10.7 meses)">R$ 97.201,02</td>
+      <td>2327</td>
+      <td>R$ 177.509,00</td>
+      <td>797</td>
+      <td>R$ 59.246,33</td>
+      <td style="color:var(--green);font-weight:600">R$ 118.262,67</td>
+      <td><span class="chip chip-orange">34%</span></td>
+      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 118.262,67) × LTV Médio (8.2 meses)">R$ 968.210,69</td>
     </tr><tr>
       <td>2</td>
       <td style="font-weight:500">Olímpia</td>
-      <td>132</td>
-      <td>R$ 11.111,66</td>
-      <td>133</td>
-      <td>R$ 11.722,64</td>
-      <td style="color:var(--danger);font-weight:600">R$ -610,98</td>
-      <td><span class="chip chip-red">101%</span></td>
-      <td style="color:var(--danger);font-weight:600" title="Saldo (R$ -610,98) × LTV Médio (28.8 meses)">R$ -17.576,01</td>
+      <td>1815</td>
+      <td>R$ 142.204,86</td>
+      <td>739</td>
+      <td>R$ 64.170,29</td>
+      <td style="color:var(--green);font-weight:600">R$ 78.034,57</td>
+      <td><span class="chip chip-orange">41%</span></td>
+      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 78.034,57) × LTV Médio (30.0 meses)">R$ 2.344.204,94</td>
     </tr><tr>
       <td>3</td>
       <td style="font-weight:500">Bebedouro</td>
-      <td>98</td>
-      <td>R$ 8.318,05</td>
-      <td>79</td>
-      <td>R$ 6.085,23</td>
-      <td style="color:var(--green);font-weight:600">R$ 2.232,82</td>
-      <td><span class="chip chip-red">81%</span></td>
-      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 2.232,82) × LTV Médio (13.2 meses)">R$ 29.422,35</td>
+      <td>1659</td>
+      <td>R$ 134.805,94</td>
+      <td>525</td>
+      <td>R$ 41.524,52</td>
+      <td style="color:var(--green);font-weight:600">R$ 93.281,42</td>
+      <td><span class="chip chip-orange">32%</span></td>
+      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 93.281,42) × LTV Médio (13.3 meses)">R$ 1.240.909,40</td>
     </tr><tr>
       <td>4</td>
-      <td style="font-weight:500">Monte Azul Paulista</td>
-      <td>33</td>
-      <td>R$ 2.846,97</td>
-      <td>58</td>
-      <td>R$ 4.693,00</td>
-      <td style="color:var(--danger);font-weight:600">R$ -1.846,03</td>
-      <td><span class="chip chip-red">176%</span></td>
-      <td style="color:var(--danger);font-weight:600" title="Saldo (R$ -1.846,03) × LTV Médio (49.2 meses)">R$ -90.901,06</td>
+      <td style="font-weight:500">Severínia</td>
+      <td>651</td>
+      <td>R$ 49.028,31</td>
+      <td>248</td>
+      <td>R$ 20.251,98</td>
+      <td style="color:var(--green);font-weight:600">R$ 28.776,33</td>
+      <td><span class="chip chip-orange">38%</span></td>
+      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 28.776,33) × LTV Médio (21.0 meses)">R$ 603.722,76</td>
     </tr><tr>
       <td>5</td>
-      <td style="font-weight:500">Severínia</td>
-      <td>31</td>
-      <td>R$ 2.613,04</td>
-      <td>57</td>
-      <td>R$ 4.877,84</td>
-      <td style="color:var(--danger);font-weight:600">R$ -2.264,80</td>
-      <td><span class="chip chip-red">184%</span></td>
-      <td style="color:var(--danger);font-weight:600" title="Saldo (R$ -2.264,80) × LTV Médio (27.5 meses)">R$ -62.222,40</td>
+      <td style="font-weight:500">Monte Azul Paulista</td>
+      <td>513</td>
+      <td>R$ 43.181,72</td>
+      <td>337</td>
+      <td>R$ 28.279,94</td>
+      <td style="color:var(--green);font-weight:600">R$ 14.901,78</td>
+      <td><span class="chip chip-red">66%</span></td>
+      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 14.901,78) × LTV Médio (46.0 meses)">R$ 685.924,07</td>
     </tr><tr>
       <td>6</td>
-      <td style="font-weight:500">Tabapuã</td>
-      <td>32</td>
-      <td>R$ 2.387,20</td>
-      <td>29</td>
-      <td>R$ 2.428,49</td>
-      <td style="color:var(--danger);font-weight:600">R$ -41,29</td>
-      <td><span class="chip chip-red">91%</span></td>
-      <td style="color:var(--danger);font-weight:600" title="Saldo (R$ -41,29) × LTV Médio (23.9 meses)">R$ -985,26</td>
+      <td style="font-weight:500">Cajobi</td>
+      <td>610</td>
+      <td>R$ 41.460,32</td>
+      <td>213</td>
+      <td>R$ 16.958,04</td>
+      <td style="color:var(--green);font-weight:600">R$ 24.502,28</td>
+      <td><span class="chip chip-orange">35%</span></td>
+      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 24.502,28) × LTV Médio (28.3 meses)">R$ 693.541,06</td>
     </tr><tr>
       <td>7</td>
-      <td style="font-weight:500">Cajobi</td>
-      <td>27</td>
-      <td>R$ 1.997,13</td>
-      <td>35</td>
-      <td>R$ 2.861,89</td>
-      <td style="color:var(--danger);font-weight:600">R$ -864,76</td>
-      <td><span class="chip chip-red">130%</span></td>
-      <td style="color:var(--danger);font-weight:600" title="Saldo (R$ -864,76) × LTV Médio (33.6 meses)">R$ -29.031,23</td>
+      <td style="font-weight:500">Guaraci</td>
+      <td>393</td>
+      <td>R$ 30.770,66</td>
+      <td>195</td>
+      <td>R$ 16.187,56</td>
+      <td style="color:var(--green);font-weight:600">R$ 14.583,10</td>
+      <td><span class="chip chip-orange">50%</span></td>
+      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 14.583,10) × LTV Médio (33.4 meses)">R$ 487.599,04</td>
     </tr><tr>
       <td>8</td>
-      <td style="font-weight:500">Novais</td>
-      <td>23</td>
-      <td>R$ 1.752,08</td>
-      <td>20</td>
-      <td>R$ 1.638,87</td>
-      <td style="color:var(--green);font-weight:600">R$ 113,21</td>
-      <td><span class="chip chip-red">87%</span></td>
-      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 113,21) × LTV Médio (30.4 meses)">R$ 3.441,58</td>
+      <td style="font-weight:500">Tabapuã</td>
+      <td>335</td>
+      <td>R$ 24.793,46</td>
+      <td>119</td>
+      <td>R$ 9.764,68</td>
+      <td style="color:var(--green);font-weight:600">R$ 15.028,78</td>
+      <td><span class="chip chip-orange">36%</span></td>
+      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 15.028,78) × LTV Médio (26.1 meses)">R$ 391.884,91</td>
     </tr><tr>
       <td>9</td>
       <td style="font-weight:500">Colômbia</td>
-      <td>20</td>
-      <td>R$ 1.740,10</td>
-      <td>22</td>
-      <td>R$ 1.623,29</td>
-      <td style="color:var(--green);font-weight:600">R$ 116,81</td>
-      <td><span class="chip chip-red">110%</span></td>
-      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 116,81) × LTV Médio (18.0 meses)">R$ 2.097,27</td>
+      <td>302</td>
+      <td>R$ 23.075,19</td>
+      <td>132</td>
+      <td>R$ 10.515,95</td>
+      <td style="color:var(--green);font-weight:600">R$ 12.559,24</td>
+      <td><span class="chip chip-orange">44%</span></td>
+      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 12.559,24) × LTV Médio (19.0 meses)">R$ 238.911,00</td>
     </tr><tr>
       <td>10</td>
       <td style="font-weight:500">Pirangi</td>
-      <td>19</td>
-      <td>R$ 1.662,56</td>
-      <td>23</td>
-      <td>R$ 1.832,59</td>
-      <td style="color:var(--danger);font-weight:600">R$ -170,03</td>
-      <td><span class="chip chip-red">121%</span></td>
-      <td style="color:var(--danger);font-weight:600" title="Saldo (R$ -170,03) × LTV Médio (33.6 meses)">R$ -5.707,09</td>
+      <td>211</td>
+      <td>R$ 16.378,11</td>
+      <td>97</td>
+      <td>R$ 7.289,86</td>
+      <td style="color:var(--green);font-weight:600">R$ 9.088,25</td>
+      <td><span class="chip chip-orange">46%</span></td>
+      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 9.088,25) × LTV Médio (30.7 meses)">R$ 278.831,26</td>
     </tr><tr>
       <td>11</td>
       <td style="font-weight:500">Vista Alegre Do Alto</td>
-      <td>17</td>
-      <td>R$ 1.317,14</td>
-      <td>12</td>
-      <td>R$ 1.077,29</td>
-      <td style="color:var(--green);font-weight:600">R$ 239,85</td>
-      <td><span class="chip chip-red">71%</span></td>
-      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 239,85) × LTV Médio (31.4 meses)">R$ 7.535,29</td>
+      <td>209</td>
+      <td>R$ 15.409,92</td>
+      <td>86</td>
+      <td>R$ 6.452,84</td>
+      <td style="color:var(--green);font-weight:600">R$ 8.957,08</td>
+      <td><span class="chip chip-orange">41%</span></td>
+      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 8.957,08) × LTV Médio (30.3 meses)">R$ 271.836,96</td>
     </tr><tr>
       <td>12</td>
-      <td style="font-weight:500">Paraíso</td>
-      <td>15</td>
-      <td>R$ 1.113,18</td>
-      <td>11</td>
-      <td>R$ 823,30</td>
-      <td style="color:var(--green);font-weight:600">R$ 289,88</td>
-      <td><span class="chip chip-red">73%</span></td>
-      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 289,88) × LTV Médio (30.3 meses)">R$ 8.775,46</td>
+      <td style="font-weight:500">Novais</td>
+      <td>189</td>
+      <td>R$ 13.924,33</td>
+      <td>66</td>
+      <td>R$ 5.280,56</td>
+      <td style="color:var(--green);font-weight:600">R$ 8.643,77</td>
+      <td><span class="chip chip-orange">35%</span></td>
+      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 8.643,77) × LTV Médio (28.6 meses)">R$ 246.871,31</td>
     </tr><tr>
       <td>13</td>
-      <td style="font-weight:500">Guaraci</td>
-      <td>14</td>
-      <td>R$ 1.111,78</td>
-      <td>40</td>
-      <td>R$ 3.757,59</td>
-      <td style="color:var(--danger);font-weight:600">R$ -2.645,81</td>
-      <td><span class="chip chip-red">286%</span></td>
-      <td style="color:var(--danger);font-weight:600" title="Saldo (R$ -2.645,81) × LTV Médio (26.1 meses)">R$ -69.055,64</td>
+      <td style="font-weight:500">Taiaçu</td>
+      <td>136</td>
+      <td>R$ 10.353,80</td>
+      <td>68</td>
+      <td>R$ 5.305,89</td>
+      <td style="color:var(--green);font-weight:600">R$ 5.047,91</td>
+      <td><span class="chip chip-orange">50%</span></td>
+      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 5.047,91) × LTV Médio (24.4 meses)">R$ 123.376,86</td>
     </tr><tr>
       <td>14</td>
-      <td style="font-weight:500">Taiaçu</td>
-      <td>8</td>
-      <td>R$ 748,39</td>
-      <td>16</td>
-      <td>R$ 1.286,89</td>
-      <td style="color:var(--danger);font-weight:600">R$ -538,50</td>
-      <td><span class="chip chip-red">200%</span></td>
-      <td style="color:var(--danger);font-weight:600" title="Saldo (R$ -538,50) × LTV Médio (19.8 meses)">R$ -10.635,38</td>
+      <td style="font-weight:500">Paraíso</td>
+      <td>135</td>
+      <td>R$ 8.703,71</td>
+      <td>69</td>
+      <td>R$ 5.040,16</td>
+      <td style="color:var(--green);font-weight:600">R$ 3.663,55</td>
+      <td><span class="chip chip-red">51%</span></td>
+      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 3.663,55) × LTV Médio (28.5 meses)">R$ 104.331,53</td>
     </tr><tr>
       <td>15</td>
       <td style="font-weight:500">Taiúva</td>
-      <td>10</td>
-      <td>R$ 747,09</td>
-      <td>13</td>
-      <td>R$ 1.073,10</td>
-      <td style="color:var(--danger);font-weight:600">R$ -326,01</td>
-      <td><span class="chip chip-red">130%</span></td>
-      <td style="color:var(--danger);font-weight:600" title="Saldo (R$ -326,01) × LTV Médio (23.9 meses)">R$ -7.799,16</td>
+      <td>116</td>
+      <td>R$ 8.271,25</td>
+      <td>59</td>
+      <td>R$ 4.409,19</td>
+      <td style="color:var(--green);font-weight:600">R$ 3.862,06</td>
+      <td><span class="chip chip-red">51%</span></td>
+      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 3.862,06) × LTV Médio (37.2 meses)">R$ 143.550,81</td>
     </tr><tr>
       <td>16</td>
-      <td style="font-weight:500">Onda Verde</td>
-      <td>7</td>
-      <td>R$ 628,30</td>
-      <td>5</td>
-      <td>R$ 469,60</td>
-      <td style="color:var(--green);font-weight:600">R$ 158,70</td>
-      <td><span class="chip chip-red">71%</span></td>
-      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 158,70) × LTV Médio (39.6 meses)">R$ 6.284,52</td>
+      <td style="font-weight:500">Altair</td>
+      <td>101</td>
+      <td>R$ 8.107,77</td>
+      <td>70</td>
+      <td>R$ 5.935,49</td>
+      <td style="color:var(--green);font-weight:600">R$ 2.172,28</td>
+      <td><span class="chip chip-red">69%</span></td>
+      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 2.172,28) × LTV Médio (35.2 meses)">R$ 76.557,35</td>
     </tr><tr>
       <td>17</td>
       <td style="font-weight:500">Embaúba</td>
-      <td>4</td>
-      <td>R$ 374,10</td>
-      <td>2</td>
-      <td>R$ 159,90</td>
-      <td style="color:var(--green);font-weight:600">R$ 214,20</td>
-      <td><span class="chip chip-orange">50%</span></td>
-      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 214,20) × LTV Médio (46.5 meses)">R$ 9.960,30</td>
+      <td>86</td>
+      <td>R$ 6.345,36</td>
+      <td>32</td>
+      <td>R$ 2.326,84</td>
+      <td style="color:var(--green);font-weight:600">R$ 4.018,52</td>
+      <td><span class="chip chip-orange">37%</span></td>
+      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 4.018,52) × LTV Médio (24.8 meses)">R$ 99.709,53</td>
     </tr><tr>
       <td>18</td>
-      <td style="font-weight:500">Taquaral</td>
-      <td>4</td>
-      <td>R$ 363,60</td>
-      <td>8</td>
-      <td>R$ 627,50</td>
-      <td style="color:var(--danger);font-weight:600">R$ -263,90</td>
-      <td><span class="chip chip-red">200%</span></td>
-      <td style="color:var(--danger);font-weight:600" title="Saldo (R$ -263,90) × LTV Médio (23.0 meses)">R$ -6.069,70</td>
+      <td style="font-weight:500">Onda Verde</td>
+      <td>78</td>
+      <td>R$ 6.131,70</td>
+      <td>27</td>
+      <td>R$ 2.633,40</td>
+      <td style="color:var(--green);font-weight:600">R$ 3.498,30</td>
+      <td><span class="chip chip-orange">35%</span></td>
+      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 3.498,30) × LTV Médio (37.3 meses)">R$ 130.473,63</td>
     </tr><tr>
       <td>19</td>
-      <td style="font-weight:500">Altair</td>
-      <td>4</td>
-      <td>R$ 318,60</td>
-      <td>14</td>
-      <td>R$ 1.067,10</td>
-      <td style="color:var(--danger);font-weight:600">R$ -748,50</td>
-      <td><span class="chip chip-red">350%</span></td>
-      <td style="color:var(--danger);font-weight:600" title="Saldo (R$ -748,50) × LTV Médio (33.4 meses)">R$ -25.021,29</td>
+      <td style="font-weight:500">Taquaral</td>
+      <td>67</td>
+      <td>R$ 4.793,75</td>
+      <td>28</td>
+      <td>R$ 1.883,08</td>
+      <td style="color:var(--green);font-weight:600">R$ 2.910,67</td>
+      <td><span class="chip chip-orange">42%</span></td>
+      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 2.910,67) × LTV Médio (24.3 meses)">R$ 70.687,70</td>
     </tr><tr>
       <td>20</td>
       <td style="font-weight:500">Palmares Paulista</td>
-      <td>3</td>
-      <td>R$ 174,98</td>
-      <td>4</td>
-      <td>R$ 334,90</td>
-      <td style="color:var(--danger);font-weight:600">R$ -159,92</td>
-      <td><span class="chip chip-red">133%</span></td>
-      <td style="color:var(--danger);font-weight:600" title="Saldo (R$ -159,92) × LTV Médio (21.0 meses)">R$ -3.358,32</td>
+      <td>57</td>
+      <td>R$ 3.831,64</td>
+      <td>32</td>
+      <td>R$ 2.338,08</td>
+      <td style="color:var(--green);font-weight:600">R$ 1.493,56</td>
+      <td><span class="chip chip-red">56%</span></td>
+      <td style="color:var(--green);font-weight:600" title="Saldo (R$ 1.493,56) × LTV Médio (16.3 meses)">R$ 24.317,02</td>
     </tr></tbody>
     </table>
   </div>
@@ -2833,15 +3223,15 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
     </div><div class="year-box" data-ano="2025">
       <div class="year-box-header">
         <span class="year-box-label">2025</span>
-        <button class="year-toggle-all" onclick="toggleYearAll('ltv-period-selector',2025,this)">Todos</button>
+        <button class="year-toggle-all" onclick="toggleYearAll('ltv-period-selector',2025,this)">Limpar</button>
       </div>
-      <div class="year-months"><span class="month-pill" data-ano="2025" data-mes="1">Jan</span><span class="month-pill" data-ano="2025" data-mes="2">Fev</span><span class="month-pill" data-ano="2025" data-mes="3">Mar</span><span class="month-pill" data-ano="2025" data-mes="4">Abr</span><span class="month-pill" data-ano="2025" data-mes="5">Mai</span><span class="month-pill" data-ano="2025" data-mes="6">Jun</span><span class="month-pill" data-ano="2025" data-mes="7">Jul</span><span class="month-pill" data-ano="2025" data-mes="8">Ago</span><span class="month-pill" data-ano="2025" data-mes="9">Set</span><span class="month-pill" data-ano="2025" data-mes="10">Out</span><span class="month-pill" data-ano="2025" data-mes="11">Nov</span><span class="month-pill" data-ano="2025" data-mes="12">Dez</span></div>
+      <div class="year-months"><span class="month-pill " data-ano="2025" data-mes="1">Jan</span><span class="month-pill " data-ano="2025" data-mes="2">Fev</span><span class="month-pill " data-ano="2025" data-mes="3">Mar</span><span class="month-pill " data-ano="2025" data-mes="4">Abr</span><span class="month-pill " data-ano="2025" data-mes="5">Mai</span><span class="month-pill selected" data-ano="2025" data-mes="6">Jun</span><span class="month-pill selected" data-ano="2025" data-mes="7">Jul</span><span class="month-pill selected" data-ano="2025" data-mes="8">Ago</span><span class="month-pill selected" data-ano="2025" data-mes="9">Set</span><span class="month-pill selected" data-ano="2025" data-mes="10">Out</span><span class="month-pill selected" data-ano="2025" data-mes="11">Nov</span><span class="month-pill selected" data-ano="2025" data-mes="12">Dez</span></div>
     </div><div class="year-box" data-ano="2026">
       <div class="year-box-header">
         <span class="year-box-label">2026</span>
         <button class="year-toggle-all" onclick="toggleYearAll('ltv-period-selector',2026,this)">Limpar</button>
       </div>
-      <div class="year-months"><span class="month-pill" data-ano="2026" data-mes="1">Jan</span><span class="month-pill" data-ano="2026" data-mes="2">Fev</span><span class="month-pill" data-ano="2026" data-mes="3">Mar</span><span class="month-pill" data-ano="2026" data-mes="4">Abr</span><span class="month-pill selected" data-ano="2026" data-mes="5">Mai</span></div>
+      <div class="year-months"><span class="month-pill selected" data-ano="2026" data-mes="1">Jan</span><span class="month-pill selected" data-ano="2026" data-mes="2">Fev</span><span class="month-pill selected" data-ano="2026" data-mes="3">Mar</span><span class="month-pill selected" data-ano="2026" data-mes="4">Abr</span><span class="month-pill selected" data-ano="2026" data-mes="5">Mai</span></div>
     </div></div>
     </div>
     <div class="filter-divider"></div>
@@ -2874,7 +3264,7 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
   <div class="kpi-row">
     <div class="kpi-card" style="--kpi-color:var(--accent2)">
       <div class="kpi-label">Life Time Médio</div>
-      <div class="kpi-value" id="ltv-kpi-med">24.4 meses</div>
+      <div class="kpi-value" id="ltv-kpi-med">23.6 meses</div>
       <div class="kpi-sub">Meses em base até cancelamento</div>
       <div class="kpi-icon">📅</div>
     </div>
@@ -2886,13 +3276,13 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
     </div>
     <div class="kpi-card" style="--kpi-color:var(--danger)">
       <div class="kpi-label">Saídas Precoces (&lt;6 meses)</div>
-      <div class="kpi-value" id="ltv-kpi-prec">200</div>
+      <div class="kpi-value" id="ltv-kpi-prec">1.352</div>
       <div class="kpi-sub">Alto risco — cancelamentos rápidos</div>
       <div class="kpi-icon">⚠️</div>
     </div>
     <div class="kpi-card" style="--kpi-color:var(--gold)">
       <div class="kpi-label">Receita Total Recebida</div>
-      <div class="kpi-value" id="ltv-kpi-rec">R$ 1.401.911,57</div>
+      <div class="kpi-value" id="ltv-kpi-rec">R$ 6.235.436,59</div>
       <div class="kpi-sub">Valor acumulado antes do churn</div>
       <div class="kpi-icon">💎</div>
     </div>
@@ -2908,24 +3298,24 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
       <div class="chart-title">Mapa de Concentração por Faixa</div>
       <div class="chart-sub">Proporção de clientes cancelados em cada faixa de permanência</div>
     </div>
-    <div id="ltv-faixa-bar" class="ltv-faixa-bar" style="height:40px; border-radius:8px; border:1px solid var(--border); overflow:hidden; margin-bottom:12px;"><div class="ltv-segment" style="flex:19.7;background:#c81a2e" data-tip="0-3: 145 (19.7%)"></div><div class="ltv-segment" style="flex:15.2;background:#c8611a" data-tip="4-6: 112 (15.2%)"></div><div class="ltv-segment" style="flex:15.6;background:#b8860b" data-tip="6-12: 115 (15.6%)"></div><div class="ltv-segment" style="flex:10.7;background:#1a8a4a" data-tip="13-18: 79 (10.7%)"></div><div class="ltv-segment" style="flex:4.8;background:#1a6bc8" data-tip="19-24: 35 (4.8%)"></div><div class="ltv-segment" style="flex:9.2;background:#6b1ac8" data-tip="25-36: 68 (9.2%)"></div><div class="ltv-segment" style="flex:11.4;background:#1ac8b8" data-tip="37-60: 84 (11.4%)"></div><div class="ltv-segment" style="flex:13.3;background:#1a6bc8" data-tip="&gt;=61: 98 (13.3%)"></div></div>
+    <div id="ltv-faixa-bar" class="ltv-faixa-bar" style="height:40px; border-radius:8px; border:1px solid var(--border); overflow:hidden; margin-bottom:12px;"><div class="ltv-segment" style="flex:24.2;background:#c81a2e" data-tip="0-3: 919 (24.2%)"></div><div class="ltv-segment" style="flex:13.7;background:#c8611a" data-tip="4-6: 519 (13.7%)"></div><div class="ltv-segment" style="flex:13.4;background:#b8860b" data-tip="6-12: 506 (13.4%)"></div><div class="ltv-segment" style="flex:9.9;background:#1a8a4a" data-tip="13-18: 374 (9.9%)"></div><div class="ltv-segment" style="flex:5.3;background:#1a6bc8" data-tip="19-24: 201 (5.3%)"></div><div class="ltv-segment" style="flex:8.5;background:#6b1ac8" data-tip="25-36: 322 (8.5%)"></div><div class="ltv-segment" style="flex:10.3;background:#1ac8b8" data-tip="37-60: 389 (10.3%)"></div><div class="ltv-segment" style="flex:14.8;background:#1a6bc8" data-tip="&gt;=61: 560 (14.8%)"></div></div>
     <div id="ltv-faixa-legend" style="display:flex; flex-wrap:wrap; gap:12px; margin-bottom:8px; filter:brightness(1.1);"><div style="display:flex;align-items:center;gap:5px;font-size:12px;color:var(--text2)">
       <span style="width:10px;height:10px;border-radius:2px;background:#c81a2e;display:inline-block"></span>
-      <span>0-3m</span><span style="color:var(--muted)">(145 · 20%)</span></div><div style="display:flex;align-items:center;gap:5px;font-size:12px;color:var(--text2)">
+      <span>0-3m</span><span style="color:var(--muted)">(919 · 24%)</span></div><div style="display:flex;align-items:center;gap:5px;font-size:12px;color:var(--text2)">
       <span style="width:10px;height:10px;border-radius:2px;background:#c8611a;display:inline-block"></span>
-      <span>4-6m</span><span style="color:var(--muted)">(112 · 15%)</span></div><div style="display:flex;align-items:center;gap:5px;font-size:12px;color:var(--text2)">
+      <span>4-6m</span><span style="color:var(--muted)">(519 · 14%)</span></div><div style="display:flex;align-items:center;gap:5px;font-size:12px;color:var(--text2)">
       <span style="width:10px;height:10px;border-radius:2px;background:#b8860b;display:inline-block"></span>
-      <span>6-12m</span><span style="color:var(--muted)">(115 · 16%)</span></div><div style="display:flex;align-items:center;gap:5px;font-size:12px;color:var(--text2)">
+      <span>6-12m</span><span style="color:var(--muted)">(506 · 13%)</span></div><div style="display:flex;align-items:center;gap:5px;font-size:12px;color:var(--text2)">
       <span style="width:10px;height:10px;border-radius:2px;background:#1a8a4a;display:inline-block"></span>
-      <span>13-18m</span><span style="color:var(--muted)">(79 · 11%)</span></div><div style="display:flex;align-items:center;gap:5px;font-size:12px;color:var(--text2)">
+      <span>13-18m</span><span style="color:var(--muted)">(374 · 10%)</span></div><div style="display:flex;align-items:center;gap:5px;font-size:12px;color:var(--text2)">
       <span style="width:10px;height:10px;border-radius:2px;background:#1a6bc8;display:inline-block"></span>
-      <span>19-24m</span><span style="color:var(--muted)">(35 · 5%)</span></div><div style="display:flex;align-items:center;gap:5px;font-size:12px;color:var(--text2)">
+      <span>19-24m</span><span style="color:var(--muted)">(201 · 5%)</span></div><div style="display:flex;align-items:center;gap:5px;font-size:12px;color:var(--text2)">
       <span style="width:10px;height:10px;border-radius:2px;background:#6b1ac8;display:inline-block"></span>
-      <span>25-36m</span><span style="color:var(--muted)">(68 · 9%)</span></div><div style="display:flex;align-items:center;gap:5px;font-size:12px;color:var(--text2)">
+      <span>25-36m</span><span style="color:var(--muted)">(322 · 8%)</span></div><div style="display:flex;align-items:center;gap:5px;font-size:12px;color:var(--text2)">
       <span style="width:10px;height:10px;border-radius:2px;background:#1ac8b8;display:inline-block"></span>
-      <span>37-60m</span><span style="color:var(--muted)">(84 · 11%)</span></div><div style="display:flex;align-items:center;gap:5px;font-size:12px;color:var(--text2)">
+      <span>37-60m</span><span style="color:var(--muted)">(389 · 10%)</span></div><div style="display:flex;align-items:center;gap:5px;font-size:12px;color:var(--text2)">
       <span style="width:10px;height:10px;border-radius:2px;background:#1a6bc8;display:inline-block"></span>
-      <span>&gt;=61m</span><span style="color:var(--muted)">(98 · 13%)</span></div></div>
+      <span>&gt;=61m</span><span style="color:var(--muted)">(560 · 15%)</span></div></div>
   </div>
 
   <div class="chart-row chart-row-2">
@@ -2973,26 +3363,31 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
         <th>Produto</th><th>Qtd Churn</th><th>LTV Médio (meses)</th>
         <th>LTV Min</th><th>LTV Max</th><th>% Saída &lt;6m</th><th>Receita Recebida Média</th><th>Faixa Predominante</th>
       </tr></thead>
-      <tbody id="t-ltv-prod"><tr><td style="font-weight:600">Internet</td><td>532</td>
-      <td style="font-weight:600;color:var(--accent2)">32 meses</td>
+      <tbody id="t-ltv-prod"><tr><td style="font-weight:600">Internet</td><td>2752</td>
+      <td style="font-weight:600;color:var(--accent2)">32.3 meses</td>
       <td>0m</td><td>120m</td>
-      <td><span class="chip chip-orange">16%</span></td>
-      <td>R$ 2.632,95</td>
-      <td><span class="chip chip-blue">&gt;=61</span></td></tr><tr><td style="font-weight:600">Fixo</td><td>5</td>
-      <td style="font-weight:600;color:var(--accent2)">7.4 meses</td>
-      <td>3m</td><td>10m</td>
-      <td><span class="chip chip-orange">20%</span></td>
-      <td>R$ 0,00</td>
-      <td><span class="chip chip-blue">6-12</span></td></tr><tr><td style="font-weight:600">TV</td><td>83</td>
-      <td style="font-weight:600;color:var(--accent2)">6.9 meses</td>
+      <td><span class="chip chip-green">15%</span></td>
+      <td>R$ 2.263,74</td>
+      <td><span class="chip chip-blue">&gt;=61</span></td></tr><tr><td style="font-weight:600">Fixo</td><td>17</td>
+      <td style="font-weight:600;color:var(--accent2)">5.9 meses</td>
+      <td>0m</td><td>10m</td>
+      <td><span class="chip chip-orange">29%</span></td>
+      <td>R$ 19,96</td>
+      <td><span class="chip chip-blue">6-12</span></td></tr><tr><td style="font-weight:600">TV</td><td>496</td>
+      <td style="font-weight:600;color:var(--accent2)">5.8 meses</td>
       <td>0m</td><td>15m</td>
-      <td><span class="chip chip-orange">25%</span></td>
-      <td>R$ 0,00</td>
-      <td><span class="chip chip-blue">4-6</span></td></tr><tr><td style="font-weight:600">Móvel</td><td>116</td>
-      <td style="font-weight:600;color:var(--accent2)">3 meses</td>
+      <td><span class="chip chip-red">57%</span></td>
+      <td>R$ 1,93</td>
+      <td><span class="chip chip-blue">0-3</span></td></tr><tr><td style="font-weight:600">Móvel</td><td>703</td>
+      <td style="font-weight:600;color:var(--accent2)">2.6 meses</td>
       <td>0m</td><td>8m</td>
-      <td><span class="chip chip-red">79%</span></td>
-      <td>R$ 10,20</td>
+      <td><span class="chip chip-red">91%</span></td>
+      <td>R$ 6,18</td>
+      <td><span class="chip chip-blue">0-3</span></td></tr><tr><td style="font-weight:600">Outros</td><td>1</td>
+      <td style="font-weight:600;color:var(--accent2)">2 meses</td>
+      <td>2m</td><td>2m</td>
+      <td><span class="chip chip-red">100%</span></td>
+      <td>R$ 0,00</td>
       <td><span class="chip chip-blue">0-3</span></td></tr></tbody>
     </table>
   </div>
@@ -3008,54 +3403,54 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
         <th>#</th><th>Cidade</th><th>Qtd Churn</th><th>LTV Médio</th><th>% Saída &lt;6m</th><th>Tendência</th>
       </tr></thead>
       <tbody id="t-ltv-cid"><tr><td><span class="rank rank-1">1</span></td><td style="font-weight:500">Barretos</td>
-      <td>144</td>
-      <td style="font-weight:600">10.7 meses</td>
-      <td><span class="chip chip-orange">38%</span></td>
-      <td>🟡 Atenção</td></tr><tr><td><span class="rank rank-2">2</span></td><td style="font-weight:500">Olímpia</td>
-      <td>133</td>
-      <td style="font-weight:600">28.8 meses</td>
-      <td><span class="chip chip-green">20%</span></td>
-      <td>🟢 Estável</td></tr><tr><td><span class="rank rank-3">3</span></td><td style="font-weight:500">Bebedouro</td>
-      <td>79</td>
-      <td style="font-weight:600">13.2 meses</td>
-      <td><span class="chip chip-orange">37%</span></td>
-      <td>🟡 Atenção</td></tr><tr><td><span class="rank ">4</span></td><td style="font-weight:500">Monte Azul Paulista</td>
-      <td>58</td>
-      <td style="font-weight:600">49.2 meses</td>
-      <td><span class="chip chip-green">7%</span></td>
+      <td>797</td>
+      <td style="font-weight:600">8.2 meses</td>
+      <td><span class="chip chip-red">57%</span></td>
+      <td>🔴 Alto risco</td></tr><tr><td><span class="rank rank-2">2</span></td><td style="font-weight:500">Olímpia</td>
+      <td>739</td>
+      <td style="font-weight:600">30 meses</td>
+      <td><span class="chip chip-orange">24%</span></td>
+      <td>🟡 Atenção</td></tr><tr><td><span class="rank rank-3">3</span></td><td style="font-weight:500">Bebedouro</td>
+      <td>525</td>
+      <td style="font-weight:600">13.3 meses</td>
+      <td><span class="chip chip-red">42%</span></td>
+      <td>🔴 Alto risco</td></tr><tr><td><span class="rank ">4</span></td><td style="font-weight:500">Monte Azul Paulista</td>
+      <td>337</td>
+      <td style="font-weight:600">46 meses</td>
+      <td><span class="chip chip-green">15%</span></td>
       <td>🟢 Estável</td></tr><tr><td><span class="rank ">5</span></td><td style="font-weight:500">Severínia</td>
-      <td>57</td>
-      <td style="font-weight:600">27.5 meses</td>
-      <td><span class="chip chip-orange">35%</span></td>
-      <td>🟡 Atenção</td></tr><tr><td><span class="rank ">6</span></td><td style="font-weight:500">Guaraci</td>
-      <td>40</td>
-      <td style="font-weight:600">26.1 meses</td>
-      <td><span class="chip chip-orange">23%</span></td>
-      <td>🟡 Atenção</td></tr><tr><td><span class="rank ">7</span></td><td style="font-weight:500">Cajobi</td>
-      <td>35</td>
-      <td style="font-weight:600">33.6 meses</td>
-      <td><span class="chip chip-orange">23%</span></td>
-      <td>🟡 Atenção</td></tr><tr><td><span class="rank ">8</span></td><td style="font-weight:500">Tabapuã</td>
-      <td>29</td>
-      <td style="font-weight:600">23.9 meses</td>
-      <td><span class="chip chip-green">14%</span></td>
-      <td>🟢 Estável</td></tr><tr><td><span class="rank ">9</span></td><td style="font-weight:500">Pirangi</td>
-      <td>23</td>
-      <td style="font-weight:600">33.6 meses</td>
+      <td>248</td>
+      <td style="font-weight:600">21 meses</td>
+      <td><span class="chip chip-orange">39%</span></td>
+      <td>🟡 Atenção</td></tr><tr><td><span class="rank ">6</span></td><td style="font-weight:500">Cajobi</td>
+      <td>213</td>
+      <td style="font-weight:600">28.3 meses</td>
+      <td><span class="chip chip-orange">29%</span></td>
+      <td>🟡 Atenção</td></tr><tr><td><span class="rank ">7</span></td><td style="font-weight:500">Guaraci</td>
+      <td>195</td>
+      <td style="font-weight:600">33.4 meses</td>
       <td><span class="chip chip-green">17%</span></td>
-      <td>🟢 Estável</td></tr><tr><td><span class="rank ">10</span></td><td style="font-weight:500">Colômbia</td>
-      <td>22</td>
-      <td style="font-weight:600">18 meses</td>
+      <td>🟢 Estável</td></tr><tr><td><span class="rank ">8</span></td><td style="font-weight:500">Colômbia</td>
+      <td>132</td>
+      <td style="font-weight:600">19 meses</td>
+      <td><span class="chip chip-orange">28%</span></td>
+      <td>🟡 Atenção</td></tr><tr><td><span class="rank ">9</span></td><td style="font-weight:500">Tabapuã</td>
+      <td>119</td>
+      <td style="font-weight:600">26.1 meses</td>
+      <td><span class="chip chip-orange">25%</span></td>
+      <td>🟡 Atenção</td></tr><tr><td><span class="rank ">10</span></td><td style="font-weight:500">Pirangi</td>
+      <td>97</td>
+      <td style="font-weight:600">30.7 meses</td>
+      <td><span class="chip chip-orange">24%</span></td>
+      <td>🟡 Atenção</td></tr><tr><td><span class="rank ">11</span></td><td style="font-weight:500">Vista Alegre Do Alto</td>
+      <td>86</td>
+      <td style="font-weight:600">30.3 meses</td>
       <td><span class="chip chip-orange">27%</span></td>
-      <td>🟡 Atenção</td></tr><tr><td><span class="rank ">11</span></td><td style="font-weight:500">Novais</td>
-      <td>20</td>
-      <td style="font-weight:600">30.4 meses</td>
-      <td><span class="chip chip-orange">30%</span></td>
-      <td>🟡 Atenção</td></tr><tr><td><span class="rank ">12</span></td><td style="font-weight:500">Taiaçu</td>
-      <td>16</td>
-      <td style="font-weight:600">19.8 meses</td>
-      <td><span class="chip chip-orange">31%</span></td>
-      <td>🟡 Atenção</td></tr></tbody>
+      <td>🟡 Atenção</td></tr><tr><td><span class="rank ">12</span></td><td style="font-weight:500">Altair</td>
+      <td>70</td>
+      <td style="font-weight:600">35.2 meses</td>
+      <td><span class="chip chip-green">13%</span></td>
+      <td>🟢 Estável</td></tr></tbody>
     </table>
   </div>
 </div>
@@ -3076,9 +3471,9 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
     </div><div class="year-box" data-ano="2025">
       <div class="year-box-header">
         <span class="year-box-label">2025</span>
-        <button class="year-toggle-all" onclick="toggleYearAll('arpu-period-selector',2025,this)">Todos</button>
+        <button class="year-toggle-all" onclick="toggleYearAll('arpu-period-selector',2025,this)">Limpar</button>
       </div>
-      <div class="year-months"><span class="month-pill" data-ano="2025" data-mes="1">Jan</span><span class="month-pill" data-ano="2025" data-mes="2">Fev</span><span class="month-pill" data-ano="2025" data-mes="3">Mar</span><span class="month-pill" data-ano="2025" data-mes="4">Abr</span><span class="month-pill" data-ano="2025" data-mes="5">Mai</span><span class="month-pill" data-ano="2025" data-mes="6">Jun</span><span class="month-pill" data-ano="2025" data-mes="7">Jul</span><span class="month-pill" data-ano="2025" data-mes="8">Ago</span><span class="month-pill" data-ano="2025" data-mes="9">Set</span><span class="month-pill" data-ano="2025" data-mes="10">Out</span><span class="month-pill" data-ano="2025" data-mes="11">Nov</span><span class="month-pill" data-ano="2025" data-mes="12">Dez</span></div>
+      <div class="year-months"><span class="month-pill " data-ano="2025" data-mes="1">Jan</span><span class="month-pill " data-ano="2025" data-mes="2">Fev</span><span class="month-pill " data-ano="2025" data-mes="3">Mar</span><span class="month-pill " data-ano="2025" data-mes="4">Abr</span><span class="month-pill " data-ano="2025" data-mes="5">Mai</span><span class="month-pill selected" data-ano="2025" data-mes="6">Jun</span><span class="month-pill selected" data-ano="2025" data-mes="7">Jul</span><span class="month-pill selected" data-ano="2025" data-mes="8">Ago</span><span class="month-pill selected" data-ano="2025" data-mes="9">Set</span><span class="month-pill selected" data-ano="2025" data-mes="10">Out</span><span class="month-pill selected" data-ano="2025" data-mes="11">Nov</span><span class="month-pill selected" data-ano="2025" data-mes="12">Dez</span></div>
     </div><div class="year-box" data-ano="2026">
       <div class="year-box-header">
         <span class="year-box-label">2026</span>
@@ -3128,7 +3523,7 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
     <div class="arpu-chart-title">📈 Ticket Médio por Cliente — Evolução Mensal</div>
     <div class="arpu-chart-sub">TM = Σ Valor Total por CPF/CNPJ ÷ Nº de Clientes Únicos no período · indica evolução do gasto médio por cliente ao longo do tempo</div>
     <div class="arpu-canvas-wrap">
-      <canvas id="arpu-chart" style="box-sizing: border-box; display: block; height: 300px; width: 2423px;" width="2423" height="300"></canvas>
+      <canvas id="arpu-chart" style="box-sizing: border-box; display: block; height: 0px; width: 0px;" width="0" height="0"></canvas>
     </div>
   </div>
 
@@ -3150,6 +3545,34 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
       <tbody id="arpu-tbody"><tr>
       <td><span class="arpu-rank gold">1</span></td>
       <td>
+        <div class="arpu-cliente">Prefeitura Municipal De Monte Azul Paulista</div>
+        <div class="arpu-cpf">52.942.380/0001-87</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AZUL</div>
+      </td>
+      <td><span class="arpu-prod-chip">Internet_Mensal Pós ×3 · R$239.80</span><span class="arpu-prod-chip">Internet_Mensal/Setor Publico ×33 · R$2740.10</span><span class="arpu-prod-chip">Internet_Cortesia · R$100.00</span><span class="arpu-prod-chip">Telefonia Fixa ×2 · R$1566.90</span><span class="arpu-prod-chip">Telefonia Móvel ×20 · R$1598.00</span><span class="arpu-prod-chip">Central Telefônica em Nuvem · R$1280.00</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 7524.80</span></td>
+      <td style="text-align:right;color:var(--text2)">60</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-top">R$ 7524.80</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:100.0%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank silver">2</span></td>
+      <td>
+        <div class="arpu-cliente">Municipio De Severinia</div>
+        <div class="arpu-cpf">46.596.235/0001-99</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AZUL</div>
+      </td>
+      <td><span class="arpu-prod-chip">Telefonia Fixa ×2 · R$79.80</span><span class="arpu-prod-chip">Internet_Mensal/Setor Publico ×64 · R$3840.00</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 3919.80</span></td>
+      <td style="text-align:right;color:var(--text2)">66</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-top">R$ 3919.80</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:52.1%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank bronze">3</span></td>
+      <td>
         <div class="arpu-cliente">Microset Tecnologia Ltda</div>
         <div class="arpu-cpf">74.209.909/0001-90</div>
         <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AZUL</div>
@@ -3159,10 +3582,94 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
       <td style="text-align:right;color:var(--text2)">3</td>
       <td class="arpu-tm-cell">
         <span class="arpu-tm-top">R$ 1784.80</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:100.0%"></div></div>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:23.7%"></div></div>
       </td>
     </tr><tr>
-      <td><span class="arpu-rank silver">2</span></td>
+      <td><span class="arpu-rank ">4</span></td>
+      <td>
+        <div class="arpu-cliente">Cliente X Teste</div>
+        <div class="arpu-cpf">011.730.398-48</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AZUL</div>
+      </td>
+      <td><span class="arpu-prod-chip">Telefonia Móvel ×6 · R$289.60</span><span class="arpu-prod-chip">Central Telefônica em Nuvem · R$1000.00</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 1289.60</span></td>
+      <td style="text-align:right;color:var(--text2)">7</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-top">R$ 1289.60</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:17.1%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">5</span></td>
+      <td>
+        <div class="arpu-cliente">Nettop Servicos De Internet Ltda</div>
+        <div class="arpu-cpf">55.745.950/0001-37</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AMARELO</div>
+      </td>
+      <td><span class="arpu-prod-chip">Internet_Mensal Pós · R$1200.00</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 1200.00</span></td>
+      <td style="text-align:right;color:var(--text2)">1</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-top">R$ 1200.00</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:15.9%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">6</span></td>
+      <td>
+        <div class="arpu-cliente">Acquathermas Operadora De Turismo Ltda</div>
+        <div class="arpu-cpf">15.210.932/0001-36</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
+      </td>
+      <td><span class="arpu-prod-chip">Internet_Mensal Pré · R$980.00</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 980.00</span></td>
+      <td style="text-align:right;color:var(--text2)">1</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-top">R$ 980.00</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:13.0%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">7</span></td>
+      <td>
+        <div class="arpu-cliente">Arion Serviços De Telecomunicações Ltda</div>
+        <div class="arpu-cpf">20.059.578/0001-20</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AMARELO</div>
+      </td>
+      <td><span class="arpu-prod-chip">Internet/ PJ - Mensal POS · R$480.00</span><span class="arpu-prod-chip">Internet_Mensal Pós · R$480.00</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 960.00</span></td>
+      <td style="text-align:right;color:var(--text2)">2</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-top">R$ 960.00</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:12.8%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">8</span></td>
+      <td>
+        <div class="arpu-cliente">Elecnor Do Brasil Ltda</div>
+        <div class="arpu-cpf">30.455.661/0017-30</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
+      </td>
+      <td><span class="arpu-prod-chip">Internet_Mensal Pós ×3 · R$249.70</span><span class="arpu-prod-chip">Internet_Mensal Pré ×4 · R$559.60</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 809.30</span></td>
+      <td style="text-align:right;color:var(--text2)">7</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-top">R$ 809.30</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:10.8%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">9</span></td>
+      <td>
+        <div class="arpu-cliente">Urbanizadora Barretos 162 Ltda</div>
+        <div class="arpu-cpf">22.416.446/0001-34</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO VERDE</div>
+      </td>
+      <td><span class="arpu-prod-chip">Internet/ PJ - Mensal POS · R$800.00</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 800.00</span></td>
+      <td style="text-align:right;color:var(--text2)">1</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-top">R$ 800.00</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:10.6%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">10</span></td>
       <td>
         <div class="arpu-cliente">A. Alves De Oliveira Estacionamento Ltda</div>
         <div class="arpu-cpf">61.517.887/0001-84</div>
@@ -3173,10 +3680,108 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
       <td style="text-align:right;color:var(--text2)">1</td>
       <td class="arpu-tm-cell">
         <span class="arpu-tm-top">R$ 800.00</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:44.8%"></div></div>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:10.6%"></div></div>
       </td>
     </tr><tr>
-      <td><span class="arpu-rank bronze">3</span></td>
+      <td><span class="arpu-rank ">11</span></td>
+      <td>
+        <div class="arpu-cliente">Pedro Bretanha</div>
+        <div class="arpu-cpf">125.680.588-20</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO VERDE</div>
+      </td>
+      <td><span class="arpu-prod-chip">Telefonia Móvel ×7 · R$319.48</span><span class="arpu-prod-chip">TV ×3 · R$128.70</span><span class="arpu-prod-chip">Internet_Digital Pós · R$140.00</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 588.18</span></td>
+      <td style="text-align:right;color:var(--text2)">11</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-mid">R$ 588.18</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:7.8%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">12</span></td>
+      <td>
+        <div class="arpu-cliente">Jair Augusto Paneque</div>
+        <div class="arpu-cpf">418.290.648-94</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AZUL</div>
+      </td>
+      <td><span class="arpu-prod-chip">Internet_Digital Pós ×3 · R$299.70</span><span class="arpu-prod-chip">Internet_Digital Pré ×3 · R$189.90</span><span class="arpu-prod-chip">Telefonia Móvel ×2 · R$94.89</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 584.49</span></td>
+      <td style="text-align:right;color:var(--text2)">8</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-mid">R$ 584.49</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:7.8%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">13</span></td>
+      <td>
+        <div class="arpu-cliente">Marcia Regina Da Cunha Dos Santos</div>
+        <div class="arpu-cpf">156.296.098-90</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AMARELO</div>
+      </td>
+      <td><span class="arpu-prod-chip">Internet_Carnê Pós ×3 · R$249.80</span><span class="arpu-prod-chip">TV ×2 · R$100.00</span><span class="arpu-prod-chip">Telefonia Móvel ×2 · R$99.80</span><span class="arpu-prod-chip">Internet_Digital Pós · R$99.90</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 549.50</span></td>
+      <td style="text-align:right;color:var(--text2)">8</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-mid">R$ 549.50</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:7.3%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">14</span></td>
+      <td>
+        <div class="arpu-cliente">Jessica Da Silva Borges</div>
+        <div class="arpu-cpf">444.275.898-04</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO VERDE</div>
+      </td>
+      <td><span class="arpu-prod-chip">Telefonia Móvel ×3 · R$269.97</span><span class="arpu-prod-chip">Internet_Digital Pós ×2 · R$199.80</span><span class="arpu-prod-chip">TV · R$50.00</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 519.77</span></td>
+      <td style="text-align:right;color:var(--text2)">6</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-mid">R$ 519.77</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:6.9%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">15</span></td>
+      <td>
+        <div class="arpu-cliente">Silvia Bonci Beserra</div>
+        <div class="arpu-cpf">277.968.638-37</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
+      </td>
+      <td><span class="arpu-prod-chip">Internet_Digital Pós ×5 · R$499.50</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 499.50</span></td>
+      <td style="text-align:right;color:var(--text2)">5</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-mid">R$ 499.50</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:6.6%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">16</span></td>
+      <td>
+        <div class="arpu-cliente">José Gouveia Dos Santos</div>
+        <div class="arpu-cpf">057.161.415-95</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
+      </td>
+      <td><span class="arpu-prod-chip">Telefonia Móvel ×4 · R$199.60</span><span class="arpu-prod-chip">TV ×2 · R$198.90</span><span class="arpu-prod-chip">Internet_Digital Pós · R$100.00</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 498.50</span></td>
+      <td style="text-align:right;color:var(--text2)">7</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-mid">R$ 498.50</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:6.6%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">17</span></td>
+      <td>
+        <div class="arpu-cliente">Rafael Da Silva</div>
+        <div class="arpu-cpf">099.400.027-85</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AMARELO</div>
+      </td>
+      <td><span class="arpu-prod-chip">Internet_Digital Pós · R$99.90</span><span class="arpu-prod-chip">Telefonia Móvel ×8 · R$389.20</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 489.10</span></td>
+      <td style="text-align:right;color:var(--text2)">9</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-mid">R$ 489.10</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:6.5%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">18</span></td>
       <td>
         <div class="arpu-cliente">Antônio José Gonzaga De Moraes Filho</div>
         <div class="arpu-cpf">329.493.508-01</div>
@@ -3186,11 +3791,67 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
       <td style="text-align:right"><span class="arpu-val">R$ 483.75</span></td>
       <td style="text-align:right;color:var(--text2)">7</td>
       <td class="arpu-tm-cell">
-        <span class="arpu-tm-top">R$ 483.75</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:27.1%"></div></div>
+        <span class="arpu-tm-mid">R$ 483.75</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:6.4%"></div></div>
       </td>
     </tr><tr>
-      <td><span class="arpu-rank ">4</span></td>
+      <td><span class="arpu-rank ">19</span></td>
+      <td>
+        <div class="arpu-cliente">Lindomar Marcal De Oliveira</div>
+        <div class="arpu-cpf">257.231.358-80</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AMARELO</div>
+      </td>
+      <td><span class="arpu-prod-chip">Telefonia Móvel ×3 · R$194.97</span><span class="arpu-prod-chip">Internet_Carnê Pós · R$140.00</span><span class="arpu-prod-chip">Internet_Digital Pós · R$140.00</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 474.97</span></td>
+      <td style="text-align:right;color:var(--text2)">5</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-mid">R$ 474.97</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:6.3%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">20</span></td>
+      <td>
+        <div class="arpu-cliente">Turbo Net Telecom Ltda - Cortesia Outros</div>
+        <div class="arpu-cpf">09.366.952/0001-06</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
+      </td>
+      <td><span class="arpu-prod-chip">Internet_Cortesia ×3 · R$299.70</span><span class="arpu-prod-chip">Telefonia Móvel ×4 · R$79.60</span><span class="arpu-prod-chip">TV · R$84.40</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 463.70</span></td>
+      <td style="text-align:right;color:var(--text2)">8</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-mid">R$ 463.70</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:6.2%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">21</span></td>
+      <td>
+        <div class="arpu-cliente">Sirlene Aparecida Passoni Pires</div>
+        <div class="arpu-cpf">34.960.330/0001-40</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AMARELO</div>
+      </td>
+      <td><span class="arpu-prod-chip">Internet_Mensal Pós · R$140.00</span><span class="arpu-prod-chip">TV ×8 · R$319.20</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 459.20</span></td>
+      <td style="text-align:right;color:var(--text2)">9</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-low">R$ 459.20</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:6.1%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">22</span></td>
+      <td>
+        <div class="arpu-cliente">Sindicato Emp No Com Hoteleiro E Similares De S J R Preto</div>
+        <div class="arpu-cpf">60.001.690/0001-25</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
+      </td>
+      <td><span class="arpu-prod-chip">Telefonia Móvel ×5 · R$449.77</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 449.77</span></td>
+      <td style="text-align:right;color:var(--text2)">5</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-low">R$ 449.77</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:6.0%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">23</span></td>
       <td>
         <div class="arpu-cliente">Gabriel Peralta Neto</div>
         <div class="arpu-cpf">981.794.038-15</div>
@@ -3200,372 +3861,106 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
       <td style="text-align:right"><span class="arpu-val">R$ 449.18</span></td>
       <td style="text-align:right;color:var(--text2)">5</td>
       <td class="arpu-tm-cell">
-        <span class="arpu-tm-top">R$ 449.18</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:25.2%"></div></div>
+        <span class="arpu-tm-low">R$ 449.18</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:6.0%"></div></div>
       </td>
     </tr><tr>
-      <td><span class="arpu-rank ">5</span></td>
+      <td><span class="arpu-rank ">24</span></td>
+      <td>
+        <div class="arpu-cliente">Jaquelini Moreira Dos Santos</div>
+        <div class="arpu-cpf">389.781.068-97</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO VERDE</div>
+      </td>
+      <td><span class="arpu-prod-chip">Internet_Carnê Pós ×2 · R$199.80</span><span class="arpu-prod-chip">TV ×3 · R$148.90</span><span class="arpu-prod-chip">Internet_Digital Pós · R$99.90</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 448.60</span></td>
+      <td style="text-align:right;color:var(--text2)">6</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-low">R$ 448.60</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:6.0%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">25</span></td>
+      <td>
+        <div class="arpu-cliente">Debora Cristina Pereira Gomes</div>
+        <div class="arpu-cpf">343.910.388-97</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO VERDE</div>
+      </td>
+      <td><span class="arpu-prod-chip">Internet_Digital Pós ×2 · R$199.80</span><span class="arpu-prod-chip">TV ×3 · R$146.70</span><span class="arpu-prod-chip">Internet/ PF - Digital POS · R$99.90</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 446.40</span></td>
+      <td style="text-align:right;color:var(--text2)">6</td>
+      <td class="arpu-tm-cell">
+        <span class="arpu-tm-low">R$ 446.40</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:5.9%"></div></div>
+      </td>
+    </tr><tr>
+      <td><span class="arpu-rank ">26</span></td>
       <td>
         <div class="arpu-cliente">Camila Caetano Antonio</div>
         <div class="arpu-cpf">233.353.228-94</div>
         <div class="arpu-cpf" style="color:var(--accent2)">BLOCO VERDE</div>
       </td>
-      <td><span class="arpu-prod-chip">Internet_Digital Pós ×2 · R$169.80</span><span class="arpu-prod-chip">Telefonia Móvel ×4 · R$234.87</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 404.67</span></td>
-      <td style="text-align:right;color:var(--text2)">6</td>
+      <td><span class="arpu-prod-chip">Telefonia Móvel ×5 · R$274.77</span><span class="arpu-prod-chip">Internet_Digital Pós ×2 · R$169.80</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 444.57</span></td>
+      <td style="text-align:right;color:var(--text2)">7</td>
       <td class="arpu-tm-cell">
-        <span class="arpu-tm-top">R$ 404.67</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:22.7%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">6</span></td>
-      <td>
-        <div class="arpu-cliente">Ana Laura Regina Moraes Pereira</div>
-        <div class="arpu-cpf">577.012.768-66</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO VERDE</div>
-      </td>
-      <td><span class="arpu-prod-chip">Internet_Carnê Pós · R$99.90</span><span class="arpu-prod-chip">Internet_Digital Pós · R$89.90</span><span class="arpu-prod-chip">TV · R$48.90</span><span class="arpu-prod-chip">Telefonia Móvel ×2 · R$129.98</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 368.68</span></td>
-      <td style="text-align:right;color:var(--text2)">5</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-top">R$ 368.68</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:20.7%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">7</span></td>
-      <td>
-        <div class="arpu-cliente">Joice De Fatima Neves Ferreira</div>
-        <div class="arpu-cpf">380.587.998-90</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AZUL</div>
-      </td>
-      <td><span class="arpu-prod-chip">Telefonia Móvel ×2 · R$84.89</span><span class="arpu-prod-chip">Internet_Digital Pós ×2 · R$179.80</span><span class="arpu-prod-chip">TV ×2 · R$97.80</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 362.49</span></td>
-      <td style="text-align:right;color:var(--text2)">6</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-top">R$ 362.49</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:20.3%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">8</span></td>
-      <td>
-        <div class="arpu-cliente">Joalice Gallina Pelissari</div>
-        <div class="arpu-cpf">281.547.558-82</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
-      </td>
-      <td><span class="arpu-prod-chip">Internet_Digital Pós ×3 · R$359.70</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 359.70</span></td>
-      <td style="text-align:right;color:var(--text2)">3</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-top">R$ 359.70</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:20.2%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">9</span></td>
-      <td>
-        <div class="arpu-cliente">Bruna Aparecida Tieko Do Santos Domingos</div>
-        <div class="arpu-cpf">390.340.828-06</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
-      </td>
-      <td><span class="arpu-prod-chip">Internet_Digital Pós · R$109.90</span><span class="arpu-prod-chip">TV ×2 · R$78.80</span><span class="arpu-prod-chip">Telefonia Móvel ×2 · R$129.98</span><span class="arpu-prod-chip">Telefonia Fixa · R$39.90</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 358.58</span></td>
-      <td style="text-align:right;color:var(--text2)">6</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-top">R$ 358.58</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:20.1%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">10</span></td>
-      <td>
-        <div class="arpu-cliente">Wise Intermediacao Estrategica E Participacoes Ltda</div>
-        <div class="arpu-cpf">66.059.224/0001-87</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
-      </td>
-      <td><span class="arpu-prod-chip">Internet_Mensal Pós · R$350.00</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 350.00</span></td>
-      <td style="text-align:right;color:var(--text2)">1</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-top">R$ 350.00</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar top" style="width:19.6%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">11</span></td>
-      <td>
-        <div class="arpu-cliente">Cristiano Perpetuo Da Silva</div>
-        <div class="arpu-cpf">355.313.708-81</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
-      </td>
-      <td><span class="arpu-prod-chip">Internet_Digital Pós ×3 · R$298.70</span><span class="arpu-prod-chip">TV · R$48.90</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 347.60</span></td>
-      <td style="text-align:right;color:var(--text2)">4</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-mid">R$ 347.60</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:19.5%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">12</span></td>
-      <td>
-        <div class="arpu-cliente">Luciana Cristina Ventura Da Silva</div>
-        <div class="arpu-cpf">355.600.048-20</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
-      </td>
-      <td><span class="arpu-prod-chip">Internet_Digital Pós · R$99.90</span><span class="arpu-prod-chip">TV · R$48.90</span><span class="arpu-prod-chip">Telefonia Móvel ×3 · R$194.97</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 343.77</span></td>
-      <td style="text-align:right;color:var(--text2)">5</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-mid">R$ 343.77</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:19.3%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">13</span></td>
-      <td>
-        <div class="arpu-cliente">Keyte Kely Alves Simionato</div>
-        <div class="arpu-cpf">405.297.198-19</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO VERDE</div>
-      </td>
-      <td><span class="arpu-prod-chip">Telefonia Móvel ×2 · R$129.98</span><span class="arpu-prod-chip">Internet_Carnê Pós · R$109.90</span><span class="arpu-prod-chip">Internet_Digital Pós · R$89.90</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 329.78</span></td>
-      <td style="text-align:right;color:var(--text2)">4</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-mid">R$ 329.78</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:18.5%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">14</span></td>
-      <td>
-        <div class="arpu-cliente">Rosa Rubi De Olimpia - Comercio De Bijuterias Ltda</div>
-        <div class="arpu-cpf">08.371.580/0001-35</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
-      </td>
-      <td><span class="arpu-prod-chip">Internet_Mensal Pós · R$250.80</span><span class="arpu-prod-chip">Telefonia Fixa · R$69.90</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 320.70</span></td>
-      <td style="text-align:right;color:var(--text2)">2</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-mid">R$ 320.70</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:18.0%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">15</span></td>
-      <td>
-        <div class="arpu-cliente">Mateus Sousa Leal Silva</div>
-        <div class="arpu-cpf">529.254.758-17</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
-      </td>
-      <td><span class="arpu-prod-chip">Internet_Digital Pós ×2 · R$269.90</span><span class="arpu-prod-chip">Telefonia Móvel · R$49.90</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 319.80</span></td>
-      <td style="text-align:right;color:var(--text2)">3</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-mid">R$ 319.80</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:17.9%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">16</span></td>
-      <td>
-        <div class="arpu-cliente">Bebedouro Comercio De Bombas Injetoras Limitada</div>
-        <div class="arpu-cpf">55.503.387/0001-90</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AMARELO</div>
-      </td>
-      <td><span class="arpu-prod-chip">Internet_Mensal Pós ×2 · R$249.80</span><span class="arpu-prod-chip">Telefonia Fixa · R$69.90</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 319.70</span></td>
-      <td style="text-align:right;color:var(--text2)">3</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-mid">R$ 319.70</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:17.9%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">17</span></td>
-      <td>
-        <div class="arpu-cliente">Matheus Augusto Julião Da Rocha</div>
-        <div class="arpu-cpf">476.464.858-02</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
-      </td>
-      <td><span class="arpu-prod-chip">Internet_Digital Pós · R$99.90</span><span class="arpu-prod-chip">TV ×4 · R$178.70</span><span class="arpu-prod-chip">Telefonia Móvel · R$39.90</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 318.50</span></td>
-      <td style="text-align:right;color:var(--text2)">6</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-mid">R$ 318.50</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:17.8%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">18</span></td>
-      <td>
-        <div class="arpu-cliente">Mariane Dos Santos Farinaci</div>
-        <div class="arpu-cpf">307.345.368-79</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO VERDE</div>
-      </td>
-      <td><span class="arpu-prod-chip">Telefonia Móvel ×2 · R$129.80</span><span class="arpu-prod-chip">Internet_Digital Pós · R$99.90</span><span class="arpu-prod-chip">Telefonia Fixa · R$39.90</span><span class="arpu-prod-chip">TV · R$48.90</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 318.50</span></td>
-      <td style="text-align:right;color:var(--text2)">5</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-mid">R$ 318.50</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:17.8%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">19</span></td>
-      <td>
-        <div class="arpu-cliente">Alessandra Sampaio Dos Santos</div>
-        <div class="arpu-cpf">181.016.978-02</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO VERDE</div>
-      </td>
-      <td><span class="arpu-prod-chip">Internet_Digital Pós ×2 · R$219.80</span><span class="arpu-prod-chip">TV ×2 · R$97.80</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 317.60</span></td>
-      <td style="text-align:right;color:var(--text2)">4</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-mid">R$ 317.60</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:17.8%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">20</span></td>
-      <td>
-        <div class="arpu-cliente">Marcelo Alves Batista</div>
-        <div class="arpu-cpf">357.857.508-99</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AZUL</div>
-      </td>
-      <td><span class="arpu-prod-chip">Internet_Carnê Pós ×2 · R$199.80</span><span class="arpu-prod-chip">Telefonia Móvel · R$59.99</span><span class="arpu-prod-chip">TV · R$48.90</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 308.69</span></td>
-      <td style="text-align:right;color:var(--text2)">4</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-mid">R$ 308.69</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar mid" style="width:17.3%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">21</span></td>
-      <td>
-        <div class="arpu-cliente">Ivan José Da Silva Junior</div>
-        <div class="arpu-cpf">480.095.868-70</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
-      </td>
-      <td><span class="arpu-prod-chip">Internet_Digital Pós · R$149.00</span><span class="arpu-prod-chip">TV ×5 · R$159.50</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 308.50</span></td>
-      <td style="text-align:right;color:var(--text2)">6</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-low">R$ 308.50</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:17.3%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">22</span></td>
-      <td>
-        <div class="arpu-cliente">Lidiane Cristiana Diogo</div>
-        <div class="arpu-cpf">357.416.368-10</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO VERDE</div>
-      </td>
-      <td><span class="arpu-prod-chip">Internet_Digital Pós · R$99.90</span><span class="arpu-prod-chip">TV ×2 · R$97.80</span><span class="arpu-prod-chip">Internet_Carnê Pós · R$109.90</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 307.60</span></td>
-      <td style="text-align:right;color:var(--text2)">4</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-low">R$ 307.60</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:17.2%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">23</span></td>
-      <td>
-        <div class="arpu-cliente">Michely Cristina Da Silva Nascimento</div>
-        <div class="arpu-cpf">34.778.561/0001-38</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AMARELO</div>
-      </td>
-      <td><span class="arpu-prod-chip">Internet_Digital Pós · R$199.90</span><span class="arpu-prod-chip">Telefonia Fixa · R$100.00</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 299.90</span></td>
-      <td style="text-align:right;color:var(--text2)">2</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-low">R$ 299.90</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:16.8%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">24</span></td>
-      <td>
-        <div class="arpu-cliente">Gustavo Alfredo Cintra</div>
-        <div class="arpu-cpf">475.293.408-67</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
-      </td>
-      <td><span class="arpu-prod-chip">Internet_Digital Pré · R$99.90</span><span class="arpu-prod-chip">TV ×2 · R$100.00</span><span class="arpu-prod-chip">Internet_Carnê Pós · R$99.90</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 299.80</span></td>
-      <td style="text-align:right;color:var(--text2)">4</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-low">R$ 299.80</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:16.8%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">25</span></td>
-      <td>
-        <div class="arpu-cliente">Regiane De Sousa Silva De Almeida Ltda</div>
-        <div class="arpu-cpf">26.843.660/0001-28</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AMARELO</div>
-      </td>
-      <td><span class="arpu-prod-chip">Internet_Mensal Pós ×2 · R$299.80</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 299.80</span></td>
-      <td style="text-align:right;color:var(--text2)">2</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-low">R$ 299.80</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:16.8%"></div></div>
-      </td>
-    </tr><tr>
-      <td><span class="arpu-rank ">26</span></td>
-      <td>
-        <div class="arpu-cliente">Karina Dos Santos Munis</div>
-        <div class="arpu-cpf">244.984.508-92</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO VERDE</div>
-      </td>
-      <td><span class="arpu-prod-chip">Internet_Digital Pós ×2 · R$199.80</span><span class="arpu-prod-chip">TV ×2 · R$100.00</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 299.80</span></td>
-      <td style="text-align:right;color:var(--text2)">4</td>
-      <td class="arpu-tm-cell">
-        <span class="arpu-tm-low">R$ 299.80</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:16.8%"></div></div>
+        <span class="arpu-tm-low">R$ 444.57</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:5.9%"></div></div>
       </td>
     </tr><tr>
       <td><span class="arpu-rank ">27</span></td>
       <td>
-        <div class="arpu-cliente">Douglas Henrique De Oliveira Ry Souza</div>
-        <div class="arpu-cpf">504.010.198-88</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO VERDE</div>
+        <div class="arpu-cliente">Jose Antonio Alves Pereira</div>
+        <div class="arpu-cpf">039.664.998-00</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AZUL</div>
       </td>
-      <td><span class="arpu-prod-chip">Internet_Carnê Pós · R$89.90</span><span class="arpu-prod-chip">Internet_Digital Pós · R$109.90</span><span class="arpu-prod-chip">Telefonia Móvel · R$99.99</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 299.79</span></td>
-      <td style="text-align:right;color:var(--text2)">3</td>
+      <td><span class="arpu-prod-chip">Internet_Digital Pós ×3 · R$299.70</span><span class="arpu-prod-chip">TV ×3 · R$129.90</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 429.60</span></td>
+      <td style="text-align:right;color:var(--text2)">6</td>
       <td class="arpu-tm-cell">
-        <span class="arpu-tm-low">R$ 299.79</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:16.8%"></div></div>
+        <span class="arpu-tm-low">R$ 429.60</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:5.7%"></div></div>
       </td>
     </tr><tr>
       <td><span class="arpu-rank ">28</span></td>
       <td>
-        <div class="arpu-cliente">Edivaldo Felix Da Silva</div>
-        <div class="arpu-cpf">008.532.448-55</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
+        <div class="arpu-cliente">Pires Supermercados Ltda</div>
+        <div class="arpu-cpf">10.273.166/0002-16</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AZUL</div>
       </td>
-      <td><span class="arpu-prod-chip">Internet_Digital Pós · R$99.90</span><span class="arpu-prod-chip">TV ×3 · R$199.70</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 299.60</span></td>
-      <td style="text-align:right;color:var(--text2)">4</td>
+      <td><span class="arpu-prod-chip">Internet_Mensal/Setor Publico · R$380.00</span><span class="arpu-prod-chip">Telefonia Fixa · R$29.90</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 409.90</span></td>
+      <td style="text-align:right;color:var(--text2)">2</td>
       <td class="arpu-tm-cell">
-        <span class="arpu-tm-low">R$ 299.60</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:16.8%"></div></div>
+        <span class="arpu-tm-low">R$ 409.90</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:5.4%"></div></div>
       </td>
     </tr><tr>
       <td><span class="arpu-rank ">29</span></td>
       <td>
-        <div class="arpu-cliente">Claudinea Oliveira De Jesus Menezes</div>
-        <div class="arpu-cpf">312.963.388-00</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
+        <div class="arpu-cliente">Miguel Ferreira Da Costa Henrique</div>
+        <div class="arpu-cpf">351.624.288-41</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO RURAL</div>
       </td>
-      <td><span class="arpu-prod-chip">Internet_Digital Pós ×2 · R$189.80</span><span class="arpu-prod-chip">TV ×2 · R$98.90</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 288.70</span></td>
-      <td style="text-align:right;color:var(--text2)">4</td>
+      <td><span class="arpu-prod-chip">Internet_Digital Pós · R$200.00</span><span class="arpu-prod-chip">Internet/ PF - Digital POS · R$200.00</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 400.00</span></td>
+      <td style="text-align:right;color:var(--text2)">2</td>
       <td class="arpu-tm-cell">
-        <span class="arpu-tm-low">R$ 288.70</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:16.2%"></div></div>
+        <span class="arpu-tm-low">R$ 400.00</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:5.3%"></div></div>
       </td>
     </tr><tr>
       <td><span class="arpu-rank ">30</span></td>
       <td>
-        <div class="arpu-cliente">Emerson Antonio De Souza Nobre</div>
-        <div class="arpu-cpf">216.835.278-01</div>
-        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO AMARELO</div>
+        <div class="arpu-cliente">Robson Paredero Hernandes</div>
+        <div class="arpu-cpf">317.468.718-73</div>
+        <div class="arpu-cpf" style="color:var(--accent2)">BLOCO LARANJA</div>
       </td>
-      <td><span class="arpu-prod-chip">Internet_Digital Pós ×2 · R$285.00</span></td>
-      <td style="text-align:right"><span class="arpu-val">R$ 285.00</span></td>
+      <td><span class="arpu-prod-chip">Internet/ PF - Digital POS ×2 · R$399.90</span></td>
+      <td style="text-align:right"><span class="arpu-val">R$ 399.90</span></td>
       <td style="text-align:right;color:var(--text2)">2</td>
       <td class="arpu-tm-cell">
-        <span class="arpu-tm-low">R$ 285.00</span>
-        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:16.0%"></div></div>
+        <span class="arpu-tm-low">R$ 399.90</span>
+        <div class="arpu-tm-bar-wrap"><div class="arpu-tm-bar low" style="width:5.3%"></div></div>
       </td>
     </tr></tbody>
     </table>
@@ -3575,116 +3970,18 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
 
 
 <!-- ══════════ PRINT OVERLAY ══════════ -->
-<div id="print-overlay" class="">
+<div id="print-overlay">
   <div id="print-modal">
     <div class="print-modal-actions">
-      <h3>🖨️ Resumo Executivo — Correlação — Pré-visualização</h3>
+      <h3>🖨️ Resumo Executivo — Pré-visualização</h3>
       <div style="display:flex;gap:8px">
         <button class="btn-close-print" onclick="closePrintPreview()">✕ Fechar</button>
         <button class="btn-do-print" onclick="window.print()">🖨️ Imprimir / Salvar PDF</button>
       </div>
     </div>
     <div id="print-content">
-  <div class="pe-header" style="border-bottom-color:#3a8ee8">
-    <div>
-      <div class="pe-title">🔗 RESUMO EXECUTIVO — CORRELAÇÃO VENDAS vs CHURN</div>
-      <div class="pe-sub">Turbo Net Telecom Ltda &nbsp;·&nbsp; Período: <strong style="color:#3a8ee8">undefined</strong> &nbsp;·&nbsp; Filtro de período aplicado</div>
+      <!-- preenchido por openPrintPreview() -->
     </div>
-    <div class="pe-date">
-      <div style="color:#b0b8c8;font-size:11px;font-weight:600">Gerado em 25/05/2026</div>
-      <div style="color:#3a8ee8;font-size:9px;margin-top:2px;font-weight:700">CONFIDENCIAL</div>
-    </div>
-  </div>
-
-  <div class="pe-section-label" style="border-left-color:#3a8ee8">VISÃO GERAL — VENDAS vs CANCELAMENTOS</div>
-  <div class="pe-kpi-grid">
-    <div class="pe-kpi blue">
-      <div class="pe-kpi-label">Receita de Vendas</div>
-      <div class="pe-kpi-val" style="color:#3a8ee8">R$ 61.691,08</div>
-      <div class="pe-kpi-sub">753 contratos emitidos</div>
-    </div>
-    <div class="pe-kpi red">
-      <div class="pe-kpi-label">Valor Cancelado</div>
-      <div class="pe-kpi-val" style="color:#e83050">R$ 60.157,83</div>
-      <div class="pe-kpi-sub">736 cancelamentos</div>
-    </div>
-    <div class="pe-kpi green">
-      <div class="pe-kpi-label">Saldo Líquido</div>
-      <div class="pe-kpi-val" style="color:#2ab870">R$ 1.533,25</div>
-      <div class="pe-kpi-sub">Vendas − Cancelamentos</div>
-    </div>
-    <div class="pe-kpi red">
-      <div class="pe-kpi-label">Taxa Churn / Vendas</div>
-      <div class="pe-kpi-val" style="color:#e83050">97.7%</div>
-      <div class="pe-kpi-sub">Qtd cancelamentos ÷ vendas</div>
-    </div>
-  </div>
-
-  <div class="pe-section-label" style="border-left-color:#3a8ee8">EVOLUÇÃO MENSAL — VENDAS (🔵) vs CHURN (🔴)</div>
-  <div style="background:#f8fafb;border:1px solid #dde3ec;border-radius:8px;padding:14px 16px">
-    <div class="pe-chart-wrap"><div class="pe-bar-col" style="gap:1px"><div class="pe-bar-val" style="font-size:7px;color:#9aa0b0">—</div><div style="display:flex;align-items:flex-end;gap:2px;width:100%"><div style="flex:1;height:2px;background:#dde8f5;border-radius:2px 2px 0 0"></div><div style="flex:1;height:2px;background:#f5dddd;border-radius:2px 2px 0 0"></div></div><div class="pe-bar-label" style="color:#c8d4e4">Jan/26</div></div><div class="pe-bar-col" style="gap:1px"><div class="pe-bar-val" style="font-size:7px;color:#9aa0b0">—</div><div style="display:flex;align-items:flex-end;gap:2px;width:100%"><div style="flex:1;height:2px;background:#dde8f5;border-radius:2px 2px 0 0"></div><div style="flex:1;height:2px;background:#f5dddd;border-radius:2px 2px 0 0"></div></div><div class="pe-bar-label" style="color:#c8d4e4">Fev/26</div></div><div class="pe-bar-col" style="gap:1px"><div class="pe-bar-val" style="font-size:7px;color:#9aa0b0">—</div><div style="display:flex;align-items:flex-end;gap:2px;width:100%"><div style="flex:1;height:2px;background:#dde8f5;border-radius:2px 2px 0 0"></div><div style="flex:1;height:2px;background:#f5dddd;border-radius:2px 2px 0 0"></div></div><div class="pe-bar-label" style="color:#c8d4e4">Mar/26</div></div><div class="pe-bar-col" style="gap:1px"><div class="pe-bar-val" style="font-size:7px;color:#9aa0b0">—</div><div style="display:flex;align-items:flex-end;gap:2px;width:100%"><div style="flex:1;height:2px;background:#dde8f5;border-radius:2px 2px 0 0"></div><div style="flex:1;height:2px;background:#f5dddd;border-radius:2px 2px 0 0"></div></div><div class="pe-bar-label" style="color:#c8d4e4">Abr/26</div></div><div class="pe-bar-col" style="gap:1px"><div class="pe-bar-val" style="font-size:7px;color:#0d1b2e">R$61.7k</div><div style="display:flex;align-items:flex-end;gap:2px;width:100%"><div style="flex:1;height:60px;background:#3a8ee8;border-radius:2px 2px 0 0"></div><div style="flex:1;height:59px;background:#e83050;border-radius:2px 2px 0 0"></div></div><div class="pe-bar-label" style="color:#5a6278">Mai/26</div></div><div class="pe-bar-col" style="gap:1px"><div class="pe-bar-val" style="font-size:7px;color:#9aa0b0">—</div><div style="display:flex;align-items:flex-end;gap:2px;width:100%"><div style="flex:1;height:2px;background:#dde8f5;border-radius:2px 2px 0 0"></div><div style="flex:1;height:2px;background:#f5dddd;border-radius:2px 2px 0 0"></div></div><div class="pe-bar-label" style="color:#c8d4e4">Jun/26</div></div><div class="pe-bar-col" style="gap:1px"><div class="pe-bar-val" style="font-size:7px;color:#9aa0b0">—</div><div style="display:flex;align-items:flex-end;gap:2px;width:100%"><div style="flex:1;height:2px;background:#dde8f5;border-radius:2px 2px 0 0"></div><div style="flex:1;height:2px;background:#f5dddd;border-radius:2px 2px 0 0"></div></div><div class="pe-bar-label" style="color:#c8d4e4">Jul/26</div></div><div class="pe-bar-col" style="gap:1px"><div class="pe-bar-val" style="font-size:7px;color:#9aa0b0">—</div><div style="display:flex;align-items:flex-end;gap:2px;width:100%"><div style="flex:1;height:2px;background:#dde8f5;border-radius:2px 2px 0 0"></div><div style="flex:1;height:2px;background:#f5dddd;border-radius:2px 2px 0 0"></div></div><div class="pe-bar-label" style="color:#c8d4e4">Ago/26</div></div><div class="pe-bar-col" style="gap:1px"><div class="pe-bar-val" style="font-size:7px;color:#9aa0b0">—</div><div style="display:flex;align-items:flex-end;gap:2px;width:100%"><div style="flex:1;height:2px;background:#dde8f5;border-radius:2px 2px 0 0"></div><div style="flex:1;height:2px;background:#f5dddd;border-radius:2px 2px 0 0"></div></div><div class="pe-bar-label" style="color:#c8d4e4">Set/26</div></div><div class="pe-bar-col" style="gap:1px"><div class="pe-bar-val" style="font-size:7px;color:#9aa0b0">—</div><div style="display:flex;align-items:flex-end;gap:2px;width:100%"><div style="flex:1;height:2px;background:#dde8f5;border-radius:2px 2px 0 0"></div><div style="flex:1;height:2px;background:#f5dddd;border-radius:2px 2px 0 0"></div></div><div class="pe-bar-label" style="color:#c8d4e4">Out/26</div></div><div class="pe-bar-col" style="gap:1px"><div class="pe-bar-val" style="font-size:7px;color:#9aa0b0">—</div><div style="display:flex;align-items:flex-end;gap:2px;width:100%"><div style="flex:1;height:2px;background:#dde8f5;border-radius:2px 2px 0 0"></div><div style="flex:1;height:2px;background:#f5dddd;border-radius:2px 2px 0 0"></div></div><div class="pe-bar-label" style="color:#c8d4e4">Nov/26</div></div><div class="pe-bar-col" style="gap:1px"><div class="pe-bar-val" style="font-size:7px;color:#9aa0b0">—</div><div style="display:flex;align-items:flex-end;gap:2px;width:100%"><div style="flex:1;height:2px;background:#dde8f5;border-radius:2px 2px 0 0"></div><div style="flex:1;height:2px;background:#f5dddd;border-radius:2px 2px 0 0"></div></div><div class="pe-bar-label" style="color:#c8d4e4">Dez/26</div></div></div>
-    <div style="display:flex;gap:16px;margin-top:6px;justify-content:center">
-      <span style="font-size:9px;color:#3a8ee8;font-weight:700">■ Vendas</span>
-      <span style="font-size:9px;color:#e83050;font-weight:700">■ Cancelamentos</span>
-    </div>
-  </div>
-
-  <div class="pe-section-label" style="border-left-color:#5a6278">RESULTADO POR PERÍODO</div>
-  <table class="pe-table">
-    <thead><tr>
-      <th>Período</th>
-      <th style="text-align:right;color:#3a8ee8">Receita Vendas</th>
-      <th style="text-align:right;color:#e83050">Valor Cancelado</th>
-      <th style="text-align:right">Saldo Líquido</th>
-      <th style="text-align:right">Taxa Churn</th>
-    </tr></thead>
-    <tbody><tr><td style="font-weight:600">Mai/26</td><td style="text-align:right;color:#3a8ee8;font-weight:600">R$ 61.691,08</td><td style="text-align:right;color:#e83050;font-weight:600">R$ 60.157,83</td><td style="text-align:right;font-weight:700;color:#2ab870">R$ 1.533,25</td><td style="text-align:right;color:#e83050;font-weight:600">97.7%</td></tr></tbody>
-  </table>
-
-  <div style="margin-top:14px">
-      <div class="pe-section-label" style="border-left-color:#3a8ee8">VENDAS vs CHURN POR PRODUTO</div>
-      <table class="pe-table">
-        <thead><tr>
-          <th>Produto</th>
-          <th style="text-align:center;color:#3a8ee8">V.Qtd</th>
-          <th style="text-align:center;color:#e83050">C.Qtd</th>
-          <th style="text-align:right;color:#3a8ee8">Vendas R$</th>
-          <th style="text-align:right;color:#e83050">Cancel. R$</th>
-        </tr></thead>
-        <tbody><tr>
-      <td style="max-width:110px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Internet</td>
-      <td style="text-align:center;color:#3a8ee8;font-weight:700">441</td>
-      <td style="text-align:center;color:#e83050;font-weight:700">532</td>
-      <td style="text-align:right;color:#3a8ee8;font-weight:600">R$ 44.022,90</td>
-      <td style="text-align:right;color:#e83050;font-weight:600">R$ 50.834,57</td>
-    </tr><tr>
-      <td style="max-width:110px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Móvel</td>
-      <td style="text-align:center;color:#3a8ee8;font-weight:700">206</td>
-      <td style="text-align:center;color:#e83050;font-weight:700">116</td>
-      <td style="text-align:right;color:#3a8ee8;font-weight:600">R$ 12.263,68</td>
-      <td style="text-align:right;color:#e83050;font-weight:600">R$ 5.498,18</td>
-    </tr><tr>
-      <td style="max-width:110px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">TV</td>
-      <td style="text-align:center;color:#3a8ee8;font-weight:700">94</td>
-      <td style="text-align:center;color:#e83050;font-weight:700">83</td>
-      <td style="text-align:right;color:#3a8ee8;font-weight:600">R$ 4.805,50</td>
-      <td style="text-align:right;color:#e83050;font-weight:600">R$ 3.625,58</td>
-    </tr><tr>
-      <td style="max-width:110px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Fixo</td>
-      <td style="text-align:center;color:#3a8ee8;font-weight:700">12</td>
-      <td style="text-align:center;color:#e83050;font-weight:700">5</td>
-      <td style="text-align:right;color:#3a8ee8;font-weight:600">R$ 599,00</td>
-      <td style="text-align:right;color:#e83050;font-weight:600">R$ 199,50</td>
-    </tr></tbody>
-      </table>
-  </div>
-
-  <div class="pe-footer">
-    <span>Turbo Net Telecom Ltda &nbsp;·&nbsp; Dashboard Executivo — Correlação</span>
-    <span>Dados extraídos do CRM interno &nbsp;·&nbsp; Uso restrito à diretoria</span>
-    <span style="color:#3a8ee8;font-weight:700">1 / 1</span>
-  </div>
-  </div>
   </div>
 </div>
 
@@ -3757,7 +4054,7 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
     </div>
     <div class="fpa-kpi blue">
       <div class="fpa-kpi-label">Taxa de Ativação</div>
-      <div class="fpa-kpi-val" id="fpa-taxa-ativ">0.0%</div>
+      <div class="fpa-kpi-val" id="fpa-taxa-ativ">74.6%</div>
       <div class="fpa-kpi-sub">Ativados ÷ Aprovados</div>
     </div>
     <div class="fpa-kpi purple">
@@ -5582,7 +5879,7 @@ function processFile(file){
       const rv=XLSX.utils.sheet_to_json(wb.Sheets[vsn],{header:1});
       const nv=[];
       for(let i=1;i<rv.length;i++){const r=rv[i];if(!r||!r.length)continue;
-        const bh=r[59];const statusAtiv=(bh===undefined||bh===null||bh==='')?'Não Ativado':(isNaN(Number(bh))?String(bh):'Ativado');
+        const bh=r[59];const statusAtiv=(bh===undefined||bh===null||bh===''||bh==='Não Ativado')?'Não Ativado':(isNaN(Number(bh))?'Não Ativado':'Ativado');
         nv.push({produto:r[9]||'',produto_cat:r[61]||'',valor:Number(r[11]||0),vendedor:r[41]||'',mes:Number(r[56]||0),ano:Number(r[57]||0),cidade:r[54]||'',regiao:r[43]||'',equipe:r[38]||'',status_contrato:r[10]||'',status_ativacao:statusAtiv,cpf:String(r[48]||''),cliente:String(r[46]||''),origem:r[33]||'',custo:Number(r[60]||0),faixa_meses:r[59]||''});}      const rc=XLSX.utils.sheet_to_json(wb.Sheets[csn],{header:1});
       const nc=[];
       for(let i=1;i<rc.length;i++){const r=rc[i];if(!r||!r.length)continue;
@@ -6848,7 +7145,7 @@ function exportSharedVersion() {
 
       // ── Replace update badge text in the static HTML ──────────────────
       html = html.replace(
-        'Atualizado: 25/05/2026 13:41 · Força de Vendas.xlsx',
+        'Atualizado: 25/05/2026 14:17 · Força de Vendas.xlsx',
         updateLabel
       );
 
@@ -7182,7 +7479,7 @@ function renderFPA() {
   renderFPA_MRRChart(fVfpa, fCfpa);
   renderFPA_CACLTVTable(prods);
   renderFPA_FaixaBars(fCfpa);
-  renderFPA_FunilChart();
+  renderFPA_FunilChart(fVall);
   renderFPA_OrigemBars(fVfpa);
   renderFPA_CohortTable(fVfpa, fCfpa);
   _fpaRegisterCharts();
@@ -7196,7 +7493,7 @@ function renderFPA_KPIs(fV, fC, fVall) {
 
   const emitidos  = fVall.length;
   const aprovados = fVall.filter(r => ['Aprovado','Em Aprovação'].includes(r.status_contrato)).length;
-  const ativados  = fVall.filter(r => r.status_ativacao === 'Encerramento').length;
+  const ativados  = fVall.filter(r => r.status_ativacao === 'Ativado').length;
 
   const ltvArr = fC.map(r => Number(r.life_time||0)).filter(v => v > 0);
   const ltvMed = ltvArr.length ? (ltvArr.reduce((a,b)=>a+b,0)/ltvArr.length).toFixed(1) : '—';
@@ -7413,13 +7710,29 @@ function renderFPA_FaixaBars(fC) {
 }
 
 // ── Funil Chart ───────────────────────────────────────────────────────
-function renderFPA_FunilChart() {
+function renderFPA_FunilChart(fVall) {
   const ctx = document.getElementById('fpa-funil-chart');
   if (!ctx) return;
-  const labels = Object.keys(FPA_FUNIL);
-  const emit   = labels.map(k=>FPA_FUNIL[k].emitidos);
-  const aprov  = labels.map(k=>FPA_FUNIL[k].aprovados);
-  const ativ   = labels.map(k=>FPA_FUNIL[k].ativados);
+
+  // Use period-filtered VD (fVall) — respects active period filter
+  const src = (fVall && fVall.length > 0) ? fVall : VD;
+  const MN = ['','Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
+  const pMap = {};
+  src.forEach(r => {
+    if (!r.mes || !r.ano) return;
+    const k = MN[r.mes] + '/' + String(r.ano).slice(2);
+    if (!pMap[k]) pMap[k] = { emitidos:0, aprovados:0, ativados:0, ano:r.ano, mes:r.mes };
+    pMap[k].emitidos++;
+    if (['Aprovado','Em Aprovação'].includes(r.status_contrato)) pMap[k].aprovados++;
+    if (r.status_ativacao === 'Ativado') pMap[k].ativados++;
+  });
+  const labels = Object.keys(pMap).sort((a,b) => {
+    const pa=pMap[a], pb=pMap[b];
+    return pa.ano !== pb.ano ? pa.ano - pb.ano : pa.mes - pb.mes;
+  });
+  const emit  = labels.map(k => pMap[k].emitidos);
+  const aprov = labels.map(k => pMap[k].aprovados);
+  const ativ  = labels.map(k => pMap[k].ativados);
 
   if (_fpaChartFunil) { _fpaChartFunil.destroy(); _fpaChartFunil=null; }
   _fpaChartFunil = new Chart(ctx.getContext('2d'), {
