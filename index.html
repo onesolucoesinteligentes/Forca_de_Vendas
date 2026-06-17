@@ -1162,7 +1162,7 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
     </div>
   </div>
   <div class="header-actions">
-    <div class="last-update" id="last-update">Atualizado: 17/06/2026 11:20 · Força de Vendas.xlsx</div>
+    <div class="last-update" id="last-update">Atualizado: 17/06/2026 11:32 · Força de Vendas.xlsx</div>
     <button class="btn-print" onclick="openPrintPreview('vendas')" title="Resumo Executivo — Vendas">🖨️ Resumo Executivo</button>
     
     
@@ -3631,9 +3631,9 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
     </div><div class="year-box" data-ano="2025">
       <div class="year-box-header">
         <span class="year-box-label">2025</span>
-        <button class="year-toggle-all" onclick="toggleYearAll('fpa-period-selector',2025,this)">Limpar</button>
+        <button class="year-toggle-all" onclick="toggleYearAll('fpa-period-selector',2025,this)">Todos</button>
       </div>
-      <div class="year-months"><span class="month-pill " data-ano="2025" data-mes="1">Jan</span><span class="month-pill " data-ano="2025" data-mes="2">Fev</span><span class="month-pill " data-ano="2025" data-mes="3">Mar</span><span class="month-pill " data-ano="2025" data-mes="4">Abr</span><span class="month-pill " data-ano="2025" data-mes="5">Mai</span><span class="month-pill " data-ano="2025" data-mes="6">Jun</span><span class="month-pill selected" data-ano="2025" data-mes="7">Jul</span><span class="month-pill selected" data-ano="2025" data-mes="8">Ago</span><span class="month-pill selected" data-ano="2025" data-mes="9">Set</span><span class="month-pill selected" data-ano="2025" data-mes="10">Out</span><span class="month-pill selected" data-ano="2025" data-mes="11">Nov</span><span class="month-pill selected" data-ano="2025" data-mes="12">Dez</span></div>
+      <div class="year-months"><span class="month-pill" data-ano="2025" data-mes="1">Jan</span><span class="month-pill" data-ano="2025" data-mes="2">Fev</span><span class="month-pill" data-ano="2025" data-mes="3">Mar</span><span class="month-pill" data-ano="2025" data-mes="4">Abr</span><span class="month-pill" data-ano="2025" data-mes="5">Mai</span><span class="month-pill" data-ano="2025" data-mes="6">Jun</span><span class="month-pill" data-ano="2025" data-mes="7">Jul</span><span class="month-pill" data-ano="2025" data-mes="8">Ago</span><span class="month-pill" data-ano="2025" data-mes="9">Set</span><span class="month-pill" data-ano="2025" data-mes="10">Out</span><span class="month-pill" data-ano="2025" data-mes="11">Nov</span><span class="month-pill" data-ano="2025" data-mes="12">Dez</span></div>
     </div><div class="year-box" data-ano="2026">
       <div class="year-box-header">
         <span class="year-box-label">2026</span>
@@ -3673,27 +3673,27 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
   <div class="fpa-kpi-strip" id="fpa-kpi-strip">
     <div class="fpa-kpi green">
       <div class="fpa-kpi-label">MRR Líquido</div>
-      <div class="fpa-kpi-val" id="fpa-mrr">—</div>
+      <div class="fpa-kpi-val" id="fpa-mrr" style="color: var(--green);">R$ 28.878,52</div>
       <div class="fpa-kpi-sub">Vendas − Churn no período</div>
     </div>
     <div class="fpa-kpi blue">
       <div class="fpa-kpi-label">Taxa de Aprovação</div>
-      <div class="fpa-kpi-val" id="fpa-taxa-aprov">—</div>
+      <div class="fpa-kpi-val" id="fpa-taxa-aprov">96.7%</div>
       <div class="fpa-kpi-sub">Aprovados ÷ Emitidos</div>
     </div>
     <div class="fpa-kpi blue">
       <div class="fpa-kpi-label">Taxa de Ativação</div>
-      <div class="fpa-kpi-val" id="fpa-taxa-ativ">—</div>
+      <div class="fpa-kpi-val" id="fpa-taxa-ativ">71.2%</div>
       <div class="fpa-kpi-sub">Ativados ÷ Aprovados</div>
     </div>
     <div class="fpa-kpi purple">
       <div class="fpa-kpi-label">LTV Médio Geral</div>
-      <div class="fpa-kpi-val" id="fpa-ltv">—</div>
+      <div class="fpa-kpi-val" id="fpa-ltv">26.1 meses</div>
       <div class="fpa-kpi-sub">Meses em base (churn)</div>
     </div>
     <div class="fpa-kpi gold">
       <div class="fpa-kpi-label">Custo/Cliente (DRE)</div>
-      <div class="fpa-kpi-val" id="fpa-cac">—</div>
+      <div class="fpa-kpi-val" id="fpa-cac">R$ 29.54</div>
       <div class="fpa-kpi-sub">Custo operacional ÷ base ativa</div>
     </div>
   </div>
@@ -3703,12 +3703,12 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
     <div class="fpa-card">
       <div class="fpa-card-title">📈 Evolução Mensal — Novos vs Churn</div>
       <div class="fpa-card-sub">Volume de contratos novos e cancelamentos mês a mês — tendência de crescimento líquido</div>
-      <div class="fpa-chart-wrap"><canvas id="fpa-cohort-chart"></canvas></div>
+      <div class="fpa-chart-wrap"><canvas id="fpa-cohort-chart" style="box-sizing: border-box; display: block; height: 0px; width: 0px;" width="0" height="0"></canvas></div>
     </div>
     <div class="fpa-card">
       <div class="fpa-card-title">💰 MRR — Receita vs Cancelamento Mensal</div>
       <div class="fpa-card-sub">Receita gerada pelas vendas novas vs valor cancelado — saldo líquido de receita</div>
-      <div class="fpa-chart-wrap"><canvas id="fpa-mrr-chart"></canvas></div>
+      <div class="fpa-chart-wrap"><canvas id="fpa-mrr-chart" style="box-sizing: border-box; display: block; height: 0px; width: 0px;" width="0" height="0"></canvas></div>
     </div>
   </div>
 
@@ -3723,13 +3723,124 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
           <th>Custo/Cliente</th><th>Ticket Médio</th><th>Margem Unit.</th>
           <th>LTV (meses)</th><th>Margem × LTV</th><th>Margem %</th>
         </tr></thead>
-        <tbody id="fpa-cac-tbody"></tbody>
+        <tbody id="fpa-cac-tbody"><tr>
+      <td style="text-align:left;font-weight:600">Internet</td>
+      <td>R$ 29.54</td>
+      <td>R$ 98.67</td>
+      <td style="color:var(--green);font-weight:600">
+        R$ 69.13</td>
+      <td>33.2 m</td>
+      <td style="color:var(--green);font-weight:700">
+        R$ 2294.58</td>
+      <td><span class="ratio-badge ratio-excellent">
+        🏆 70.1%</span></td>
+    </tr><tr>
+      <td style="text-align:left;font-weight:600">Outros</td>
+      <td>R$ 29.52</td>
+      <td>R$ 47.48</td>
+      <td style="color:var(--green);font-weight:600">
+        R$ 17.96</td>
+      <td>23.3 m</td>
+      <td style="color:var(--green);font-weight:700">
+        R$ 418.95</td>
+      <td><span class="ratio-badge ratio-warn">
+        ⚠️ 37.8%</span></td>
+    </tr><tr>
+      <td style="text-align:left;font-weight:600">TV</td>
+      <td>R$ 29.54</td>
+      <td>R$ 48.87</td>
+      <td style="color:var(--green);font-weight:600">
+        R$ 19.33</td>
+      <td>6.0 m</td>
+      <td style="color:var(--green);font-weight:700">
+        R$ 115.17</td>
+      <td><span class="ratio-badge ratio-warn">
+        ⚠️ 39.6%</span></td>
+    </tr><tr>
+      <td style="text-align:left;font-weight:600">Fixo</td>
+      <td>R$ 29.53</td>
+      <td>R$ 45.29</td>
+      <td style="color:var(--green);font-weight:600">
+        R$ 15.76</td>
+      <td>5.8 m</td>
+      <td style="color:var(--green);font-weight:700">
+        R$ 92.05</td>
+      <td><span class="ratio-badge ratio-warn">
+        ⚠️ 34.8%</span></td>
+    </tr><tr>
+      <td style="text-align:left;font-weight:600">Móvel</td>
+      <td>R$ 29.53</td>
+      <td>R$ 52.33</td>
+      <td style="color:var(--green);font-weight:600">
+        R$ 22.80</td>
+      <td>2.4 m</td>
+      <td style="color:var(--green);font-weight:700">
+        R$ 55.11</td>
+      <td><span class="ratio-badge ratio-good">
+        ✅ 43.6%</span></td>
+    </tr></tbody>
       </table>
     </div>
     <div class="fpa-card">
       <div class="fpa-card-title">⏱ Churn por Tempo de Permanência</div>
       <div class="fpa-card-sub">Quando os clientes estão cancelando — identifica falha de onboarding (0-3m) vs insatisfação crônica (&gt;12m)</div>
-      <div id="fpa-faixa-bars"></div>
+      <div id="fpa-faixa-bars"><div class="faixa-row">
+      <div class="faixa-label" style="color:var(--danger)">0-3m</div>
+      <div class="faixa-bar-bg">
+        <div class="faixa-bar" style="width:100%;background:#e83050"></div>
+      </div>
+      <div class="faixa-pct" style="color:#e83050">22.9%</div>
+      <div class="faixa-qtd">1019</div>
+    </div><div class="faixa-row">
+      <div class="faixa-label" style="color:var(--danger)">4-6m</div>
+      <div class="faixa-bar-bg">
+        <div class="faixa-bar" style="width:55%;background:#e07830"></div>
+      </div>
+      <div class="faixa-pct" style="color:#e07830">12.5%</div>
+      <div class="faixa-qtd">559</div>
+    </div><div class="faixa-row">
+      <div class="faixa-label" style="color:var(--muted)">6-12m</div>
+      <div class="faixa-bar-bg">
+        <div class="faixa-bar" style="width:57%;background:#e0b030"></div>
+      </div>
+      <div class="faixa-pct" style="color:#e0b030">13.1%</div>
+      <div class="faixa-qtd">585</div>
+    </div><div class="faixa-row">
+      <div class="faixa-label" style="color:var(--muted)">13-18m</div>
+      <div class="faixa-bar-bg">
+        <div class="faixa-bar" style="width:40%;background:#3a8ee8"></div>
+      </div>
+      <div class="faixa-pct" style="color:#3a8ee8">9.2%</div>
+      <div class="faixa-qtd">412</div>
+    </div><div class="faixa-row">
+      <div class="faixa-label" style="color:var(--muted)">19-24m</div>
+      <div class="faixa-bar-bg">
+        <div class="faixa-bar" style="width:22%;background:#2ab870"></div>
+      </div>
+      <div class="faixa-pct" style="color:#2ab870">5.0%</div>
+      <div class="faixa-qtd">225</div>
+    </div><div class="faixa-row">
+      <div class="faixa-label" style="color:var(--muted)">25-36m</div>
+      <div class="faixa-bar-bg">
+        <div class="faixa-bar" style="width:35%;background:#9050e8"></div>
+      </div>
+      <div class="faixa-pct" style="color:#9050e8">8.1%</div>
+      <div class="faixa-qtd">360</div>
+    </div><div class="faixa-row">
+      <div class="faixa-label" style="color:var(--muted)">37-60m</div>
+      <div class="faixa-bar-bg">
+        <div class="faixa-bar" style="width:45%;background:#5a6278"></div>
+      </div>
+      <div class="faixa-pct" style="color:#5a6278">10.4%</div>
+      <div class="faixa-qtd">463</div>
+    </div><div class="faixa-row">
+      <div class="faixa-label" style="color:var(--muted)">&gt;=61m</div>
+      <div class="faixa-bar-bg">
+        <div class="faixa-bar" style="width:64%;background:#3a8ee8"></div>
+      </div>
+      <div class="faixa-pct" style="color:#3a8ee8">14.7%</div>
+      <div class="faixa-qtd">655</div>
+    </div></div>
     </div>
   </div>
 
@@ -3738,12 +3849,52 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
     <div class="fpa-card">
       <div class="fpa-card-title">🔻 Funil de Ativação por Mês</div>
       <div class="fpa-card-sub">Contratos emitidos → aprovados → ativados — identifica onde o funil está travando</div>
-      <div class="fpa-chart-wrap"><canvas id="fpa-funil-chart"></canvas></div>
+      <div class="fpa-chart-wrap"><canvas id="fpa-funil-chart" style="box-sizing: border-box; display: block; height: 0px; width: 0px;" width="0" height="0"></canvas></div>
     </div>
     <div class="fpa-card">
       <div class="fpa-card-title">🎯 Origem das Vendas</div>
       <div class="fpa-card-sub">Canal de origem dos contratos aprovados — direciona onde investir em prospecção</div>
-      <div id="fpa-origem-bars" style="margin-top:8px"></div>
+      <div id="fpa-origem-bars" style="margin-top:8px"><div class="origem-row">
+      <div class="origem-label">Cliente Ativo</div>
+      <div class="origem-bar-bg"><div class="origem-bar" style="width:100%;background:#3a8ee8"></div></div>
+      <div class="origem-val" style="color:#3a8ee8">R$ 219.440,24</div>
+      <div class="origem-pct">58.4%</div>
+    </div><div class="origem-row">
+      <div class="origem-label">Matrix</div>
+      <div class="origem-bar-bg"><div class="origem-bar" style="width:45%;background:#2ab870"></div></div>
+      <div class="origem-val" style="color:#2ab870">R$ 98.531,46</div>
+      <div class="origem-pct">26.2%</div>
+    </div><div class="origem-row">
+      <div class="origem-label">Pap</div>
+      <div class="origem-bar-bg"><div class="origem-bar" style="width:14%;background:#e07830"></div></div>
+      <div class="origem-val" style="color:#e07830">R$ 30.287,52</div>
+      <div class="origem-pct">8.1%</div>
+    </div><div class="origem-row">
+      <div class="origem-label">Indicação Normal</div>
+      <div class="origem-bar-bg"><div class="origem-bar" style="width:3%;background:#9050e8"></div></div>
+      <div class="origem-val" style="color:#9050e8">R$ 7.553,12</div>
+      <div class="origem-pct">2.0%</div>
+    </div><div class="origem-row">
+      <div class="origem-label">Faixada da Loja</div>
+      <div class="origem-bar-bg"><div class="origem-bar" style="width:3%;background:#e0b030"></div></div>
+      <div class="origem-val" style="color:#e0b030">R$ 5.922,02</div>
+      <div class="origem-pct">1.6%</div>
+    </div><div class="origem-row">
+      <div class="origem-label">Whatsapp</div>
+      <div class="origem-bar-bg"><div class="origem-bar" style="width:2%;background:#e83050"></div></div>
+      <div class="origem-val" style="color:#e83050">R$ 5.476,37</div>
+      <div class="origem-pct">1.5%</div>
+    </div><div class="origem-row">
+      <div class="origem-label">Telefone</div>
+      <div class="origem-bar-bg"><div class="origem-bar" style="width:2%;background:#5a6278"></div></div>
+      <div class="origem-val" style="color:#5a6278">R$ 4.800,02</div>
+      <div class="origem-pct">1.3%</div>
+    </div><div class="origem-row">
+      <div class="origem-label">Já é Cliente</div>
+      <div class="origem-bar-bg"><div class="origem-bar" style="width:2%;background:#3abee8"></div></div>
+      <div class="origem-val" style="color:#3abee8">R$ 4.033,01</div>
+      <div class="origem-pct">1.1%</div>
+    </div></div>
     </div>
   </div>
 
@@ -3759,7 +3910,61 @@ tbody td { padding: 10px 14px; font-size: 13px; color: var(--text); vertical-ali
           <th>Churn Qtd</th><th>Valor Cancelado</th>
           <th>Saldo Qtd</th><th>Saldo R$</th><th>Taxa Churn</th>
         </tr></thead>
-        <tbody id="fpa-cohort-tbody"></tbody>
+        <tbody id="fpa-cohort-tbody"><tr>
+      <td style="text-align:left">Jan/26</td>
+      <td>822</td>
+      <td>R$ 62.897,80</td>
+      <td>760</td>
+      <td>R$ 60.267,58</td>
+      <td style="color:var(--green);font-weight:700">+62</td>
+      <td style="color:var(--green);font-weight:700">R$ 2.630,22</td>
+      <td><span class="chip chip-orange">92.5%</span></td>
+    </tr><tr>
+      <td style="text-align:left">Fev/26</td>
+      <td>679</td>
+      <td>R$ 53.208,57</td>
+      <td>619</td>
+      <td>R$ 50.031,86</td>
+      <td style="color:var(--green);font-weight:700">+60</td>
+      <td style="color:var(--green);font-weight:700">R$ 3.176,71</td>
+      <td><span class="chip chip-orange">91.2%</span></td>
+    </tr><tr>
+      <td style="text-align:left">Mar/26</td>
+      <td>943</td>
+      <td>R$ 73.086,61</td>
+      <td>1008</td>
+      <td>R$ 78.809,67</td>
+      <td style="color:var(--danger);font-weight:700">-65</td>
+      <td style="color:var(--danger);font-weight:700">R$ -5.723,06</td>
+      <td><span class="chip chip-red">106.9%</span></td>
+    </tr><tr>
+      <td style="text-align:left">Abr/26</td>
+      <td>880</td>
+      <td>R$ 72.155,35</td>
+      <td>846</td>
+      <td>R$ 68.430,68</td>
+      <td style="color:var(--green);font-weight:700">+34</td>
+      <td style="color:var(--green);font-weight:700">R$ 3.724,67</td>
+      <td><span class="chip chip-orange">96.1%</span></td>
+    </tr><tr>
+      <td style="text-align:left">Mai/26</td>
+      <td>1039</td>
+      <td>R$ 83.651,03</td>
+      <td>854</td>
+      <td>R$ 70.004,08</td>
+      <td style="color:var(--green);font-weight:700">+185</td>
+      <td style="color:var(--green);font-weight:700">R$ 13.646,95</td>
+      <td><span class="chip chip-orange">82.2%</span></td>
+    </tr><tr>
+      <td style="text-align:left">Jun/26</td>
+      <td>482</td>
+      <td>R$ 41.260,22</td>
+      <td>370</td>
+      <td>R$ 29.837,19</td>
+      <td style="color:var(--green);font-weight:700">+112</td>
+      <td style="color:var(--green);font-weight:700">R$ 11.423,03</td>
+      <td><span class="chip chip-orange">76.8%</span></td>
+    </tr></tbody>
       </table>
     </div>
   </div>
@@ -4673,15 +4878,19 @@ const EQUIPE_COLORS = {
 
 function vendRow(nm, info, rank, maxRef, totalRec, showEquipe=true) {
   // Build equipe chips — show all equipes the vendor worked in during the period
+  // Only show commercial equipes in chips — filter out operational/financial teams
+  const COMERCIAL_EQUIPES = ['COMERCIAL - MCV','COMERCIAL - PAP/LOJA','COMERCIAL - PAP','COMERCIAL - LOJA','COMERCIAL - CORPORATIVO'];
   const equipes = info._byEquipe
-    ? Object.keys(info._byEquipe).sort()
-    : [info.equipe || ''];
-  const equipeChips = equipes.map(eq => {
+    ? Object.keys(info._byEquipe).filter(e => COMERCIAL_EQUIPES.includes(e)).sort()
+    : [info.equipe || ''].filter(e => COMERCIAL_EQUIPES.includes(e));
+  // Fallback: if no comercial equipe found, show the primary one
+  const displayEquipes = equipes.length > 0 ? equipes : [info.equipe || ''];
+  const equipeChips = displayEquipes.map(eq => {
     const ec = EQUIPE_COLORS[eq] || { chip:'chip-gray', bar:'#999', label: eq.replace('COMERCIAL - ','') };
     return `<span class="chip ${ec.chip}" style="margin-right:3px">${ec.label}</span>`;
   }).join('');
   // Use primary equipe color for the bar (first/main equipe)
-  const primaryEq = equipes[0] || '';
+  const primaryEq = displayEquipes[0] || '';
   const ec = EQUIPE_COLORS[primaryEq] || { chip:'chip-gray', bar:'#999', label: primaryEq };
   const bar = Math.round((info.valor / maxRef) * 100);
   const tm = info.count > 0 ? fmtFull(info.valor / info.count) : '—';
@@ -6663,7 +6872,7 @@ function exportSharedVersion() {
 
       // ── Replace update badge text in the static HTML ──────────────────
       html = html.replace(
-        'Atualizado: 17/06/2026 11:20 · Força de Vendas.xlsx',
+        'Atualizado: 17/06/2026 11:32 · Força de Vendas.xlsx',
         updateLabel
       );
 
